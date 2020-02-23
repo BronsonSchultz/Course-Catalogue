@@ -10,7 +10,7 @@ public class TestQuery {
         Connection conn = null;
         try {
             // db parameters
-            String url = "jdbc:sqlite:/sqlite/db/UofSPlanner.db";
+            String url = "jdbc:sqlite:/370project/Milestone_6/sqlite/db/UofSPlanner.db";
             // create a connection to the database
             conn = DriverManager.getConnection(url);
 
