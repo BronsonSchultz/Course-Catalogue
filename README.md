@@ -27,7 +27,7 @@ Tests for Tomcat9
     $ curl localhost:8080
 
   - this will use the terminal as a browser and show a default html file
-  
+
 Tests for Java Spring Boot
   - when installing spring boot we did not realize that it would also use a tomcat server, so tomcat may be installed twice independently. To show that spring is working:
 
