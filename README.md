@@ -42,12 +42,11 @@ Tests for Java Spring Boot
     $ spring run app.groovy
 
   - Spring by default runs actively in the terminal unlike tomcat which ran in the background, so in order to view the output either run spring in the background or open a new terminal tab and run:
-  - Also by default spring will start it's server on the same port as tomcat, so make sure to stop the tomcat server first before launching this one 
-  
 
     $ curl localhost:8080
     
-    
+  - Also by default spring will start it's server on the same port as tomcat, so make sure to stop the tomcat server first before launching this one 
+
     
     
 
