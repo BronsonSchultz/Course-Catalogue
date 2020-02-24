@@ -15,7 +15,7 @@ Tests for JDK 11
     $ javac HelloWorld.java
     $ java HelloWorld
 
-    - there is already a .class file in the directory, but a new one can be created if you want to test the comiplation works
+    - there is already a .class file in the directory, but a new one can be created if you want to test the compilation works
 
 Tests for Tomcat9
   - to launch the tomcat server type:
@@ -38,3 +38,7 @@ Tests for Java Spring Boot
     $ curl localhost:8080
 
 Tests For JDBC
+  - Navigate to "connect" directory first
+  - Run the following command to select the "CourseCode" column from the "Courses" table:
+
+    $ java -cp .:.sqlite-jdbc-3.30.1.jar net.sqlitetest.TestQuery
