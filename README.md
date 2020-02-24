@@ -29,13 +29,27 @@ Tests for Tomcat9
   - this will use the terminal as a browser and show a default html file
 
 Tests for Java Spring Boot
+
+  - Spring had to be installed for each user, as permission was denied to install it in usr/local/bin. And also we were unable to access the marker's profile to install for that user as well.
+  - So if spring does not work within the marker profile, install it with these lines:
+
+    $ curl -s "https://get.sdkman.io" | bash
+    $ source "$HOME/.sdkman/bin/sdkman-init.sh"
+    $ sdk install springboot
+
   - when installing spring boot we did not realize that it would also use a tomcat server, so tomcat may be installed twice independently. To show that spring is working:
 
     $ spring run app.groovy
 
   - Spring by default runs actively in the terminal unlike tomcat which ran in the background, so in order to view the output either run spring in the background or open a new terminal tab and run:
+  - Also by default spring will start it's server on the same port as tomcat, so make sure to stop the tomcat server first before launching this one 
+  
 
     $ curl localhost:8080
+    
+    
+    
+    
 
 Tests For JDBC
   - Navigate to "connect" directory first
