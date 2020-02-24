@@ -42,3 +42,5 @@ Tests For JDBC
   - Run the following command to select the "CourseCode" column from the "Courses" table:
 
     $ java -cp .:.sqlite-jdbc-3.30.1.jar net.sqlitetest.TestQuery
+
+  - Currently not working, but connection to database is fine
