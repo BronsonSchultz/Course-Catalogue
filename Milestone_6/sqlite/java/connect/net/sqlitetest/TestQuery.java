@@ -21,7 +21,7 @@ public class TestQuery {
             stmt = conn.createStatement();
             String sql = "SELECT CourseCode FROM Courses";
             ResultSet rs = stmt.executeQuery(sql);
-
+`
             while (rs.next()) {
                 System.out.print(rs.getInt("CourseCode"));
             }
