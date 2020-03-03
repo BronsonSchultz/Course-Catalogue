@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="c58c7800-ab70-41f3-9abd-eac5c16a8a70" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/FrontEnd/PersonForm.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/fragments/navbar.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/fragments/signIn.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/home.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/modal.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/home.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradlew" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradlew.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/settings.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/validatingforminput/PersonForm.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/validatingforminput/ValidatingFormInputApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/FrontEnd/ValidatingFormInputApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/validatingforminput/WebController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/FrontEnd/WebController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/form.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/form.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/results.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/results.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/validatingforminput/ApplicationMockMvcTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/FrontEnd/ApplicationMockMvcTests.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="1YUdi5Vy4vRHz7yukhKV3xdZnBE" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../370FrontEnd/pom.xml" />
+    <property name="restartRequiresConfirmation" value="false" />
+    <property name="show.unlinked.gradle.project.popup" value="false" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\nosno\OneDrive\Year 3\CMPT 370\gs-validating-form-input\complete\src\main\resources\static" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.ValidatingFormInputApplication (1)">
+    <configuration name="ValidatingFormInputApplication (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.FrontEnd.ValidatingFormInputApplication" />
+      <module name="projectFrontEnd" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.FrontEnd.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ValidatingFormInputApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.example.validatingforminput.ValidatingFormInputApplication" />
+      <module name="projectFrontEnd" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.validatingforminput.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="JetRunConfigurationType" factoryName="Kotlin">
+      <module name="projectFrontEnd" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="WORKING_DIRECTORY" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType" factoryName="Kotlin script">
+      <module name="projectFrontEnd" />
+      <option name="filePath" />
+      <option name="vmParameters" />
+      <option name="alternativeJrePath" />
+      <option name="programParameters" />
+      <option name="passParentEnvs" value="true" />
+      <option name="workingDirectory" />
+      <option name="isAlternativeJrePathEnabled" value="false" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="filePath" />
+      <option name="vmParameters" />
+      <option name="alternativeJrePath" />
+      <option name="programParameters" />
+      <option name="passParentEnvs" value="true" />
+      <option name="workingDirectory" />
+      <option name="isAlternativeJrePathEnabled" value="false" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="WORKING_DIRECTORY" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.ValidatingFormInputApplication (1)" />
+        <item itemvalue="Application.ValidatingFormInputApplication" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="c58c7800-ab70-41f3-9abd-eac5c16a8a70" name="Default Changelist" comment="" />
+      <created>1583001230417</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1583001230417</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="548" y="183" key="FileChooserDialogImpl" timestamp="1583267848018">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="548" y="183" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1583267848018" />
+    <state width="1493" height="2" key="GridCell.Tab.0.bottom" timestamp="1583269945173">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="2" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1583269945173" />
+    <state width="1493" height="2" key="GridCell.Tab.0.center" timestamp="1583269945172">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="2" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1583269945172" />
+    <state width="1493" height="2" key="GridCell.Tab.0.left" timestamp="1583269945172">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="2" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1583269945172" />
+    <state width="1493" height="2" key="GridCell.Tab.0.right" timestamp="1583269945173">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="2" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1583269945173" />
+  </component>
+</project>
