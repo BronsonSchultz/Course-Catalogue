@@ -1,0 +1,11 @@
+-------------------------------------------------------------------------------
+Test set: com.FrontEnd.ApplicationMockMvcTests
+-------------------------------------------------------------------------------
+Tests run: 5, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 4.756 s <<< FAILURE! - in com.FrontEnd.ApplicationMockMvcTests
+checkPersonInfoWhenValidRequestThenSuccess  Time elapsed: 0.015 s  <<< FAILURE!
+java.lang.AssertionError: 
+Unexpected binding/validation errors: org.springframework.validation.BeanPropertyBindingResult: 2 errors
+Field error in object 'personForm' on field 'password': rejected value [null]; codes [NotNull.personForm.password,NotNull.password,NotNull.java.lang.String,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [personForm.password,password]; arguments []; default message [password]]; default message [must not be null]
+Field error in object 'personForm' on field 'userName': rejected value [null]; codes [NotNull.personForm.userName,NotNull.userName,NotNull.java.lang.String,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [personForm.userName,userName]; arguments []; default message [userName]]; default message [must not be null]
+	at com.FrontEnd.ApplicationMockMvcTests.checkPersonInfoWhenValidRequestThenSuccess(ApplicationMockMvcTests.java:84)
+
