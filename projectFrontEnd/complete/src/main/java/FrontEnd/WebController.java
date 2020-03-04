@@ -1,4 +1,4 @@
-package com.FrontEnd;
+package FrontEnd;
 
 import javax.validation.Valid;
 
@@ -32,4 +32,7 @@ public class WebController implements WebMvcConfigurer {
 
 		return "redirect:/results";
 	}
+
+	@GetMapping("/nav")
+	public String showNav(){return "navbar";}
 }
