@@ -38,12 +38,21 @@
 
 /* The button used to open the sidebar */
 .openbtn {
-  font-size: 20px;
-  cursor: pointer;
-  background-color: #111;
-  color: white;
-  padding: 10px 15px;
-  border: none;
+    position: fixed;
+    top: 0;
+    left: 10;
+    font-size: 20px;
+    cursor: pointer;
+    background-color: #111;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+}
+
+.openbtn p {
+    position: relative;
+    top: 0;
+    z-index: 1;
 }
 
 .openbtn:hover {

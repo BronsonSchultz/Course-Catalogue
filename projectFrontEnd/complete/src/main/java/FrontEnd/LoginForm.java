@@ -3,7 +3,7 @@ package FrontEnd;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
 
-public class PersonForm {
+public class LoginForm {
 
 	@NotNull
 	@Size(min=2, max=30)
@@ -30,6 +30,6 @@ public class PersonForm {
 	}
 
 	public String toString() {
-		return "Person(Name: " + this.userName + ", Age: " + this.password + ")";
+		return "User(Username: " + this.userName + ", password: " + this.password + ")";
 	}
 }

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+</head>
+
+<body>
+    <nav th:fragment="navbar" id="navbar" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="#">Home</a>
+        <a href="#">Schedule</a>
+        <a href="#">My Courses</a>
+        <a href="#">My Degrees</a>
+        <a href="#">Catalogue</a>
+        <a href="#">FAQ</a>
+    </nav>
+
+    <div th:fragment="navBtn" class="button">
+        <button class="openbtn" onclick="openNav()">&#9776;</button>
+    </div>
+
+</body>
+</html>

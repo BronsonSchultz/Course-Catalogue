@@ -18,13 +18,18 @@ public class WebController implements WebMvcConfigurer {
 		registry.addViewController("/results").setViewName("results");
 	}
 
+
 	@GetMapping("/")
-	public String showForm(PersonForm personForm) {
-		return "home";
+	public String root() {
+		return "redirect:/home";
 	}
 
+
+	@GetMapping("/home")
+	public String showForm(LoginForm loginForm){ return "home"; }
+
 	@PostMapping("/")
-	public String checkPersonInfo(@Valid PersonForm personForm, BindingResult bindingResult) {
+	public String checkUserInfo(@Valid LoginForm loginForm, BindingResult bindingResult) {
 
 		if (bindingResult.hasErrors()) {
 			return "home";
@@ -33,6 +38,12 @@ public class WebController implements WebMvcConfigurer {
 		return "redirect:/results";
 	}
 
-	@GetMapping("/nav")
-	public String showNav(){return "navbar";}
+	@GetMapping("/catalogue")
+	public String cat(){return "catalogue";}
+
+	@GetMapping("/faq")
+	public String faq(){return "faq";}
+
+
+
 }

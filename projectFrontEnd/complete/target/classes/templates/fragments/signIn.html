@@ -1,6 +1,23 @@
-<html>
-    <body>
-        <form action="#" th:action="@{/}" th:object="${personForm}" method="post">
+<!DOCTYPE html>
+
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+</head>
+<body>
+
+<!-- Open The sign in Modal -->
+<button  th:fragment="button" id="signBtn" class="button">Sign In</button>
+
+
+<!-- The sign in modal div -->
+<div th:fragment="signInModal" id="signModal" class="modal">
+
+    <!-- sign in content -->
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <form action="#" th:action="@{/}" th:object="${loginForm}" method="post">
             <table>
                 <tr>
                     <td>UserName:</td>
@@ -13,9 +30,14 @@
                     <td th:if="${#fields.hasErrors('password')}" th:errors="*{password}">Age Error</td>
                 </tr>
                 <tr>
-                    <td><button type="submit">Login</button></td>
+                    <td><button type="submit" class="button">Submit</button></td>
                 </tr>
             </table>
         </form>
-    </body>
+    </div>
+
+</div>
+
+
+</body>
 </html>

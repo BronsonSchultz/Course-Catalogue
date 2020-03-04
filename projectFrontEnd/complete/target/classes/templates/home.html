@@ -1,61 +1,28 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="UTF-8">
     <title>Home Page</title>
-    <!-- BootStrap -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" type='text/css' th:href="@{css/home.css}">
+    <link rel="stylesheet" type='text/css' th:href="@{css/navbar.css}">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type='text/css' th:href="@{css/site.css}">
 
-    <link rel="stylesheet" href="home.css">
+
 
 </head>
+
 <body>
-Hello
-<!-- Open The sign in Modal -->
-<button id="myBtn">Sign In</button>
 
+<h1>Welcome!</h1>
 
-<!-- The sign in modal div -->
-<div id="myModal" class="modal">
+<div th:insert="fragments/signIn :: button"></div>
+<div th:insert="fragments/signIn :: signInModal"></div>
 
-    <!-- sign in content -->
-    <div class="modal-content">
-        <span class="close">&times;</span>
-        <form action="#" th:action="@{/}" th:object="${personForm}" method="post">
-            <table>
-                <tr>
-                    <td>UserName:</td>
-                    <td><input type="text" th:field="*{userName}" /></td>
-                    <td th:if="${#fields.hasErrors('userName')}" th:errors="*{userName}">Name Error</td>
-                </tr>
-                <tr>
-                    <td>Password:</td>
-                    <td><input type="text" th:field="*{password}" /></td>
-                    <td th:if="${#fields.hasErrors('password')}" th:errors="*{password}">Age Error</td>
-                </tr>
-                <tr>
-                    <td><button type="submit">Submit</button></td>
-                </tr>
-            </table>
-        </form>
-    </div>
+<div th:insert="fragments/navbar :: navBtn"></div>
+<div th:insert="fragments/navbar :: navbar"></div>
 
-</div>
-
-<script src="modal.js"></script>
-
-
-<!-- BootStrap stuff -->
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-        crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-        crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-        crossorigin="anonymous"></script>
-<!-- end of Bootstrap stuff -->
+<script th:src="@{js/signIn.js}"></script>
+<script th:src="@{js/navbar.js}"></script>
 </body>
 </html>
