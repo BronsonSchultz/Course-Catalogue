@@ -42,11 +42,11 @@
   </component>
   <component name="RunManager" selected="Application.Application">
     <configuration name="Application" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="FrontEnd.Application" />
+      <option name="MAIN_CLASS_NAME" value="webApp.Application" />
       <module name="webServer" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="FrontEnd.*" />
+          <option name="PATTERN" value="webApp.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
