@@ -1,3 +1,5 @@
+<details>
+<summary>Milestone 6 Tests</summary>
 All tests assume files are in working directory and testing environment is within the VM (Milestone_6/ of the repository)  
 
 Tests for sqlite3 database
@@ -57,3 +59,12 @@ Tests For JDBC
     $ java -cp .:.sqlite-jdbc-3.30.1.jar net.sqlitetest.TestQuery
 
   - Currently not working, but connection to database is fine
+ 
+</details>
+
+<details open>
+<summary>Milestone 8 Tests</summary>
+.
+.
+.
+</details>
