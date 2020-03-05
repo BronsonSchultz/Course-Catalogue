@@ -8,7 +8,7 @@
 <body>
 
 <!-- Open The sign in Modal -->
-<button  th:fragment="button" id="signBtn" class="button">Sign In</button>
+<button  th:fragment="signBtn" id="signBtn" class="button">Sign In</button>
 
 
 <!-- The sign in modal div -->
@@ -30,7 +30,7 @@
                     <td th:if="${#fields.hasErrors('password')}" th:errors="*{password}">Age Error</td>
                 </tr>
                 <tr>
-                    <td><button type="submit" class="button">Submit</button></td>
+                    <td><button type="submit" class="button">Submit 1</button></td>
                 </tr>
             </table>
         </form>

@@ -25,9 +25,6 @@ public class WebController implements WebMvcConfigurer {
 	}
 
 
-	@GetMapping("/home")
-	public String showForm(LoginForm loginForm){ return "home"; }
-
 	@PostMapping("/")
 	public String checkUserInfo(@Valid LoginForm loginForm, BindingResult bindingResult) {
 
@@ -35,8 +32,11 @@ public class WebController implements WebMvcConfigurer {
 			return "home";
 		}
 
-		return "redirect:/results";
+		return "redirect:/home";
 	}
+
+	@GetMapping("/home")
+	public String showForm(LoginForm loginForm){ return "home"; }
 
 	@GetMapping("/catalogue")
 	public String cat(){return "catalogue";}
@@ -44,6 +44,7 @@ public class WebController implements WebMvcConfigurer {
 	@GetMapping("/faq")
 	public String faq(){return "faq";}
 
-
+	@GetMapping("/schedule")
+	public String schedule(){return "schedule";}
 
 }

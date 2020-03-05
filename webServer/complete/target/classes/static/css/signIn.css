@@ -2,6 +2,11 @@ h1 {
     text-align: center;
 }
 
+#signBtn {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+}
 /* The Modal (background) */
 .modal {
   display: none; /* Hidden by default */
@@ -18,11 +23,11 @@ h1 {
 
 /* Modal Content/Box */
 .modal-content {
-  background-color: #fefefe;
-  margin: 15% auto;
-  padding: 20px;
-  border: 1px solid #888;
-  width: 80%;
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
 }
 
 /* The Close Button */

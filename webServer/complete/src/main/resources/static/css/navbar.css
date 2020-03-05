@@ -39,8 +39,8 @@
 /* The button used to open the sidebar */
 .openbtn {
     position: fixed;
-    top: 0;
-    left: 10;
+    top: 20px;
+    left: 10px;
     font-size: 20px;
     cursor: pointer;
     background-color: #111;
@@ -50,8 +50,6 @@
 }
 
 .openbtn p {
-    position: relative;
-    top: 0;
     z-index: 1;
 }
 
