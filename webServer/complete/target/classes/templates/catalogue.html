@@ -4,14 +4,32 @@
     <meta charset="UTF-8">
     <title>Course Catalogue</title>
 
+    <!-- many  css files, can be condensed later to reduce http calls -->
+    <link rel="stylesheet" type='text/css' th:href="@{css/courseSideBar.css}">
     <link rel="stylesheet" type='text/css' th:href="@{css/site.css}">
     <link rel="stylesheet" type='text/css' th:href="@{css/signIn.css}">
     <link rel="stylesheet" type='text/css' th:href="@{css/navbar.css}">
+
     <link href="https://fonts.googleapis.com/css?family=Noto+Sans&display=swap" rel="stylesheet">
+
 </head>
 <body>
 
     <h1>Course Catalogue</h1>
+
+    <div th:insert="fragments/searchBar :: searchForm"></div>
+
+    <p th:text="'You searched for: ' + ${searchForm.searchStr} + ' at the ' + ${searchForm.yearLvl} + '-level'"></p>
+
+    <h3 onclick="openCourseSideBar()">(Course Stub) CMPT 100</h3>
+
+    <div th:insert="fragments/courseSideBar :: courseSideBar"></div>
+
+    <div th:insert="fragments/navbar :: navBtn"></div>
+    <div th:insert="fragments/navbar :: navbar"></div>
+
+    <script th:src="@{js/courseSideBar.js}"></script>
+    <script th:src="@{js/navbar.js}"></script>
 
 </body>
 </html>

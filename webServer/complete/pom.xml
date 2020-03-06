@@ -8,11 +8,11 @@
 		<version>2.2.2.RELEASE</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.example</groupId>
-	<artifactId>validating-form-input</artifactId>
+	<groupId>com.CMPT370</groupId>
+	<artifactId>CMPT370-g28-project</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>validating-form-input</name>
-	<description>Demo project for Spring Boot</description>
+	<name>CMPT370-g28-project</name>
+	<description>Group project consisting of a course catalogue and scheduler</description>
 
 	<properties>
 		<java.version>11</java.version>

@@ -13,17 +13,27 @@
 
 <body>
 
-<h1>Welcome!</h1>
+    <h1>Welcome!</h1>
 
-<p> This website is an easy look up tool when choosing classes at the U of S</p>
-<p> It also will provide a scheduler tool for planning out your week!</p>
-<div th:insert="fragments/signIn :: signBtn"></div>
-<div th:insert="fragments/signIn :: signInModal"></div>
+    <p> This website is an easy look up tool when choosing classes at the U of S</p>
+    <p> It will also provide a scheduler tool for planning out your week!</p>
 
-<div th:insert="fragments/navbar :: navBtn"></div>
-<div th:insert="fragments/navbar :: navbar"></div>
+    <div th:insert="fragments/signIn :: signBtn"></div>
+    <div th:insert="fragments/signIn :: signInModal"></div>
 
-<script th:src="@{js/signIn.js}"></script>
-<script th:src="@{js/navbar.js}"></script>
+    <div th:insert="fragments/navbar :: navBtn"></div>
+    <div th:insert="fragments/navbar :: navbar"></div>
+
+    <p>
+        Here's How to Use it:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+        dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+        commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+        pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+        laborum."
+    </p>
+
+    <script th:src="@{js/signIn.js}"></script>
+    <script th:src="@{js/navbar.js}"></script>
 </body>
 </html>
