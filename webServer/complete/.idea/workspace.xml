@@ -36,7 +36,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/pom.xml" />
     <property name="project.structure.last.edited" value="Project" />
-    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.0" />
     <property name="restartRequiresConfirmation" value="false" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
@@ -184,10 +184,10 @@
     </state>
     <state width="1493" height="177" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1583531391977" />
     <state width="2517" height="117" key="GridCell.Tab.0.right/0.0.2560.1040/-1920.0.1920.1040@0.0.2560.1040" timestamp="1583476356008" />
-    <state x="462" y="69" key="SettingsEditor" timestamp="1583439981847">
-      <screen x="0" y="0" width="2560" height="1040" />
+    <state x="277" y="0" key="SettingsEditor" timestamp="1583531957464">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="277" y="55" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1583271050743" />
+    <state x="277" y="0" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1583531957464" />
     <state x="462" y="69" key="SettingsEditor/0.0.2560.1040/-1920.0.1920.1040@0.0.2560.1040" timestamp="1583439981847" />
     <state x="988" y="347" key="com.intellij.ide.util.TipDialog" timestamp="1583439919784">
       <screen x="0" y="0" width="2560" height="1040" />
