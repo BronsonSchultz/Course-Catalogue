@@ -64,6 +64,8 @@ Tests For JDBC
 
 <details open>
 <summary>Milestone 8 Tests</summary>
+
+##Database tests 
 - Once in the vm:
 
     cd 370project/webServer/complete/src/main/query
