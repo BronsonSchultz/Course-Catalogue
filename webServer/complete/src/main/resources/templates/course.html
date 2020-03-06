@@ -1,20 +1,18 @@
 <!DOCTYPE html>
 <html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
-
 <head>
     <meta charset="UTF-8">
-    <title>My Schedule</title>
-
-    <link rel="stylesheet" type='text/css' th:href="@{css/site.css}">
-    <link rel="stylesheet" type='text/css' th:href="@{css/navbar.css}">
+    <link rel="stylesheet" th:href="@{css/site.css}" type='text/css'>
+    <link rel="stylesheet" th:href="@{css/navbar.css}" type='text/css'>
     <link href="https://fonts.googleapis.com/css?family=Noto+Sans&display=swap" rel="stylesheet">
 
+    <title>My Courses</title>
 </head>
-
 <body>
-<h1>Schedules</h1>
-<h2> A virtual piece of paper where you can drag and drop classes to plan your semesters</h2>
 
+<h1>My Saved Courses</h1>
+
+<h2>Here's where you'll view your saved courses that you have favourited/completed</h2>
 
 <div th:insert="fragments/navbar :: navBtn"></div>
 <div th:insert="fragments/navbar :: navbar"></div>

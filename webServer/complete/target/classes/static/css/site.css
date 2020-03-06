@@ -6,6 +6,8 @@ body {
 
 p {
     text-align: center;
+    margin: auto;
+    width: 500px;
 }
 
 .button {
