@@ -1,0 +1,4 @@
+INDEX VERSION 1.131+/Users/tomasjohnsgaard/Git/370project/Milestone_8/db_query/.metadata/.plugins/org.eclipse.jdt.core
+1517987751.index
+1662721716.index
+3968750213.index
