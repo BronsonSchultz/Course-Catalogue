@@ -74,7 +74,7 @@ Tests For JDBC
     CreditConflicts     Prerequisites       Users
     DegreeRequirements  TestCompletedList   test
 
-    .read bd_upkeep/counCheck.sql
+    .read db_upkeep/counCheck.sql
     Should return:
     360, number of distinct rows in Courses table
     330, number of distinct rows in DegreeRequirements table
