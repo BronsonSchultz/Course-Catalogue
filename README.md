@@ -65,6 +65,7 @@ Tests For JDBC
 <details open>
 <summary>Milestone 8 Tests</summary>
 - Once in the vm:
+
     cd 370project/webServer/complete/src/main/query
     (or from wherever you are to the end directory)
     sqlite3 UofSPlanner.db
@@ -72,7 +73,7 @@ Tests For JDBC
     Courses             Degrees             TestFavouriteList
     CreditConflicts     Prerequisites       Users
     DegreeRequirements  TestCompletedList   test
--
+
     .read bd_upkeep/counCheck.sql
     Should return:
     360, number of distinct rows in Courses table
