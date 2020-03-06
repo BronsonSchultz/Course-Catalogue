@@ -15,10 +15,10 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 @Controller
 public class WebController implements WebMvcConfigurer {
 
-	@Override
-	public void addViewControllers(ViewControllerRegistry registry) {
-		registry.addViewController("/results").setViewName("results");
-	}
+//	@Override
+//	public void addViewControllers(ViewControllerRegistry registry) {
+//		registry.addViewController("/results").setViewName("results");
+//	}
 
 	// home
 	@GetMapping("/")
@@ -52,6 +52,7 @@ public class WebController implements WebMvcConfigurer {
 		return "catalogue";
 	}
 
+
 	// faq
 	@GetMapping("/faq")
 	public String faq(){return "faq";}
@@ -59,5 +60,13 @@ public class WebController implements WebMvcConfigurer {
 	// schedule
 	@GetMapping("/schedule")
 	public String schedule(){return "schedule";}
+
+	//My Degrees
+	@GetMapping("/degree")
+	public String degree(){ return "degree";}
+
+	//My Courses
+	@GetMapping("/course")
+	public String course(){ return "course";}
 
 }

@@ -1,12 +1,37 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="UTF-8">
     <title>FAQ Page</title>
+
+    <link rel="stylesheet" type='text/css' th:href="@{css/site.css}">
+    <link rel="stylesheet" type='text/css' th:href="@{css/navbar.css}">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans&display=swap" rel="stylesheet">
 </head>
 <body>
 
     <h1>Frequently Asked Questions</h1>
+
+    <details>
+        <summary>Question 1</summary>
+        <p>Answer 1</p>
+    </details>
+
+    <p>
+        . <br>
+        . <br>
+        . <br>
+    </p>
+    <details>
+        <summary>Question n</summary>
+        <p>Answer n</p>
+    </details>
+
+
+    <div th:insert="fragments/navbar :: navBtn"></div>
+    <div th:insert="fragments/navbar :: navbar"></div>
+
+    <script th:src="@{js/navbar.js}"></script>
 
 </body>
 </html>

@@ -5,10 +5,11 @@
     <title>Course Catalogue</title>
 
     <!-- many  css files, can be condensed later to reduce http calls -->
-    <link rel="stylesheet" type='text/css' th:href="@{css/courseSideBar.css}">
+
     <link rel="stylesheet" type='text/css' th:href="@{css/site.css}">
-    <link rel="stylesheet" type='text/css' th:href="@{css/signIn.css}">
+    <link rel="stylesheet" type='text/css' th:href="@{css/courseSideBar.css}">
     <link rel="stylesheet" type='text/css' th:href="@{css/navbar.css}">
+    <link rel="stylesheet" type='text/css' th:href="@{css/catalogue.css}">
 
     <link href="https://fonts.googleapis.com/css?family=Noto+Sans&display=swap" rel="stylesheet">
 
@@ -16,13 +17,17 @@
 <body>
 
     <h1>Course Catalogue</h1>
+    <h2>Here's where you will be able to search for classes and degrees to view info about them</h2>
 
     <div th:insert="fragments/searchBar :: searchForm"></div>
 
     <p th:text="'You searched for: ' + ${searchForm.searchStr} + ' at the ' + ${searchForm.yearLvl} + '-level'"></p>
 
-    <h3 onclick="openCourseSideBar()">(Course Stub) CMPT 100</h3>
-
+    <ul class="courseList">
+        <li class="courseName">
+            <h3 onclick="openCourseSideBar()">(Course Stub) CMPT 100</h3>
+        </li>
+    </ul>
     <div th:insert="fragments/courseSideBar :: courseSideBar"></div>
 
     <div th:insert="fragments/navbar :: navBtn"></div>
