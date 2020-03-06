@@ -1,10 +1,10 @@
 SELECT COUNT(DISTINCT SubjectCode||CourseCode)
 FROM Courses;
 
-SELECT COUNT(DegreeReqID)
+SELECT COUNT(DISTINCT DegreeReqID)
 FROM DegreeRequirements;
 
-SELECT COUNT(CreditConflictID)
+SELECT COUNT(DISTINCT CreditConflictID)
 FROM CreditConflicts;
 
 SELECT *
