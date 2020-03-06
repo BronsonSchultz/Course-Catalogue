@@ -1,12 +1,15 @@
 package db_query;
 
 import java.sql.*;
+import webApp.*;
 
 public class CoursesQuery {
 	
-	public static void query(String sql) {
+	public static String query() throws Exception {
 		Connection conn = null;
 		Statement stmt = null;
+		
+		String sql = "SELECT Subject, CourseCode, CourseName FROM Courses";	// change this to call SearchForm methods instead?
 		
 		try {
             // create a connection to the database
@@ -19,8 +22,9 @@ public class CoursesQuery {
             ResultSet rs = stmt.executeQuery(sql);
 
             // print query results
+            String results = "";
             while (rs.next()) {
-                System.out.println(rs.getString("SubjectCode") + " " + rs.getString("CourseCode"));
+                results += rs.getString("SubjectCode") + " " + rs.getString("CourseCode") + " - " + rs.getString("CourseName") + "\n";
             }
 		}
 		catch (Exception e) {
@@ -41,12 +45,9 @@ public class CoursesQuery {
                 e.printStackTrace();
             }
         }
-
-        System.out.println("Query finished.");
-	}
-
-	public static void main(String[] args) throws Exception {
-		query("SELECT SubjectCode, CourseCode FROM Courses");
+		
+		System.out.println("Query finished.");
+		return results;
 	}
 
 }

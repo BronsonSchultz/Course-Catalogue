@@ -34,6 +34,8 @@
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/pom.xml" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
@@ -123,8 +125,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1583001230417</updated>
+      <workItem from="1583535962484" duration="66000" />
     </task>
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -152,10 +158,15 @@
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
     <state x="1085" y="204" key="#com.intellij.ide.util.MemberChooser/0.0.2560.1040/-1920.0.1920.1040@0.0.2560.1040" timestamp="1583459336988" />
-    <state x="1131" y="409" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog" timestamp="1583440411769">
-      <screen x="0" y="0" width="2560" height="1040" />
+    <state x="636" y="346" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog" timestamp="1583536027814">
+      <screen x="0" y="23" width="1440" height="822" />
     </state>
     <state x="1131" y="409" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/0.0.2560.1040/-1920.0.1920.1040@0.0.2560.1040" timestamp="1583440411769" />
+    <state x="636" y="346" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/0.23.1440.822@0.23.1440.822" timestamp="1583536027814" />
+    <state x="375" y="112" key="#com.intellij.openapi.projectRoots.ui.ProjectJdksEditor" timestamp="1583536012683">
+      <screen x="0" y="23" width="1440" height="822" />
+    </state>
+    <state x="375" y="112" key="#com.intellij.openapi.projectRoots.ui.ProjectJdksEditor/0.23.1440.822@0.23.1440.822" timestamp="1583536012683" />
     <state x="392" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1583347488469">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

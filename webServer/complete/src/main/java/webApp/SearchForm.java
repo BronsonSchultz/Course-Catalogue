@@ -13,8 +13,13 @@ public class SearchForm {
                 '}';
     }
 
-    public int getYearLvl() {
-        return yearLvl;
+    public String getYearLvl() {
+    	if (yearLvl != 0) {
+    		return "SELECT Subject, CourseCode, CourseName FROM Courses WHERE CourseCode LIKE '" +  yearLvl + "%'";
+    	}
+    	else {
+    		return "SELECT Subject, CourseCode, CourseName FROM Courses;
+    	}
     }
 
     public void setYearLvl(int yearLvl) {
@@ -22,7 +27,7 @@ public class SearchForm {
     }
 
     public String getSearchStr() {
-        return searchStr;
+    	return "SELECT Subject, CourseCode, CourseName FROM Courses WHERE CourseName LIKE '%" +  searchStr + "%'";
     }
 
     public void setSearchStr(String searchStr) {
