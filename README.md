@@ -64,10 +64,11 @@ Tests For JDBC
 
 <details open>
 <summary>Milestone 8 Tests</summary>
-
-##Database tests 
+  
+Database tests 
 - Once in the vm:
 
+```
     cd 370project/webServer/complete/src/main/query
     (or from wherever you are to the end directory)
     sqlite3 UofSPlanner.db
@@ -82,6 +83,7 @@ Tests For JDBC
     330, number of distinct rows in DegreeRequirements table
     121, number of distinct rows in Credit Conflicts table
     Should have 4 undergraduate degrees for computer science listedS
+```
 
 - Prerequisistes table is being reworked
 
