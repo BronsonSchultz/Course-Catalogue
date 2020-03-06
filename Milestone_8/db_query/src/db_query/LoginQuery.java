@@ -2,7 +2,7 @@ package db_query;
 
 import java.sql.*;
 
-public class LoginQuery implements Query {
+public class LoginQuery {
 	
 	public static void query(String sql) {
 		Connection conn = null;
