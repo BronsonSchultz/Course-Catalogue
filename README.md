@@ -94,7 +94,7 @@ as long as your on a Usask machine or using the VPN
 
 On the website you can navigate through the basic pages of our website.
 I have created some stubs for any information that requires data from the 
-backend.
+backend. Please refer to our storyboards for some of the functionality!
   
  ## Database tests 
 
