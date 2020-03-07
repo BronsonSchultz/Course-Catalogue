@@ -64,29 +64,88 @@ Tests For JDBC
 
 <details open>
 <summary>Milestone 8 Tests</summary>
+
+ ## Website tests
+ 
+we don't have access to the marker's profile so there may be some setup required
+first.
+Hopefully maven is installed for the marker profile, test it with  
+`mvn -version`
+
+if it isn't:
+`sudo apt-get install maven`
+
+after that installs, spring boot should be on the system already:
+(assuming your working from your home directory)
+```
+cd 370project
+git fetch
+git checkout alpha
+git pull
+```
+This will get you up to date with our repository
+```
+cd webServer/complete
+mvn spring-boot:run
+```
+This will launch the server on port 8081, it can be view in the browser at:
+`http://10.81.40.175:8081/`
+as long as your on a Usask machine or using the VPN
+
+On the website you can navigate through the basic pages of our website.
+I have created some stubs for any information that requires data from the 
+backend.
   
-Database tests 
-- Once in the vm:
+ ## Database tests 
+
 
 ```
-    cd 370project/webServer/complete/src/main/query
-    (or from wherever you are to the end directory)
-    sqlite3 UofSPlanner.db
-    .tables
-    Courses             Degrees             TestFavouriteList
-    CreditConflicts     Prerequisites       Users
-    DegreeRequirements  TestCompletedList   test
+cd 370project/webServer/complete/src/main/query
+(or from wherever you are to the end directory)
+sqlite3 UofSPlanner.db
+.tables
+Courses             Degrees             TestFavouriteList
+CreditConflicts     Prerequisites       Users
+DegreeRequirements  TestCompletedList   test
 
-    .read db_upkeep/counCheck.sql
-    Should return:
-    360, number of distinct rows in Courses table
-    330, number of distinct rows in DegreeRequirements table
-    121, number of distinct rows in Credit Conflicts table
-    Should have 4 undergraduate degrees for computer science listedS
+.read db_upkeep/counCheck.sql
+Should return:
+360, number of distinct rows in Courses table
+330, number of distinct rows in DegreeRequirements table
+121, number of distinct rows in Credit Conflicts table
+Should have 4 undergraduate degrees for computer science listedS
 ```
 
 - Prerequisistes table is being reworked
 
-.
-.
+ ## JDBC Tests
+ again, working from you home directory
+ ```
+ cd 370project/webServer/complete/src/main/query
+ ```
+ there you can find a .txt file with a sample query fo the database
+ running it:
+ ```
+ java -classpath sqlite-jdbc-3.8.11.2.jar db_query/src/db_query/CoursesQuery.java
+ ```
+ results in every single CMPT course being printed to the console from JDBC
+ 
+ ## What User Stories did we implement?
+ - As Alan Admin, I need a database to hold all of the classes and programs, 
+ so that the information is accessible for the rest of the application.
+ - As Alan Admin, I want to be able to add and remove classes to and from the 
+ database, so that the catalogue of classes is up to date.
+
+ ## What User stories are partially complete? 
+ - As Newman I want to see a list of first year CMPT courses so I know what
+courses to take this years.
+ - As Newman I want to see info about CMPT courses so I know what
+the course will cover.
+ -As Ember I’d like my favourited classes to show they are on that list when 
+looking at the course description. (star icon?)
+
+**Right now these user stories have front end stubs, we will be working on 
+the communication of data to and from the back end**
+
+
 </details>
