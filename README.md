@@ -102,7 +102,8 @@ backend. Please refer to our storyboards for some of the functionality!
 ```
 cd 370project/webServer/complete/src/main/query
 (or from wherever you are to the end directory)
-sqlite3 UofSPlanner.db
+sqlite3 
+.open UofSPlanner.db
 .tables
 Courses             Degrees             TestFavouriteList
 CreditConflicts     Prerequisites       Users
