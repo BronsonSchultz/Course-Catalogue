@@ -34,6 +34,7 @@ public class WebController implements WebMvcConfigurer {
 
 	@PostMapping("/home")
 	public String checkUserInfo(@ModelAttribute("loginForm") LoginForm loginForm) {
+		// TODO: implement login verification query
 		return "home";
 	}
 
@@ -49,6 +50,7 @@ public class WebController implements WebMvcConfigurer {
 
 	@PostMapping("/catalogue")
 	public String searchSubmit(@ModelAttribute("searchForm") SearchForm searchForm) {
+		// TODO: implement search query
 		return "catalogue";
 	}
 
