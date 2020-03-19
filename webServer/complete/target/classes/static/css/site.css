@@ -17,3 +17,7 @@ p {
     padding: 10px 15px;
     border: none;
 }
+
+.button:hover {
+    background-color: #11a263;
+}

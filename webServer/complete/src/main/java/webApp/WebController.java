@@ -69,4 +69,9 @@ public class WebController implements WebMvcConfigurer {
 	@GetMapping("/course")
 	public String course(){ return "course";}
 
+
+	//sign In
+	@GetMapping("/signIn")
+	public String signIn(){ return "signIn";}
+
 }

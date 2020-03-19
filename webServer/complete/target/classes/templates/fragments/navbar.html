@@ -6,7 +6,22 @@
 </head>
 
 <body>
-    <nav th:fragment="navbar" id="navbar" class="sidebar">
+
+    <!-- Top Bar -->
+    <nav th:fragment="topBar" class="navbar navbar-light bg-light">
+        <a class="navbar-brand">F11</a>
+
+        <button class="btn btn-success" type="button" onclick="openNav()">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <a href="@{/signIn}" class="btn btn-outline-success ml-auto" type="button" style="margin: 3px;">Sign In</a>
+        <a th:href="@{#}" class="btn btn-outline-success" type="button">Sign Up</a>
+    </nav>
+
+
+    <!-- Collapsible side bar -->
+    <div th:fragment="navbar" id="navbar" class="side-nav-bar">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
         <a href="/home">Home</a>
         <a href="/schedule">Schedule</a>
@@ -14,10 +29,6 @@
         <a href="/degree">My Degrees</a>
         <a href="/catalogue">Catalogue</a>
         <a href="/faq">FAQ</a>
-    </nav>
-
-    <div th:fragment="navBtn">
-        <button class="openbtn" onclick="openNav()">&#9776;</button>
     </div>
 
 </body>
