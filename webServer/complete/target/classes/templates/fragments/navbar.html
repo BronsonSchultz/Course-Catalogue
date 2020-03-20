@@ -9,13 +9,13 @@
 
     <!-- Top Bar -->
     <nav th:fragment="topBar" class="navbar navbar-light bg-light">
-        <a class="navbar-brand">F11</a>
+        <a th:href="@{/home}" class="navbar-brand">C</a>
 
         <button class="btn btn-success" type="button" onclick="openNav()">
             <span class="navbar-toggler-icon"></span>
         </button>
 
-        <a href="@{/signIn}" class="btn btn-outline-success ml-auto" type="button" style="margin: 3px;">Sign In</a>
+        <a th:href="@{/signIn}" class="btn btn-outline-success ml-auto" type="button" style="margin: 3px; color: #0b6a41">Sign In</a>
         <a th:href="@{#}" class="btn btn-outline-success" type="button">Sign Up</a>
     </nav>
 

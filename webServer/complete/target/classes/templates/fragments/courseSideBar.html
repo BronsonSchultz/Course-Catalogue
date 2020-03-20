@@ -6,13 +6,16 @@
 </head>
 
 <body>
-<div th:fragment="courseSideBar" id="courseSideBar" class="coursesidebar">
+<div th:fragment="courseSideBar" id="courseSideBar" class="courseSideBar">
     <a href="javascript:void(0)" class="closebtn" onclick="closeCourseSideBar()">&times;</a>
 
-    <label>Fav
-        <input type="checkbox">
-        <span class="favourite"></span>
-    </label>
+
+    <div class="btn-group-toggle" data-toggle="buttons">
+        <label class="btn btn-warning">
+            <i class="fas fa-check"></i>
+            <input type="checkbox">
+        </label>
+    </div>
 
     <label>Done
         <input type="checkbox">

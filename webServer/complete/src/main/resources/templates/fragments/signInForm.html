@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+    <div th:fragment="signInForm" class="form-row">
+
+        <div class="col"></div>
+        <div class="col-3" style="border: 1px solid grey; padding: 20px; background-color: #5cb85c">
+                <form>
+
+                    <div class="input-group" style="padding-bottom: 10px">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text">Username</span>
+                        </div>
+                        <input type="text" class="form-control">
+                    </div>
+
+                    <div class="input-group" style="padding-bottom: 10px">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text">Password</span>
+                        </div>
+                        <input type="password" class="form-control">
+                    </div>
+
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+        </div>
+        <div class="col"></div>
+    </div>
+</body>
+</html>
