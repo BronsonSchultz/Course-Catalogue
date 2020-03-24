@@ -2,15 +2,17 @@
 <html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Sign In</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" type='text/css' th:href="@{css/site.css}">
+    <link rel="stylesheet" type='text/css' th:href="@{css/navbar.css}">
 
 </head>
 <body>
 <div th:insert="fragments/navbar :: topBar"></div>
 <h1 style="text-align: center">Sign In</h1>
 <div th:insert="fragments/signInForm :: signInForm" class="container-fluid" style="margin:auto"></div>
-
+<div th:insert="fragments/navbar :: navbar"></div>
 
 <script th:src="@{js/navbar.js}"></script>
 
