@@ -44,6 +44,7 @@ public class WebController implements WebMvcConfigurer {
 	@GetMapping("/catalogue")
 	public String searchForm(Model model) {
 		model.addAttribute("searchForm", new SearchForm());
+		model.addAttribute("searchResults", new SearchResults());
 		return "catalogue";
 	}
 
