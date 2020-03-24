@@ -16,12 +16,12 @@
         </button>
 
         <a th:href="@{/signIn}" class="btn btn-outline-success ml-auto" type="button" style="margin: 3px; color: #0b6a41">Sign In</a>
-        <a th:href="@{#}" class="btn btn-outline-success" type="button">Sign Up</a>
+        <a th:href="@{#}" class="btn btn-outline-success" type="button" style="color: #0b6a41">Sign Up</a>
     </nav>
 
 
     <!-- Collapsible side bar -->
-    <div th:fragment="navbar" id="navbar" class="side-nav-bar">
+    <div th:fragment="navbar" id="navbar" class="side-nav-bar border-right">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
         <a href="/home">Home</a>
         <a href="/schedule">Schedule</a>
