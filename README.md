@@ -153,7 +153,8 @@ the communication of data to and from the back end**
 
 <details open>
 <summary>Milestone 10 Progress</summary>
-To view our product progress on the vm:
+
+## To view our product progress on the vm:
 Once logged in, make sure to clone our project into a directory of your choice.
 using 
 ```
