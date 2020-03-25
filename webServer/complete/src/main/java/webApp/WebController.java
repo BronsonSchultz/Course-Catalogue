@@ -34,21 +34,33 @@ public class WebController implements WebMvcConfigurer {
 	@RequestMapping(value="/catalogue", method = {RequestMethod.GET, RequestMethod.POST})
 	public String createCourses(Model model, @ModelAttribute("searchForm") SearchForm searchForm){
 		model.addAttribute("searchForm", new SearchForm());
-
-		SearchResults s = new SearchResults();
-		Course c = new Course("CMPT","100","Introduction to Computing","A survey of" +
+		Course c = new Course("CMPT",100,"Introduction to Computing","A survey of" +
 				" major computer science areas, combining a breadth of topics with depth via specific examples within " +
 				"each topic. Topics include: history of computing, computer applications, analysis and design, high " +
 				"level programming, computer software, computer hardware, artificial intelligence, and the social" +
 				" impact of computers.");
 
-		Course d = new Course("MATH", "110", "Calculus I", "Introduction to " +
+		Course d = new Course("MATH", 110, "Calculus I", "Introduction to " +
 				"derivatives, limits, techniques of differentiation, maximum and minimum problems and other" +
 				" applications, implicit differentiation, anti-derivatives.");
 
-
+		
+		SearchResults s = new SearchResults("SELECT SubjectCode, CourseCode, CourseName, Description FROM Courses");
+//		SearchResults s = new SearchResults();
+//		Course c = new Course("CMPT",100,"Introduction to Computing","A survey of" +
+//				" major computer science areas, combining a breadth of topics with depth via specific examples within " +
+//				"each topic. Topics include: history of computing, computer applications, analysis and design, high " +
+//				"level programming, computer software, computer hardware, artificial intelligence, and the social" +
+//				" impact of computers.");
+//
+//		Course d = new Course("MATH", 110, "Calculus I", "Introduction to " +
+//				"derivatives, limits, techniques of differentiation, maximum and minimum problems and other" +
+//				" applications, implicit differentiation, anti-derivatives.");
+//
+//
 		s.addCourse(c);
 		s.addCourse(d);
+
 		model.addAttribute("s", s);
 
 		return "catalogue";

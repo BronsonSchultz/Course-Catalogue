@@ -1,0 +1,98 @@
+1,CMPT,100,HSCH,999,1,,Choice of High School Grade 12 Math classes
+2,CMPT,113,HSCH,999,1,,Choice of High School Grade 12 Math classes
+3,CMPT,116,HSCH,999,1,,Choice of High School Grade 12 Math classes
+4,CMPT,141,HSCH,999,1,,Choice of High School Grade 12 Math classes
+5,CMPT,141,CMPT,105,1,,
+6,CMPT,141,CMPT,140,1,,
+7,CMPT,141,HSCH,999,2,,Choice of High School Grade 12 Math classes
+8,CMPT,141,MATH,110,2,,
+9,CMPT,141,MATH,123,2,,
+10,CMPT,141,MATH,176,2,,
+11,CMPT,145,CMPT,141,1,,
+12,CMPT,145,CMPT,111,1,,needs permission of department to be an alternate prerequisite
+13,CMPT,214,CMPT,145,1,,
+14,CMPT,214,CMPT,115,1,,
+15,CMPT,214,CMPT,117,1,,
+16,CMPT,215,CMPT,214,0,,
+17,CMPT,215,MATH,104,1,,
+18,CMPT,215,MATH,110,1,,
+19,CMPT,215,MATH,121,1,,
+20,CMPT,215,MATH,123,1,,
+21,CMPT,215,MATH,125,1,,
+22,CMPT,215,MATH,176,1,,
+23,CMPT,215,STAT,245,1,,
+24,CMPT,260,MATH,110,1,,
+25,CMPT,260,MATH,176,1,,
+26,CMPT,260,CMPT,145,2,,
+27,CMPT,260,CMPT,115,2,,
+28,CMPT,260,CMPT,117,2,,
+29,CMPT,270,CMPT,145,1,,
+30,CMPT,270,CMPT,115,1,,
+31,CMPT,270,CMPT,117,1,,
+32,CMPT,270,MATH,104,2,,
+33,CMPT,270,MATH,110,2,,
+34,CMPT,270,MATH,121,2,,
+35,CMPT,270,MATH,123,2,,
+36,CMPT,270,MATH,125,2,,
+37,CMPT,270,MATH,176,2,,
+38,CMPT,270,STAT,245,2,,
+39,CMPT,280,CMPT,270,0,,
+40,CMPT,281,CMPT,141,1,,
+41,CMPT,281,CMPT,106,1,,
+42,CMPT,281,CMPT,111,1,,
+43,CMPT,306,CMPT,270,0,,
+44,CMPT,306,MATH,264,1,,"reccomended, not required"
+45,CMPT,306,MATH,266,1,,"reccomended, not required"
+46,CMPT,317,CMPT,260,0,,
+47,CMPT,317,CMPT,280,0,,
+48,CMPT,317,STAT,242,1,,
+49,CMPT,317,STAT,245,1,,
+50,CMPT,317,EE,216,1,,
+51,CMPT,317,ME,251,1,,
+52,CMPT,332,CMPT,280,0,,
+53,CMPT,332,CMPT,215,1,,
+54,CMPT,332,CME,331,1,,
+55,CMPT,340,CMPT,214,0,,
+56,CMPT,340,CMPT,260,0,,
+57,CMPT,340,CMPT,270,0,,
+58,CMPT,350,CMPT,280,0,,
+59,CMPT,352,CMPT,270,1,,
+60,CMPT,352,CMPT,275,1,,
+61,CMPT,353,CMPT,280,0,,
+62,CMPT,355,CMPT,260,0,,
+63,CMPT,355,CMPT,270,0,,
+64,CMPT,355,CMPT,275,1,,"instead of 260+270 combined, not one of 3"
+65,CMPT,360,CMPT,260,0,,
+66,CMPT,360,CMPT,280,0,,
+67,CMPT,360,MATH,999,,,3 of MATH
+68,CMPT,364,ZZZZ,999,,,3 of MATH or STAT
+69,CMPT,364,CMPT,260,0,,
+70,CMPT,370,CMPT,214,0,,
+71,CMPT,370,CMPT,270,0,,
+72,CMPT,371,CMPT,370,0,,
+73,CMPT,371,CMPT,280,0,,can be concurrent
+74,CMPT,381,CMPT,270,0,,
+75,CMPT,384,CMPT,280,0,,
+76,CMPT,384,MATH,164,0,,"reccomended, not required"
+77,CMPT,394,CMPT,270,0,,
+78,CMPT,400,ZZZZ,999,,,In the final year of an Honours Program; or a cumulative percentage average of at least 70% in 24 credit units in computer science and written permission of the department.
+79,CMPT,405,ZZZZ,999,,,permission of dept + In the final year of an Honours Program; or a cumulative percentage average of at least 70% in 24 credit units in computer science.
+80,CMPT,406,CMPT,306,0,,
+81,CMPT,408,CMPT,999,,,"Successful completion of 30 credit units in computer science, including at least 3 credit units at the 400-level of computer science."
+82,CMPT,412,CMPT,350,0,,
+83,CMPT,423,CMPT,317,0,,
+84,CMPT,423,STAT,245,0,,
+85,CMPT,423,MATH,164,0,,
+86,CMPT,432,CMPT,332,0,,
+87,CMPT,433,CMPT,332,0,,
+88,CMPT,433,CMPT,352,1,,can be concurrent
+89,CMPT,433,CMPT,432,1,,can be concurrent
+90,CMPT,433,CMPT,434,1,,can be concurrent
+91,CMPT,434,CMPT,332,0,,
+92,CMPT,435,CMPT,215,0,,
+93,CMPT,435,CMPT,332,,1,
+94,CMPT,435,CMPT,340,,1,
+95,CMPT,435,CMPT,360,,1,
+96,CMPT,436,CMPT,332,1,,
+97,CMPT,436,CMPT,350,1,,
+98,CMPT,436,CMPT,370,1,,
