@@ -44,7 +44,7 @@ public class WebController implements WebMvcConfigurer {
 				"derivatives, limits, techniques of differentiation, maximum and minimum problems and other" +
 				" applications, implicit differentiation, anti-derivatives.");
 
-		
+
 		SearchResults s = new SearchResults("SELECT SubjectCode, CourseCode, CourseName, Description FROM Courses");
 //		SearchResults s = new SearchResults();
 //		Course c = new Course("CMPT",100,"Introduction to Computing","A survey of" +
