@@ -21,7 +21,7 @@ public class CoursesQuery {
             // create and execute query
 			stmt = conn.createStatement();
             ResultSet rs = stmt.executeQuery(sql);
-            
+
             // print query results
             while (rs.next()) {
             	rsCourses.add(new Course(rs.getString("SubjectCode"), rs.getInt("CourseCode"), rs.getString("CourseName"), rs.getString("Description")));

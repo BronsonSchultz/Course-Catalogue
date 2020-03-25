@@ -42,7 +42,7 @@ public class WebController implements WebMvcConfigurer {
 		for (Course c : rsCourses) {
 			s.addCourse(c);
 		}
-		
+
 //		Course c = new Course("CMPT",100,"Introduction to Computing","A survey of" +
 //				" major computer science areas, combining a breadth of topics with depth via specific examples within " +
 //				"each topic. Topics include: history of computing, computer applications, analysis and design, high " +
