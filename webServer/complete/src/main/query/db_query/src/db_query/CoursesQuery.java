@@ -1,10 +1,13 @@
 package db_query;
 
 import java.sql.*;
+import java.util.ArrayList;
+
+import webApp.Course;
 
 public class CoursesQuery {
 	
-	public static void query(String sql) {
+	public static ArrayList<Course> query(String sql) {
 		Connection conn = null;
 		Statement stmt = null;
 		
@@ -18,9 +21,12 @@ public class CoursesQuery {
 			stmt = conn.createStatement();
             ResultSet rs = stmt.executeQuery(sql);
 
+            rsCourses = new ArrayList<Course>();
+            
             // print query results
             while (rs.next()) {
-                System.out.println(rs.getString("SubjectCode") + " " + rs.getString("CourseCode"));
+            	rsCourses.add(new Course(rs.getString("SubjectCode"), rs.getString("CourseCode"), rs.getString("CourseName"), rs.getString("Description")));
+//                System.out.println(rs.getString("SubjectCode") + " " + rs.getString("CourseCode"));
             }
 		}
 		catch (Exception e) {
@@ -42,11 +48,12 @@ public class CoursesQuery {
             }
         }
 
-        System.out.println("Query finished.");
+//        System.out.println("Query finished.");
+		return rsCourses;
 	}
 
 	public static void main(String[] args) throws Exception {
-		query("SELECT SubjectCode, CourseCode FROM Courses");
+		query("SELECT SubjectCode, CourseCode, CourseName, Description FROM Courses");
 	}
 
 }
