@@ -23,8 +23,6 @@
     <div th:insert="fragments/searchBar :: searchForm" class="container" style="margin-bottom: 5px"></div>
     <div class="border-bottom"></div>
 
-    <p th:text="'You searched for: ' + ${searchForm.toString()}"></p>
-
     <ul class="courseList"> <!-- thymeleaf for loop here to generalize -->
 
         <li class="courseName" onclick="openCourseSideBar()">
@@ -36,7 +34,7 @@
             </div>
         </li>
 
-        <li>
+        <li onclick="openCourseSideBar()">
             <div class="card border-info mb-3" style="width 20rem;" th:with="i=${1}">
                 <div class="card-body">
                     <h3 class="card-title text-info">MATH 110</h3>

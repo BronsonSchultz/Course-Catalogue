@@ -16,20 +16,70 @@
 
     <h1>Frequently Asked Questions</h1>
 
-    <details>
-        <summary>Question 1</summary>
-        <p>Answer 1</p>
-    </details>
+    <div class="accordion container-xl mb-5" id="accordionQuestions">
+        <div class="card">
+            <div class="card-header">
+                <h2 class="mb-0">
+                    <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#questionOne">
+                        How do I...?
+                    </button>
+                </h2>
+            </div>
 
-    <p>
-        . <br>
-        . <br>
-        . <br>
-    </p>
-    <details>
-        <summary>Question n</summary>
-        <p>Answer n</p>
-    </details>
+
+            <div id="questionOne" class="collapse" data-parent="#accordionQuestions">
+                <div class="card-body">
+                    Just do this....
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-header">
+                <h2 class="mb-0">
+                    <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#questionTwo">
+                        Where is...?
+                    </button>
+                </h2>
+            </div>
+
+
+            <div id="questionTwo" class="collapse" data-parent="#accordionQuestions">
+                <div class="card-body">
+                    It's over here....
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-header">
+                <h2 class="mb-0">
+                    <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#questionThree">
+                       What happens if...?
+                    </button>
+                </h2>
+            </div>
+
+
+            <div id="questionThree" class="collapse" data-parent="#accordionQuestions">
+                <div class="card-body">
+                    No problem, just....
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="container-xl" th:action="@{/faq}">
+        <form th:object="${bugReportForm}" method="post">
+            <label for="bug-box">Found a bug? let us know what happened along with as much detail you can provide!</label>
+            <div class="input-group">
+                <textarea class="form-control" id="bug-box" th:field="*{description}"></textarea>
+                <button class="btn btn-primary" type="submit">Send</button>
+            </div>
+        </form>
+    </div>
+
 
 
     <div th:insert="fragments/navbar :: navbar"></div>
