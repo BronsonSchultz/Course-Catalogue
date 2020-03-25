@@ -6,33 +6,32 @@
 </head>
 
 <body>
-<div th:fragment="courseSideBar" id="courseSideBar" class="courseSideBar" >
-    <a href="javascript:void(0)" class="closebtn" onclick="closeCourseSideBar()">&times;</a>
+<div class="courseSideBar" id="courseSideBar" th:fragment="courseSideBar" th:object="${s}">
+    <a class="closebtn" href="javascript:void(0)" onclick="closeCourseSideBar()">&times;</a>
 
+    <div class="container" th:with="i=${1}">
+        <div class="row">
+            <div class="btn-group-toggle ml-3 mr-3" data-toggle="buttons">
+                <label class="btn btn-warning">
+                    <i class="fa fa-check">&#x2714;</i>
+                    <input type="checkbox">
+                </label>
+            </div>
 
-    <div class="btn-group-toggle" data-toggle="buttons">
-        <label class="btn btn-warning">
-            <i class="fas fa-check"></i>
-            <input type="checkbox">
-        </label>
+            <div class="btn-group-toggle" data-toggle="buttons">
+                <label class="btn btn-warning">
+                    <i>	&#x1F7CA;</i>
+                    <input type="checkbox">
+                </label>
+            </div>
+        </div>
+
+        <h4 th:text="${s.get(i).subjectCode}"></h4>
+        <h4 th:text="${s.get(i).number}"></h4>
+        <h4 th:text="${s.get(i).title}"></h4>
+        <h5>Description:</h5>
+        <p th:text="${s.get(i).description}"></p>
     </div>
-
-    <label>Done
-        <input type="checkbox">
-        <span class="completed"></span>
-    </label>
-
-    <h3>CMPT 100</h3>
-    <h4>Subject Code: CMPT</h4>
-    <h4>Course Number: 101</h4>
-    <h4>Title</h4>
-    <p>Introduction to Computing</p>
-    <h4>Description</h4>
-    <p>
-        A survey of major computer science areas, combining a breadth of topics with depth via specific examples
-        within each topic. Topics include: history of computing, computer applications, analysis and design, high level
-        programming, computer software, computer hardware, artificial intelligence, and the social impact of computers.
-    </p>
 </div>
 
 </body>

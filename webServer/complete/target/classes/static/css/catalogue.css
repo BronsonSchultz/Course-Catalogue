@@ -3,11 +3,9 @@
 }
 
 .courseList li {
-    border: 1px solid black;
-    width: 300px;
     align: center;
     margin: auto;
 }
-.courseList li:hover {
-    background-color: #aaa;
+.courseList li div:hover {
+    background-color: #80cde5;
 }

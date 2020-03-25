@@ -1,20 +1,16 @@
 package webApp;
 
-import javax.naming.directory.SearchResult;
 import java.util.ArrayList;
 
 public class SearchResults {
     private ArrayList<Course> courses;
+    private int idx;
 
     public SearchResults(){
         courses = new ArrayList<>();
     }
 
-    public void addCourse(Course c){
-        courses.add(c);
-    }
-
-    public void setCourses(ArrayList<Course> courses) {
+    public SearchResults(ArrayList<Course> courses){
         this.courses = courses;
     }
 
@@ -22,28 +18,13 @@ public class SearchResults {
         return courses;
     }
 
-    public void clearCourses(){
-        courses.clear();
+    public void addCourse(Course c){
+        courses.add(c);
     }
 
-    @Override
-    public String toString() {
-        return "searchResults{" +
-                "courses=" + courses +
-                '}';
+    public Course get(int i){
+        return courses.get(i);
     }
 
-    public static void main(String[] args){
-        Course c = new Course("CMPT", 100, "Introduction to Computing", "A survey " +
-                "of major computer science areas, combining a breadth of topics with depth via specific examples within " +
-                "each topic. Topics include: history of computing, computer applications, analysis and design, " +
-                "high level programming, computer software, computer hardware, artificial intelligence, " +
-                "and the social impact of computers.");
 
-        SearchResults s = new SearchResults();
-
-        s.addCourse(c);
-
-        System.out.println(s.toString());
-    }
 }
