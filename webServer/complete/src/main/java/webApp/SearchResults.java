@@ -2,12 +2,14 @@ package webApp;
 
 import java.util.ArrayList;
 
+import webApp.CoursesQuery;
+
 public class SearchResults {
     private ArrayList<Course> courses;
     private int idx;
 
-    public SearchResults(){
-        courses = new ArrayList<>();
+    public SearchResults(String sqlString){
+        courses = CoursesQuery.query(sqlString);
     }
 
     public SearchResults(ArrayList<Course> courses){

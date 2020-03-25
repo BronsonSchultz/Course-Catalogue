@@ -1,4 +1,4 @@
-package db_query;
+package webApp;
 
 import java.sql.*;
 import java.util.ArrayList;
@@ -10,6 +10,7 @@ public class CoursesQuery {
 	public static ArrayList<Course> query(String sql) {
 		Connection conn = null;
 		Statement stmt = null;
+		ArrayList<Course> rsCourses = new ArrayList<Course>();
 		
 		try {
             // create a connection to the database
@@ -20,12 +21,10 @@ public class CoursesQuery {
             // create and execute query
 			stmt = conn.createStatement();
             ResultSet rs = stmt.executeQuery(sql);
-
-            rsCourses = new ArrayList<Course>();
             
             // print query results
             while (rs.next()) {
-            	rsCourses.add(new Course(rs.getString("SubjectCode"), rs.getString("CourseCode"), rs.getString("CourseName"), rs.getString("Description")));
+            	rsCourses.add(new Course(rs.getString("SubjectCode"), rs.getInt("CourseCode"), rs.getString("CourseName"), rs.getString("Description")));
 //                System.out.println(rs.getString("SubjectCode") + " " + rs.getString("CourseCode"));
             }
 		}
