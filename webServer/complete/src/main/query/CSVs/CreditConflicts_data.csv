@@ -1,191 +1,122 @@
-CMPT,100,CMPT,120,Regular
-CMPT,100,CMPT,105,Regular
-CMPT,100,CMPT,111,Regular
-CMPT,100,CMPT,140,Regular
-CMPT,100,CMPT,141,Regular
-CMPT,113,CMPT,106,Regular
-CMPT,113,CMPT,111,Regular
-CMPT,113,CMPT,116,Regular
-CMPT,116,CMPT,111,Regular
-CMPT,116,CMPT,113,Regular
-CMPT,120,CMPT,100,Regular
-CMPT,140,CMPT,105,Regular
-CMPT,140,CMPT,111,Regular
-CMPT,140,CMPT,113,Regular
-CMPT,140,CMPT,116,Regular
-CMPT,140,CMPT,100,Regular
-CMPT,141,CMPT,115,Regular
-CMPT,141,CMPT,117,Regular
-CMPT,145,CMPT,270,Regular
-CMPT,214,CMPT,330,Regular
-CMPT,215,EE,331,Regular
-CMPT,215,CME,331,Regular
-CMPT,270,CMPT,250,Regular
-CMPT,280,CMPT,250,Regular
-CMPT,281,CMPT,370,Other
-CMPT,281,CMPT,381,Other
-CMPT,332,CMPT,422,Regular
-CMPT,340,CMPT,353,Regular
-CMPT,350,CMPT,353,Regular
-CMPT,353,CMPT,350,Regular
-CMPT,355,CMPT,374,Regular
-CMPT,384,CMPT,398,Other
-CMPT,434,CMPT,424,Regular
-CMPT,435,CMPT,835,Regular
-CMPT,436,CMPT,426,Regular
-CMPT,463,CMPT,416,Regular
-CMPT,470,CMPT,816,Regular
-CMPT,484,CMPT,824,Regular
-CMPT,487,CMPT,819,Regular
-CMPT,489,CMPT,498,Other
-CMPT,816,CMPT,470,Regular
-CMPT,819,CMPT,487,Regular
-INDG,107,NS,105,Previous Name
-INDG,107,NS,106,Previous Name
-INDG,107,NS,107,Previous Name
-INDG,107,NS,110,Previous Name
-INDG,210,NS,210,Previous Name
-INDG,212,NS,212,Previous Name
-INDG,214,NS,298,Previous Name
-INDG,214,NS,214,Previous Name
-INDG,215,NS,298,Previous Name
-INDG,215,NS,215,Previous Name
-INDG,220,NS,220,Previous Name
-INDG,221,NS,221,Previous Name
-INDG,221,NS,480,Previous Name
-INDG,230,NS,230,Previous Name
-INDG,241,NS,241,Previous Name
-INDG,252,INDG,350,Regular
-INDG,255,NS,255,Previous Name
-INDG,256,NS,256,Previous Name
-INDG,256,NS,298,Previous Name
-INDG,261,NS,260,Previous Name
-INDG,261,NS,261,Previous Name
-INDG,262,NS,260,Previous Name
-INDG,262,NS,261,Previous Name
-INDG,264,NS,207,Previous Name
-INDG,264,NS,263,Previous Name
-INDG,264,NS,264,Previous Name
-INDG,265,NS,304,Previous Name
-INDG,265,NS,365,Previous Name
-INDG,265,NS,265,Previous Name
-INDG,270,NS,211,Previous Name
-INDG,270,NS,270,Previous Name
-INDG,273,NS,273,Previous Name
-INDG,273,NS,298,Previous Name
-INDG,280,NS,200,Previous Name
-INDG,280,NS,280,Previous Name
-INDG,281,NS,203,Previous Name
-INDG,281,NS,281,Previous Name
-INDG,321,INDG,398,Regular
-INDG,331,NS,331,Previous Name
-INDG,340,NS,340,Previous Name
-INDG,341,NS,341,Previous Name
-INDG,341,NS,398,Previous Name
-INDG,351,NS,351,Previous Name
-INDG,362,NS,462,Previous Name
-INDG,362,NS,401,Previous Name
-INDG,362,NS,362,Previous Name
-INDG,366,NS,305,Previous Name
-INDG,366,NS,366,Previous Name
-INDG,370,NS,208,Previous Name
-INDG,370,NS,370,Previous Name
-INDG,373,NS,373,Previous Name
-INDG,410,NS,410,Previous Name
-INDG,410,NS,498,Previous Name
-INDG,430,NS,430,Previous Name
-INDG,440,NS,403,Previous Name
-INDG,440,NS,440,Previous Name
-INDG,450,NS,450,Previous Name
-INDG,451,NS,402,Previous Name
-INDG,451,NS,451,Previous Name
-INDG,454,INDG,498,Regular
-INDG,471,INDG,498,Regular
-ANTH,111,ANTH,110,Regular
-ANTH,302,ANTH,430,Regular
-ANTH,405,ANTH,498,Other
-ANTH,421,ANTH,420,Regular
-ANTH,480,PSY,480,Regular
-ARCH,112,ANTH,110,Regular
-ARCH,112,ANTH,112,Regular
-AREC,230,COMM,349,Regular
-AREC,230,AGEC,230,Regular
-AREC,230,BPBE,230,Regular
-ART,112,ART,181,Regular
-ART,112,ART,182,Regular
-ART,136,ART,135,Regular
-ART,141,ART,114,Regular
-ART,151,ART,113,Regular
-ART,152,ART,113,Regular
-ART,161,ART,116,Regular
-ASTR,113,ASTR,101,Previous Name
-ASTR,113,ASTR,103,Previous Name
-,,,,
-,,,,
-,,,,
-,,,,
-,,,,
-,,,,
-,,,,
-,,,,
-,,,,
-,,,,
-,,,,
-,,,,
-,,,,
-,,,,
-,,,,
-,,,,
-,,,,
-,,,,
-,,,,
-,,,,
-,,,,
-,,,,
-,,,,
-,,,,
-,,,,
-,,,,
-,,,,
-,,,,
-,,,,
-,,,,
-,,,,
-,,,,
-,,,,
-,,,,
-,,,,
-,,,,
-,,,,
-,,,,
-,,,,
-,,,,
-,,,,
-,,,,
-,,,,
-,,,,
-,,,,
-,,,,
-,,,,
-,,,,
-,,,,
-,,,,
-,,,,
-,,,,
-,,,,
-,,,,
-,,,,
-,,,,
-,,,,
-,,,,
-,,,,
-,,,,
-,,,,
-,,,,
-,,,,
-,,,,
-,,,,
-,,,,
-,,,,
-,,,,
-,,,,
+1,CMPT,100,CMPT,120,Regular
+2,CMPT,100,CMPT,105,Regular
+3,CMPT,100,CMPT,111,Regular
+4,CMPT,100,CMPT,140,Regular
+5,CMPT,100,CMPT,141,Regular
+6,CMPT,113,CMPT,106,Regular
+7,CMPT,113,CMPT,111,Regular
+8,CMPT,113,CMPT,116,Regular
+9,CMPT,116,CMPT,111,Regular
+10,CMPT,116,CMPT,113,Regular
+11,CMPT,120,CMPT,100,Regular
+12,CMPT,140,CMPT,105,Regular
+13,CMPT,140,CMPT,111,Regular
+14,CMPT,140,CMPT,113,Regular
+15,CMPT,140,CMPT,116,Regular
+16,CMPT,140,CMPT,100,Regular
+17,CMPT,141,CMPT,115,Regular
+18,CMPT,141,CMPT,117,Regular
+19,CMPT,145,CMPT,270,Regular
+20,CMPT,214,CMPT,330,Regular
+21,CMPT,215,EE,331,Regular
+22,CMPT,215,CME,331,Regular
+23,CMPT,270,CMPT,250,Regular
+24,CMPT,280,CMPT,250,Regular
+25,CMPT,281,CMPT,370,Other
+26,CMPT,281,CMPT,381,Other
+27,CMPT,332,CMPT,422,Regular
+28,CMPT,340,CMPT,353,Regular
+29,CMPT,350,CMPT,353,Regular
+30,CMPT,353,CMPT,350,Regular
+31,CMPT,355,CMPT,374,Regular
+32,CMPT,384,CMPT,398,Other
+33,CMPT,434,CMPT,424,Regular
+34,CMPT,435,CMPT,835,Regular
+35,CMPT,436,CMPT,426,Regular
+36,CMPT,463,CMPT,416,Regular
+37,CMPT,470,CMPT,816,Regular
+38,CMPT,484,CMPT,824,Regular
+39,CMPT,487,CMPT,819,Regular
+40,CMPT,489,CMPT,498,Other
+41,CMPT,816,CMPT,470,Regular
+42,CMPT,819,CMPT,487,Regular
+43,INDG,107,NS,105,Previous Name
+44,INDG,107,NS,106,Previous Name
+45,INDG,107,NS,107,Previous Name
+46,INDG,107,NS,110,Previous Name
+47,INDG,210,NS,210,Previous Name
+48,INDG,212,NS,212,Previous Name
+49,INDG,214,NS,298,Previous Name
+50,INDG,214,NS,214,Previous Name
+51,INDG,215,NS,298,Previous Name
+52,INDG,215,NS,215,Previous Name
+53,INDG,220,NS,220,Previous Name
+54,INDG,221,NS,221,Previous Name
+55,INDG,221,NS,480,Previous Name
+56,INDG,230,NS,230,Previous Name
+57,INDG,241,NS,241,Previous Name
+58,INDG,252,INDG,350,Regular
+59,INDG,255,NS,255,Previous Name
+60,INDG,256,NS,256,Previous Name
+61,INDG,256,NS,298,Previous Name
+62,INDG,261,NS,260,Previous Name
+63,INDG,261,NS,261,Previous Name
+64,INDG,262,NS,260,Previous Name
+65,INDG,262,NS,261,Previous Name
+66,INDG,264,NS,207,Previous Name
+67,INDG,264,NS,263,Previous Name
+68,INDG,264,NS,264,Previous Name
+69,INDG,265,NS,304,Previous Name
+70,INDG,265,NS,365,Previous Name
+71,INDG,265,NS,265,Previous Name
+72,INDG,270,NS,211,Previous Name
+73,INDG,270,NS,270,Previous Name
+74,INDG,273,NS,273,Previous Name
+75,INDG,273,NS,298,Previous Name
+76,INDG,280,NS,200,Previous Name
+77,INDG,280,NS,280,Previous Name
+78,INDG,281,NS,203,Previous Name
+79,INDG,281,NS,281,Previous Name
+80,INDG,321,INDG,398,Regular
+81,INDG,331,NS,331,Previous Name
+82,INDG,340,NS,340,Previous Name
+83,INDG,341,NS,341,Previous Name
+84,INDG,341,NS,398,Previous Name
+85,INDG,351,NS,351,Previous Name
+86,INDG,362,NS,462,Previous Name
+87,INDG,362,NS,401,Previous Name
+88,INDG,362,NS,362,Previous Name
+89,INDG,366,NS,305,Previous Name
+90,INDG,366,NS,366,Previous Name
+91,INDG,370,NS,208,Previous Name
+92,INDG,370,NS,370,Previous Name
+93,INDG,373,NS,373,Previous Name
+94,INDG,410,NS,410,Previous Name
+95,INDG,410,NS,498,Previous Name
+96,INDG,430,NS,430,Previous Name
+97,INDG,440,NS,403,Previous Name
+98,INDG,440,NS,440,Previous Name
+99,INDG,450,NS,450,Previous Name
+100,INDG,451,NS,402,Previous Name
+101,INDG,451,NS,451,Previous Name
+102,INDG,454,INDG,498,Regular
+103,INDG,471,INDG,498,Regular
+104,ANTH,111,ANTH,110,Regular
+105,ANTH,302,ANTH,430,Regular
+106,ANTH,405,ANTH,498,Other
+107,ANTH,421,ANTH,420,Regular
+108,ANTH,480,PSY,480,Regular
+109,ARCH,112,ANTH,110,Regular
+110,ARCH,112,ANTH,112,Regular
+111,AREC,230,COMM,349,Regular
+112,AREC,230,AGEC,230,Regular
+113,AREC,230,BPBE,230,Regular
+114,ART,112,ART,181,Regular
+115,ART,112,ART,182,Regular
+116,ART,136,ART,135,Regular
+117,ART,141,ART,114,Regular
+118,ART,151,ART,113,Regular
+119,ART,152,ART,113,Regular
+120,ART,161,ART,116,Regular
+121,ASTR,113,ASTR,101,Previous Name
+122,ASTR,113,ASTR,103,Previous Name
