@@ -21,7 +21,7 @@ public class CoursesQuery {
 			stmt = conn.createStatement();
             ResultSet rs = stmt.executeQuery(sql);
 
-            rsCourses = new ArrayList<Course>();
+            ArrayList<Course> rsCourses = new ArrayList<Course>();
             
             // print query results
             while (rs.next()) {

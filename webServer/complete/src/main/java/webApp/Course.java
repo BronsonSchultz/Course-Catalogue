@@ -2,11 +2,11 @@ package webApp;
 
 public class Course {
     private String subjectCode;
-    private int number;
+    private String number;
     private String title;
     private String description;
 
-    public Course(String subjectCode, int number, String title, String description) {
+    public Course(String subjectCode, String number, String title, String description) {
         this.subjectCode = subjectCode;
         this.number = number;
         this.title = title;
@@ -21,11 +21,11 @@ public class Course {
         this.subjectCode = subjectCode;
     }
 
-    public int getNumber() {
+    public String getNumber() {
         return number;
     }
 
-    public void setNumber(int number) {
+    public void setNumber(String number) {
         this.number = number;
     }
 
@@ -56,7 +56,7 @@ public class Course {
     }
 
     public static void main(String[] args){
-        Course c = new Course("CMPT", 100, "Introduction to Computing", "A survey " +
+        Course c = new Course("CMPT", "100", "Introduction to Computing", "A survey " +
                 "of major computer science areas, combining a breadth of topics with depth via specific examples within " +
                 "each topic. Topics include: history of computing, computer applications, analysis and design, " +
                 "high level programming, computer software, computer hardware, artificial intelligence, " +
