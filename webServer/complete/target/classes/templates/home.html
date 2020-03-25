@@ -3,6 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <title>Home Page</title>
+    <link rel="shortcut icon" type="image/png" href="img/student.png" />
+
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
     <link rel="stylesheet" type='text/css' th:href="@{css/site.css}">
     <link rel="stylesheet" type='text/css' th:href="@{css/signIn.css}">
@@ -13,27 +17,80 @@
 
 <body>
 
+    <div th:insert="fragments/navbar :: topBar"></div>
     <h1>Welcome!</h1>
 
     <h2> This website is an easy look up tool when choosing classes at the U of S</h2>
-    <h3> It will also provide a scheduler tool for planning out your week!</h3>
 
-    <div th:insert="fragments/signIn :: signBtn"></div>
-    <div th:insert="fragments/signIn :: signInModal"></div>
-
-    <div th:insert="fragments/navbar :: navBtn"></div>
     <div th:insert="fragments/navbar :: navbar"></div>
 
-    <p>
-        Here's How to Use it:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-        dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-        commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-        pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
-        laborum."
-    </p>
+    <div class="container-xl" style="margin-left: 260px">
+        <div class="row">
+            <h4>Here's How to Use it:</h4>
+        </div>
 
-    <script th:src="@{js/signIn.js}"></script>
+        <div class="row border-bottom">
+            <h5>Scheduler</h5>
+        </div>
+
+        <div class="row">
+            <p>
+                The scheduler is a virtual piece of paper where you can drag and drop classes onto it to plan out your week
+                It will help you recognize conflicts and requirements for the classes you are interested in.
+            </p>
+        </div>
+
+        <div class="row border-bottom">
+            <h5>My Courses</h5>
+        </div>
+
+        <div class="row">
+            <p>
+                On this page you will be able to see the two lists of courses that you have checked off as completed and/or
+                favourited.
+            </p>
+        </div>
+
+        <div class="row border-bottom">
+            <h5>My Degrees</h5>
+        </div>
+
+        <div class="row">
+            <p>
+                Here you can see what degree programs you have favourited.  This will include the requirements for each
+                degree. Along with how much progress you have made into that degree.
+            </p>
+        </div>
+
+        <div class="row border-bottom">
+            <h5>Catalogue</h5>
+        </div>
+
+        <div class="row">
+            <p>
+                Here is where you can search the catalogue of undergrad courses that the U of S is currently offering. The courses
+                can be searched by subject (like CMPT), or by year level (100, 200, 300, 400).
+            </p>
+        </div>
+
+        <div class="row border-bottom">
+            <h5>FAQ</h5>
+        </div>
+
+        <div class="row">
+            <p>
+                On the frequently asked questions page you can find answers to some questions you might have. Here you can
+                also report any bugs you may find on the site.
+            </p>
+        </div>
+    </div>
+
     <script th:src="@{js/navbar.js}"></script>
+
+
+    <!-- Bootstrap stuff -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 </body>
 </html>

@@ -1,19 +1,36 @@
-.coursesidebar {
+.courseSideBar {
   height: 100%; /* 100% Full-height */
-  width: 0; /* 0 width - change this with JavaScript */
+  width: 0; /* 0 width - changes with JavaScript */
   position: fixed; /* Stay in place */
   z-index: 1; /* Stay on top */
   top: 0;
   right: 0;
-  background-color: #595959; /* Black*/
+  background-color: #5bc0de; /* light blue */
   overflow-x: hidden; /* Disable horizontal scroll */
   padding-top: 60px; /* Place content 60px from the top */
   transition: 0.5s; /* 0.5 second transition effect to slide in the sidebar */
-  color: #fff;
+  color: #fff; /*white text*/
 
 }
 
-.coursesidebar p {
+.courseSideBar p {
     margin: auto;
-    width: 200px;
+    width: 250px;
+}
+
+.courseSideBar .closebtn {
+  position: absolute;
+  top: 0;
+  left: 25px;
+  font-size: 36px;
+  margin-right: 50px;
+}
+
+.courseSideBar a {
+  text-decoration: none;
+  color: #1e7994;
+}
+
+.courseSideBar a:hover {
+  color: #f1f1f1;
 }

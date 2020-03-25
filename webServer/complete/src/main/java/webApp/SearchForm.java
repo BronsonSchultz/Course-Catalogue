@@ -4,13 +4,23 @@ public class SearchForm {
 
     private String searchStr;
     private int yearLvl;
+    private int numResults;
 
     @Override
     public String toString() {
         return "SearchForm{" +
                 "searchStr='" + searchStr + '\'' +
                 ", yearLvl=" + yearLvl +
+                ", numResults=" + numResults +
                 '}';
+    }
+
+    public int getNumResults() {
+        return numResults;
+    }
+
+    public void setNumResults(int numResults) {
+        this.numResults = numResults;
     }
 
     public int getYearLvl() {

@@ -1,13 +1,13 @@
-body {
-    font-family: 'Noto Sans', sans-serif;
+h1, h2{
     text-align: center;
-
 }
 
+h5 {
+   /* border-bottom: 1px solid #e6e6e6 */
+}
 p {
-    text-align: center;
-    margin: auto;
-    width: 500px;
+    width: 600px;
+    padding-left: 10px;
 }
 
 .button {
@@ -16,4 +16,22 @@ p {
     font-size: 20px;
     padding: 10px 15px;
     border: none;
+}
+
+.button:hover {
+    background-color: #11a263;
+}
+
+#signBtn {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+}
+
+#signBtn a:link, a:visited {
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    display: inline-block;
+    padding: 10px 15px;
 }

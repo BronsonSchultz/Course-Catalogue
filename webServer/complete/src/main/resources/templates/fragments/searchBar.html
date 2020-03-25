@@ -8,17 +8,37 @@
 <body>
 
     <form th:fragment="searchForm" action="#" th:action="@{/catalogue}" th:object="${searchForm}" method="post">
-        <input type="text" th:field="*{searchStr}" placeholder="Search..."/>
 
-        <label for="level">Search by Course Level:</label>
-        <select name="level" th:field="*{yearLvl}" >
-            <option value="100">100-level</option>
-            <option value="200">200-level</option>
-            <option value="300">300-level</option>
-            <option value="400">400-level</option>
-            <option value="000" selected>All Levels</option>
-        </select>
-        <button id="searchBtn" class="button" type="submit">&#x1f50d;</button>
+        <div class="form-row">
+            <div class="col">
+                <div class="form-group">
+                    <input type="text" class="form-control" th:field="*{searchStr}" placeholder="Subject Code..."/>
+                </div>
+            </div>
+        </div>
+
+        <div class="form-row">
+            <div class="col">
+                <div class="form-group">
+                    <label for="level">Search by Course Level:</label>
+                    <select class="form-control" id="level" th:field="*{yearLvl}" >
+                        <option value="100">100-level</option>
+                        <option value="200">200-level</option>
+                        <option value="300">300-level</option>
+                        <option value="400">400-level</option>
+                        <option value="000" selected>All Levels</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+
+        <div class="form-row">
+            <div class="col">
+                <button id="searchBtn" class="btn btn-success" type="submit">&#x1f50d;</button>
+            </div>
+        </div>
+
+        </div>
     </form>
 
 </body>
