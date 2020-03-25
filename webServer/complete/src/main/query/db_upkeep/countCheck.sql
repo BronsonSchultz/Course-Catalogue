@@ -7,5 +7,8 @@ FROM DegreeRequirements;
 SELECT COUNT(DISTINCT CreditConflictID)
 FROM CreditConflicts;
 
+SELECT COUNT(DISTINCT PrerequisiteID)
+FROM Prerequisites;
+
 SELECT *
 FROM Degrees;
