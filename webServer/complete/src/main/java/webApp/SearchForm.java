@@ -1,8 +1,8 @@
-      package webApp;
+package webApp;
 
 public class SearchForm {
 
-    private String searchStr;
+    private String searchStr = "CMPT";
     private int yearLvl;
     private int numResults;
 
