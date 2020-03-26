@@ -38,24 +38,24 @@ public class WebController implements WebMvcConfigurer {
 //		SearchResults s = new SearchResults("SELECT SubjectCode, CourseCode, CourseName, Description FROM Courses");
 		SearchResults s = new SearchResults();
 		
-		ArrayList<String> stringCourses = CoursesQuery.query(searchForm.getSearchStr());
-		for (int i = 0; i < stringCourses.size(); i += 4) {
-			Course c = new Course(stringCourses.get(i), Integer.parseInt(stringCourses.get(i+1)), stringCourses.get(i+2), stringCourses.get(i+3));
-			s.addCourse(c);
-		}
+//		ArrayList<String> stringCourses = CoursesQuery.query(searchForm.getSearchStr());
+//		for (int i = 0; i < stringCourses.size(); i += 4) {
+//			Course c = new Course(stringCourses.get(i), Integer.parseInt(stringCourses.get(i+1)), stringCourses.get(i+2), stringCourses.get(i+3));
+//			s.addCourse(c);
+//		}
 		
-//		Course c = new Course("CMPT",100,"Introduction to Computing","A survey of" +
-//				" major computer science areas, combining a breadth of topics with depth via specific examples within " +
-//				"each topic. Topics include: history of computing, computer applications, analysis and design, high " +
-//				"level programming, computer software, computer hardware, artificial intelligence, and the social" +
-//				" impact of computers.");
-//
-//		Course d = new Course("MATH", 110, "Calculus I", "Introduction to " +
-//				"derivatives, limits, techniques of differentiation, maximum and minimum problems and other" +
-//				" applications, implicit differentiation, anti-derivatives.");
+		Course c = new Course("CMPT",100,"Introduction to Computing","A survey of" +
+				" major computer science areas, combining a breadth of topics with depth via specific examples within " +
+				"each topic. Topics include: history of computing, computer applications, analysis and design, high " +
+				"level programming, computer software, computer hardware, artificial intelligence, and the social" +
+				" impact of computers.");
 
-//		s.addCourse(c);
-//		s.addCourse(d);
+		Course d = new Course("MATH", 110, "Calculus I", "Introduction to " +
+				"derivatives, limits, techniques of differentiation, maximum and minimum problems and other" +
+				" applications, implicit differentiation, anti-derivatives.");
+
+		s.addCourse(c);
+		s.addCourse(d);
 		model.addAttribute("s", s);
 
 		return "catalogue";
