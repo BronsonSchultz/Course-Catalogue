@@ -3,11 +3,7 @@ package webApp;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
-import org.springframework.web.servlet.ModelAndView;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
-
-import java.util.ArrayList;
-import webApp.CoursesQuery;
 
 @Controller
 public class WebController implements WebMvcConfigurer {
