@@ -1,9 +1,14 @@
 package webApp;
 
+import org.json.JSONObject;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
+
+import java.sql.SQLException;
+import java.util.ArrayList;
+import java.util.HashMap;
 //import webApp.CoursesQuery;
 
 @Controller
@@ -23,8 +28,13 @@ public class WebController implements WebMvcConfigurer {
 
 
 	@RequestMapping(value="/catalogue", method = {RequestMethod.GET, RequestMethod.POST})
-	public String createCourses(Model model, @ModelAttribute("searchForm") SearchForm searchForm){
+	public String createCourses(Model model, @ModelAttribute("searchForm") SearchForm searchForm) throws SQLException {
 		model.addAttribute("searchForm", new SearchForm());
+
+		CourseQueries querier = new CourseQueries();
+		ArrayList<HashMap<String, String>> courses = querier.getCoursesFromDB("CMPT", "1");
+		JSONObject[] searchResults = querier.jsonifyList(courses);
+		model.addAttribute("searchResults", searchResults);
 
 
 		//model.addAttribute("s", s);

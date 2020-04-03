@@ -12,10 +12,10 @@ public class DBConnection {
     public Connection getConn() {
         Connection conn = null;
         try {
+
             // create a connection to the database
             Class.forName("org.sqlite.JDBC");
             conn = DriverManager.getConnection("jdbc:sqlite:UofSPlanner.db");
-            System.out.println("database connected");
         } catch (Exception e) {
             System.out.println(e);
         }
