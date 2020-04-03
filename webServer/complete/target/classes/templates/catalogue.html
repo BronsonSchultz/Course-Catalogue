@@ -25,6 +25,7 @@
 
     <ul class="courseList"> <!-- thymeleaf for loop here to generalize -->
 
+
         <li class="courseName" onclick="openCourseSideBar()">
             <div class="card border-info mb-3" style="width 20rem;">
                 <div class="card-body">
@@ -35,7 +36,7 @@
         </li>
 
         <li onclick="openCourseSideBar()">
-            <div class="card border-info mb-3" style="width 20rem;" th:with="i=${1}">
+            <div class="card border-info mb-3" style="width 20rem;">
                 <div class="card-body">
                     <h3 class="card-title text-info">MATH 110</h3>
                     <h4 class="card-subtitle mb-2 text-muted">Course Stub</h4>
