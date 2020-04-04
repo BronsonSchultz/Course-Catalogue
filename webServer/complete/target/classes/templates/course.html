@@ -17,7 +17,12 @@
 
     <h1>My Saved Courses</h1>
 
-    <h2>Here's where you'll view your saved courses that you have favourited/completed</h2>
+    <div class="container mx-auto" style="border: 2px solid black">
+        <ul class="list-group list-group-horizontal mx-auto" id="list-tab" role="tablist" style="width: 500px; border: 2px solid red">
+            <a class="list-group-item flex-fill list-group-item-action active" id="list-favourite-list" data-toggle="list" href="#list-favourite" role="tab" style="text-align: center;">Favourited</a>
+            <a class="list-group-item flex-fill list-group-item-action" id="list-complete-list" data-toggle="list" href="#list-complete" role="tab" style="text-align: center;">Completed</a>
+        </ul>
+    </div>
 
     <div th:insert="fragments/navbar :: navbar"></div>
 
