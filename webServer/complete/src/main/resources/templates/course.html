@@ -7,6 +7,7 @@
 
     <link rel="stylesheet" th:href="@{css/site.css}" type='text/css'>
     <link rel="stylesheet" th:href="@{css/navbar.css}" type='text/css'>
+    <link rel="stylesheet" th:href="@{css/catalogue.css}" type='text/css'>
     <link href="https://fonts.googleapis.com/css?family=Noto+Sans&display=swap" rel="stylesheet">
 
     <title>My Courses</title>
@@ -29,8 +30,34 @@
 
         <div class="row">
             <div class="tab-content">
-                <div class="tab-pane active" id="list-favourite" role="tabpanel">hello this a favourite test</div>
-                <div class="tab-pane" id="list-complete" role="tabpanel">hello this a completed test</div>
+
+                <div class="tab-pane active" id="list-favourite" role="tabpanel">
+                    <ul class="courseList" th:each="i : ${#numbers.sequence(5,1)}" style="margin-top: 10px">
+
+                        <li class="courseName" th:onclick="javascript:openCourseSideBar()">
+                            <div class="card border-info mb-3" style="width 20rem;">
+                                <div class="card-body">
+                                    <h3 class="card-title text-info" th:text="${i}"></h3>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+
+                </div>
+
+                <div class="tab-pane" id="list-complete" role="tabpanel">
+                    <ul class="courseList" th:each="i : ${#numbers.sequence(1,5)}" style="margin-top: 10px">
+
+                        <li class="courseName" th:onclick="javascript:openCourseSideBar()">
+                            <div class="card border-info mb-3" style="width 20rem;">
+                                <div class="card-body">
+                                    <h3 class="card-title text-info" th:text="${i}"></h3>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
             </div>
         </div>
     </div>
