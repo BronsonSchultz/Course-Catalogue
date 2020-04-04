@@ -2,14 +2,14 @@ package webApp;
 
 public class SearchForm {
 
-    private String searchStr = "CMPT";
-    private int yearLvl;
+    private String subjectCode;
+    private String yearLvl;
     private int numResults;
 
     @Override
     public String toString() {
         return "SearchForm{" +
-                "searchStr='" + searchStr + '\'' +
+                "subjectCode='" + subjectCode + '\'' +
                 ", yearLvl=" + yearLvl +
                 ", numResults=" + numResults +
                 '}';
@@ -23,20 +23,20 @@ public class SearchForm {
         this.numResults = numResults;
     }
 
-    public int getYearLvl() {
+    public String getYearLvl() {
         return yearLvl;
     }
 
-    public void setYearLvl(int yearLvl) {
+    public void setYearLvl(String yearLvl) {
         this.yearLvl = yearLvl;
     }
 
-    public String getSearchStr() {
-        return searchStr;
+    public String getSubjectCode() {
+        return subjectCode;
     }
 
-    public void setSearchStr(String searchStr) {
-        this.searchStr = searchStr;
+    public void setSubjectCode(String subjectCode) {
+        this.subjectCode = subjectCode;
     }
 
 }

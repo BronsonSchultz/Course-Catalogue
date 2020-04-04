@@ -32,9 +32,11 @@ public class WebController implements WebMvcConfigurer {
 		model.addAttribute("searchForm", new SearchForm());
 
 		CourseQueries querier = new CourseQueries();
-		ArrayList<HashMap<String, String>> courses = querier.getCoursesFromDB("CMPT", "1");
-		JSONObject[] searchResults = querier.jsonifyList(courses);
-		model.addAttribute("searchResults", searchResults);
+		if (searchForm.getYearLvl() != null && searchForm.getSubjectCode() != null) {
+			ArrayList<HashMap<String, String>> courses = querier.getCoursesFromDB(searchForm.getSubjectCode(), searchForm.getYearLvl());
+			JSONObject[] searchResults = querier.jsonifyList(courses);
+			model.addAttribute("searchResults", searchResults);
+		}
 
 
 		//model.addAttribute("s", s);
