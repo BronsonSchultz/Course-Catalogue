@@ -85,7 +85,7 @@ CREATE TABLE Users (
 );
 
 DROP TABLE IF EXISTS CompletedList;
-CREATE TABLE TestCompletedList (
+CREATE TABLE CompletedList (
         CompletedCourseID INTEGER NOT NULL,
         SubjectCode NCHAR(4) NOT NULL,
         CourseCode INTEGER NOT NULL,
@@ -100,7 +100,7 @@ CREATE TABLE TestCompletedList (
 );
 
 DROP TABLE IF EXISTS FavouriteList;
-CREATE TABLE TestFavouriteList (
+CREATE TABLE FavouriteList (
         FavouriteID INTEGER NOT NULL,
         SubjectCode NCHAR(4) NOT NULL,
         CourseCode INTEGER NOT NULL,
