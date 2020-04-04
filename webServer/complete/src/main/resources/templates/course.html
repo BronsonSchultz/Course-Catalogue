@@ -29,10 +29,10 @@
         </div>
 
         <div class="row">
-            <div class="tab-content">
+            <div class="tab-content mx-auto">
 
-                <div class="tab-pane active" id="list-favourite" role="tabpanel">
-                    <ul class="courseList" th:each="i : ${#numbers.sequence(5,1)}" style="margin-top: 10px">
+                <div class="tab-pane active mx-auto" id="list-favourite" role="tabpanel" style="border: 2px solid yellow; width: 400px;">
+                    <ul class="courseList mx-auto" th:each="i : ${#numbers.sequence(5,1)}" style="margin-top: 10px; border: 2px solid green">
 
                         <li class="courseName" th:onclick="javascript:openCourseSideBar()">
                             <div class="card border-info mb-3" style="width 20rem;">
