@@ -22,9 +22,9 @@
     <h1>Course Catalogue</h1>
     <div th:insert="fragments/searchBar :: searchForm" class="container" style="margin-bottom: 5px"></div>
 
-    <ul class="courseList" th:each="course : ${searchResults}" style="margin-top: 10px">
+    <ul class="courseList" style="margin-top: 10px">
 
-        <li class="courseName" th:onclick="javascript:openCourseSideBar([[${course.getString('SubjectCode')}]], [[${course.getString('CourseCode')}]], [[${course.getString('CourseName')}]], [[${course.getString('Description')}]])">
+        <li class="courseName" th:each="course : ${searchResults}" th:onclick="javascript:openCourseSideBar([[${course.getString('SubjectCode')}]], [[${course.getString('CourseCode')}]], [[${course.getString('CourseName')}]], [[${course.getString('Description')}]])">
             <div class="card border-info mb-3" style="width 20rem;">
                 <div class="card-body">
                     <h3 class="card-title text-info" th:text="${course.getString('SubjectCode') + ' ' + course.getString('CourseCode')}"></h3>
