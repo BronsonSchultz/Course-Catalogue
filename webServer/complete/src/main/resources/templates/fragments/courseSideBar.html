@@ -6,7 +6,7 @@
 </head>
 
 <body>
-<div class="courseSideBar" id="courseSideBar" th:fragment="courseSideBar" th:object="${}">
+<div class="courseSideBar" id="courseSideBar" th:fragment="courseSideBar">
     <a class="closebtn" href="javascript:void(0)" onclick="closeCourseSideBar()">&times;</a>
 
     <div class="container">
@@ -26,11 +26,11 @@
             </div>
         </div>
 
-        <h4 ></h4>
-        <h4 ></h4>
-        <h4 ></h4>
+        <h4 id="subjectCode"></h4>
+        <h4 id="courseCode"></h4>
+        <h4 id="courseName"></h4>
         <h5>Description:</h5>
-        <p ></p>
+        <p id="description"></p>
     </div>
 </div>
 

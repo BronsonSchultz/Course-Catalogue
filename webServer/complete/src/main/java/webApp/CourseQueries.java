@@ -43,6 +43,10 @@ public class CourseQueries {
         JSONObject[] js = querier.jsonifyList(l);
 
         System.out.println(Arrays.toString(js));
+
+        //garbage
+        System.out.println("'openGate(\'' +${gate.gateIp} +'\',\''+${gate.gatePort}+'\')'");
+        System.out.println("'javascript:openCourseSideBar(\'' +${course.getString(SubjectCode)} +'\',\''+${course.getString(CourseCode)}+'\',\''+${course.getString(CourseName)}+'\',\''+${course.getString(Description)}+'\')'");
     }
 
     /**
