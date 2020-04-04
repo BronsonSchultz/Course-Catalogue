@@ -84,24 +84,32 @@ CREATE TABLE Users (
         PRIMARY KEY(UserID)
 );
 
-DROP TABLE IF EXISTS TestCompletedList;
+DROP TABLE IF EXISTS CompletedList;
 CREATE TABLE TestCompletedList (
         CompletedCourseID INTEGER NOT NULL,
         SubjectCode NCHAR(4) NOT NULL,
         CourseCode INTEGER NOT NULL,
+        UserID INTEGER NOT NULL,
         PRIMARY KEY(CompletedCourseID),
         FOREIGN KEY(SubjectCode, CourseCode) REFERENCES Courses (SubjectCode, CourseCode)
+           ON UPDATE CASCADE
+           ON DELETE CASCADE,
+        FOREIGN KEY(UserID)
            ON UPDATE CASCADE
            ON DELETE CASCADE
 );
 
-DROP TABLE IF EXISTS TestFavouriteList;
+DROP TABLE IF EXISTS FavouriteList;
 CREATE TABLE TestFavouriteList (
         FavouriteID INTEGER NOT NULL,
         SubjectCode NCHAR(4) NOT NULL,
         CourseCode INTEGER NOT NULL,
+        UserID INTEGER NOT NULL,
         PRIMARY KEY(FavouriteID),
         FOREIGN KEY(SubjectCode, CourseCode) REFERENCES Courses (SubjectCode, CourseCode)
+           ON UPDATE CASCADE
+           ON DELETE CASCADE,
+        FOREIGN KEY(UserID)
            ON UPDATE CASCADE
            ON DELETE CASCADE
 );
