@@ -94,7 +94,7 @@ CREATE TABLE CompletedList (
         FOREIGN KEY(SubjectCode, CourseCode) REFERENCES Courses (SubjectCode, CourseCode)
            ON UPDATE CASCADE
            ON DELETE CASCADE,
-        FOREIGN KEY(UserID)
+        FOREIGN KEY(UserID) REFERENCES Users
            ON UPDATE CASCADE
            ON DELETE CASCADE
 );
@@ -109,7 +109,7 @@ CREATE TABLE FavouriteList (
         FOREIGN KEY(SubjectCode, CourseCode) REFERENCES Courses (SubjectCode, CourseCode)
            ON UPDATE CASCADE
            ON DELETE CASCADE,
-        FOREIGN KEY(UserID)
+        FOREIGN KEY(UserID) REFERENCES Users
            ON UPDATE CASCADE
            ON DELETE CASCADE
 );
