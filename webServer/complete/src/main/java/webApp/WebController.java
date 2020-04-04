@@ -1,9 +1,15 @@
 package webApp;
 
+import org.json.JSONObject;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
+
+import java.sql.SQLException;
+import java.util.ArrayList;
+import java.util.HashMap;
+//import webApp.CoursesQuery;
 
 @Controller
 public class WebController implements WebMvcConfigurer {
@@ -20,39 +26,18 @@ public class WebController implements WebMvcConfigurer {
 		return "home";
 	}
 
-	@PostMapping("/home")
-	public String checkUserInfo(@ModelAttribute("loginForm") LoginForm loginForm) {
-		return "home";
-	}
-
-
 
 	@RequestMapping(value="/catalogue", method = {RequestMethod.GET, RequestMethod.POST})
-	public String createCourses(Model model, @ModelAttribute("searchForm") SearchForm searchForm){
+	public String createCourses(Model model, @ModelAttribute("searchForm") SearchForm searchForm) throws SQLException {
 		model.addAttribute("searchForm", new SearchForm());
 
-//		SearchResults s = new SearchResults("SELECT SubjectCode, CourseCode, CourseName, Description FROM Courses");
-		SearchResults s = new SearchResults();
-		
-//		ArrayList<String> stringCourses = CoursesQuery.query(searchForm.getSearchStr());
-//		for (int i = 0; i < stringCourses.size(); i += 4) {
-//			Course c = new Course(stringCourses.get(i), Integer.parseInt(stringCourses.get(i+1)), stringCourses.get(i+2), stringCourses.get(i+3));
-//			s.addCourse(c);
-//		}
-		
-		Course c = new Course("CMPT",100,"Introduction to Computing","A survey of" +
-				" major computer science areas, combining a breadth of topics with depth via specific examples within " +
-				"each topic. Topics include: history of computing, computer applications, analysis and design, high " +
-				"level programming, computer software, computer hardware, artificial intelligence, and the social" +
-				" impact of computers.");
+		CourseQueries querier = new CourseQueries();
+		ArrayList<HashMap<String, String>> courses = querier.getCoursesFromDB("CMPT", "1");
+		JSONObject[] searchResults = querier.jsonifyList(courses);
+		model.addAttribute("searchResults", searchResults);
 
-		Course d = new Course("MATH", 110, "Calculus I", "Introduction to " +
-				"derivatives, limits, techniques of differentiation, maximum and minimum problems and other" +
-				" applications, implicit differentiation, anti-derivatives.");
 
-		s.addCourse(c);
-		s.addCourse(d);
-		model.addAttribute("s", s);
+		//model.addAttribute("s", s);
 
 		return "catalogue";
 	}

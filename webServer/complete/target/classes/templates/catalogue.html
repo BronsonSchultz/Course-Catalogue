@@ -23,26 +23,18 @@
     <div th:insert="fragments/searchBar :: searchForm" class="container" style="margin-bottom: 5px"></div>
     <div class="border-bottom"></div>
 
-    <ul class="courseList"> <!-- thymeleaf for loop here to generalize -->
+    <ul class="courseList" th:each="course : ${searchResults}" style="margin-top: 10px">
 
-        <li class="courseName" onclick="openCourseSideBar()">
+        <li class="courseName" th:onclick="javascript:openCourseSideBar([[${course.getString('SubjectCode')}]], [[${course.getString('CourseCode')}]], [[${course.getString('CourseName')}]], [[${course.getString('Description')}]])">
             <div class="card border-info mb-3" style="width 20rem;">
                 <div class="card-body">
-                    <h3 class="card-title text-info">CMPT 100</h3>
-                    <h4 class="card-subtitle mb-2 text-muted">Course Stub</h4>
+                    <h3 class="card-title text-info" th:text="${course.getString('SubjectCode') + ' ' + course.getString('CourseCode')}"></h3>
                 </div>
             </div>
         </li>
 
-        <li onclick="openCourseSideBar()">
-            <div class="card border-info mb-3" style="width 20rem;" th:with="i=${1}">
-                <div class="card-body">
-                    <h3 class="card-title text-info">MATH 110</h3>
-                    <h4 class="card-subtitle mb-2 text-muted">Course Stub</h4>
-                </div>
-            </div>
-        </li>
     </ul>
+
     <div th:insert="fragments/courseSideBar :: courseSideBar"></div>
     <div th:insert="fragments/navbar :: navbar"></div>
 
