@@ -1,11 +1,11 @@
 .courseList {
-    list-style-type: none;
-}
+     list-style-type: none;
+ }
 
-.courseList li {
-    align: center;
-    margin: auto;
-}
-.courseList li div:hover {
-    background-color: #80cde5;
-}
+ .courseList li {
+     align: center;
+     margin: auto;
+ }
+ .courseList li div:hover {
+     background-color: #80cde5;
+ }
