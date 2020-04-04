@@ -7,10 +7,10 @@ import webApp.Course;
 
 public class CoursesQuery {
 	
-	public static ArrayList<Course> query(String sql) {
+	public static ArrayList<String> query(String sql) {
 		Connection conn = null;
 		Statement stmt = null;
-		ArrayList<Course> rsCourses = new ArrayList<Course>();
+		ArrayList<String> stringCourses = new ArrayList<String>();
 		
 		try {
             // create a connection to the database
@@ -21,10 +21,13 @@ public class CoursesQuery {
             // create and execute query
 			stmt = conn.createStatement();
             ResultSet rs = stmt.executeQuery(sql);
-            
+
             // print query results
             while (rs.next()) {
-            	rsCourses.add(new Course(rs.getString("SubjectCode"), rs.getInt("CourseCode"), rs.getString("CourseName"), rs.getString("Description")));
+            	stringCourses.add(rs.getString("SubjectCode"));
+            	stringCourses.add(rs.getString("CourseCode"));
+            	stringCourses.add(rs.getString("CourseName"));
+            	stringCourses.add(rs.getString("Description"));
 //                System.out.println(rs.getString("SubjectCode") + " " + rs.getString("CourseCode"));
             }
 		}
@@ -48,7 +51,7 @@ public class CoursesQuery {
         }
 
 //        System.out.println("Query finished.");
-		return rsCourses;
+		return stringCourses;
 	}
 
 	public static void main(String[] args) throws Exception {
