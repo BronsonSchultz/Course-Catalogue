@@ -9,6 +9,7 @@
     <link rel="stylesheet" th:href="@{css/site.css}" type='text/css'>
     <link rel="stylesheet" th:href="@{css/navbar.css}" type='text/css'>
     <link rel="stylesheet" th:href="@{css/course.css}" type='text/css'>
+    <link rel="stylesheet" type='text/css' th:href="@{css/courseSideBar.css}">
     <link href="https://fonts.googleapis.com/css?family=Noto+Sans&display=swap" rel="stylesheet">
 
     <title>My Courses</title>
@@ -42,7 +43,8 @@
                         th:onclick="javascript:openCourseSideBar([[${fav.getString('SubjectCode')}]], [[${fav.getString('CourseCode')}]], [[${fav.getString('CourseName')}]], [[${fav.getString('Description')}]])">
                         <div class="card border-info mb-1">
                             <div class="card-body">
-                                <h3 class="card-title text-info" th:text="${fav.getString('SubjectCode') + ' ' + fav.getString('CourseCode')}"></h3>
+                                <h3 class="card-title text-info"
+                                    th:text="${fav.getString('SubjectCode') + ' ' + fav.getString('CourseCode')}"></h3>
                             </div>
                         </div>
                     </li>
@@ -52,7 +54,7 @@
 
             <div class="tab-pane" id="list-complete" role="tabpanel" style="width: 400px;">
                 <ul class="courseList" style="margin-top: 10px;">
-                    <li class="courseName" th:each="i : ${#numbers.sequence(1,5)}"
+                    <li class="courseName" th:each="comp : ${completes}"
                         th:onclick="javascript:openCourseSideBar()">
                         <div class="card border-info mb-1">
                             <div class="card-body">
@@ -68,7 +70,9 @@
 </div>
 
 <div th:insert="fragments/navbar :: navbar"></div>
+<div th:insert="fragments/courseSideBar :: courseSideBar"></div>
 
+<script th:src="@{js/courseSideBar.js}"></script>
 <script th:src="@{js/navbar.js}"></script>
 
 <script src="http://code.jquery.com/jquery-1.10.1.min.js"

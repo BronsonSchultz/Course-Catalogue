@@ -74,8 +74,13 @@ public class WebController implements WebMvcConfigurer {
 
 		//if the user is logged in then
 		ArrayList<HashMap<String, String>> courses = querier.getUserFavCourses("1");
-		JSONObject[] jcourses = querier.jsonifyList(courses);
-		model.addAttribute("favourites", jcourses);
+		JSONObject[] jFavs = querier.jsonifyList(courses);
+
+		courses = querier.getUserCompletedCourses("1");
+		JSONObject[] jComplete = querier.jsonifyList(courses);
+
+		model.addAttribute("favourites", jFavs);
+		model.addAttribute("completes", jComplete);
 
 		return "course";
 	}

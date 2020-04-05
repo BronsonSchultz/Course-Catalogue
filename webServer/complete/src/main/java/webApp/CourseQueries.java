@@ -26,7 +26,7 @@ public class CourseQueries {
         //tests
         CourseQueries querier = new CourseQueries();
 
-        //get courses for search tests /////////////
+        /////////get courses for search tests /////////////
         // both fields present
         System.out.println("Expecting all of the CMPT courses to be at the 400-level");
         ArrayList<HashMap<String, String>> l = querier.getCoursesFromDB("CMPT", "4");
@@ -44,19 +44,22 @@ public class CourseQueries {
         System.out.println(l);
 
 
-        // jsonify each map in the arrayList
+        ////////// jsonify each map in the arrayList ///////
         System.out.println("Expecting array of JSON objects");
         JSONObject[] js = querier.jsonifyList(l);
         System.out.println(Arrays.toString(js));
 
 
-        // get favourite courses test ///////////
+        ///////// get favourite courses test ///////////
         System.out.println("Expecting all of user 1's favourited courses");
         l = querier.getUserFavCourses("1");
         System.out.println(l);
 
 
-
+        //////// get completed courses test /////////
+        System.out.println("Expecting all of user 1's completed courses");
+        l = querier.getUserCompletedCourses("1");
+        System.out.println(l);
 
     }
 
@@ -184,6 +187,58 @@ public class CourseQueries {
             conn.close();
         }
     }
+
+        return mappedCourses;
+    }
+
+    /**
+     * query the database for the favourited courses of a user
+     * @param userID the id of the logged in user
+     * @return an array list of courses as hashMaps
+     * @throws SQLException if a connection to the db cannot be formed
+     */
+    public ArrayList<HashMap<String, String>> getUserCompletedCourses(String userID) throws SQLException{
+        String sql = "SELECT cl.SubjectCode, cl.CourseCode, cl.UserID, CourseName, Description FROM (CompletedList cl" +
+                " JOIN Courses " +
+                "ON cl.SubjectCode = Courses.SubjectCode AND cl.CourseCode = Courses.CourseCode)" +
+                "WHERE cl.UserID = ?";
+        Connection conn = null;
+        PreparedStatement stmt = null;
+        ArrayList<HashMap<String, String>> mappedCourses = new ArrayList<>();
+
+        try {
+            conn = db.getConn();
+
+            // create statement with sql template
+            stmt = conn.prepareStatement(sql);
+            stmt.setString(1, userID);
+
+            // get results
+            ResultSet rs = stmt.executeQuery();
+
+
+            while (rs.next()) {
+                HashMap<String, String> course = new HashMap<>();
+                course.put("SubjectCode", rs.getString("SubjectCode"));
+                course.put("CourseCode", rs.getString("CourseCode"));
+                course.put("CourseName", rs.getString("CourseName"));
+                course.put("Description", rs.getString("Description"));
+
+                mappedCourses.add(course);
+            }
+
+        } catch (SQLException e){
+            System.out.println(e);
+        } finally {
+            // close statement and connection objects to conserve DBMS resources
+            if (stmt != null) {
+                stmt.close();
+            }
+
+            if (conn != null) {
+                conn.close();
+            }
+        }
 
         return mappedCourses;
     }
