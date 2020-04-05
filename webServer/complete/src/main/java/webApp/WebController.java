@@ -51,7 +51,13 @@ public class WebController implements WebMvcConfigurer {
 		try {
 			if (favAndCompleteForm.getFavourited() != null) {
 				inserter.insertFavForUser(favAndCompleteForm.getSubjectCode(), favAndCompleteForm.getCourseCode(), "1");
+			} else if (favAndCompleteForm.getCompleted() != null){
+				inserter.insertCompletedForUser(favAndCompleteForm.getSubjectCode(), favAndCompleteForm.getCourseCode(), "1");
+			} else if (favAndCompleteForm.getFavourited() != null && favAndCompleteForm.getCompleted() != null) {
+				inserter.insertFavForUser(favAndCompleteForm.getSubjectCode(), favAndCompleteForm.getCourseCode(), "1");
+				inserter.insertCompletedForUser(favAndCompleteForm.getSubjectCode(), favAndCompleteForm.getCourseCode(), "1");
 			}
+
 		} catch (SQLException e){
 			System.out.println(e);
 		}

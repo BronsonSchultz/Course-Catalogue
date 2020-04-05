@@ -61,6 +61,19 @@ public class CourseSelector {
         l = querier.getUserCompletedCourses("1");
         System.out.println(l);
 
+        /// garb
+
+        boolean i = false;
+        boolean j = false;
+
+        if (i){
+            System.out.println("neither");
+        } else if (j) {
+            System.out.println("i");
+        } else if (j && i) {
+            System.out.println("j");
+        }
+
     }
 
     /**
