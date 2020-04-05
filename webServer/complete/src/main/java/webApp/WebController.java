@@ -30,15 +30,17 @@ public class WebController implements WebMvcConfigurer {
 	@RequestMapping(value="/catalogue", method = {RequestMethod.GET, RequestMethod.POST})
 	public String createCourses(Model model, @ModelAttribute("searchForm") SearchForm searchForm, @ModelAttribute("favAndCompForm") FavAndCompleteForm favAndCompleteForm) throws SQLException {
 		model.addAttribute("searchForm", new SearchForm());
+		model.addAttribute("favAndCompleteForm", new FavAndCompleteForm());
 
-		CourseQueries querier = new CourseQueries();
+		CourseSelector querier = new CourseSelector();
 		if (searchForm.getYearLvl() != null && searchForm.getSubjectCode() != null) {
 			ArrayList<HashMap<String, String>> courses = querier.getCoursesFromDB(searchForm.getSubjectCode(), searchForm.getYearLvl());
 			JSONObject[] searchResults = querier.jsonifyList(courses);
 			model.addAttribute("searchResults", searchResults);
 		}
 
-
+		CourseInserter inserter = new CourseInserter();
+		
 
 		return "catalogue";
 	}
@@ -69,7 +71,7 @@ public class WebController implements WebMvcConfigurer {
 	//My Courses
 	@GetMapping("/course")
 	public String course(Model model) throws SQLException{
-		CourseQueries querier = new CourseQueries();
+		CourseSelector querier = new CourseSelector();
 
 		//if the user is logged in then
 		ArrayList<HashMap<String, String>> courses = querier.getUserFavCourses("1");

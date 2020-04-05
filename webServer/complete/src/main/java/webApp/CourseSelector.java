@@ -11,20 +11,20 @@ import org.json.JSONObject;
 /**
  * class who queries database for courses and degrees based on some search parameters
  */
-public class CourseQueries {
+public class CourseSelector {
     DBConnection db;
 
     /**
      * create a new instance of a CourseQueries object
      */
-    public CourseQueries() {
+    public CourseSelector() {
         db = new DBConnection();
     }
 
 
     public static void main(String[] args) throws Exception {
         //tests
-        CourseQueries querier = new CourseQueries();
+        CourseSelector querier = new CourseSelector();
 
         /////////get courses for search tests /////////////
         // both fields present
@@ -242,6 +242,7 @@ public class CourseQueries {
 
         return mappedCourses;
     }
+    
 
     /**
      * create an array of json objects from an array list
@@ -257,6 +258,5 @@ public class CourseQueries {
         return jsonArray;
     }
 
-    public void InsertFavForUser(String userID,  )
 
 }
