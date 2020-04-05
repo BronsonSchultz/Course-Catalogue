@@ -38,11 +38,11 @@
 
             <div class="tab-pane active" id="list-favourite" role="tabpanel" style="width: 400px;">
                 <ul class="courseList" style="margin-top: 10px;">
-                    <li class="courseName " th:each="i : ${#numbers.sequence(5,1)}"
-                        th:onclick="javascript:openCourseSideBar()">
+                    <li class="courseName " th:each="fav : ${favourites}"
+                        th:onclick="javascript:openCourseSideBar([[${fav.getString('SubjectCode')}]], [[${fav.getString('CourseCode')}]], [[${fav.getString('CourseName')}]], [[${fav.getString('Description')}]])">
                         <div class="card border-info mb-1">
                             <div class="card-body">
-                                <h3 class="card-title text-info" th:text="${i}"></h3>
+                                <h3 class="card-title text-info" th:text="${fav.getString('SubjectCode') + ' ' + fav.getString('CourseCode')}"></h3>
                             </div>
                         </div>
                     </li>

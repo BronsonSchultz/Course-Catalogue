@@ -69,7 +69,13 @@ public class WebController implements WebMvcConfigurer {
 
 	//My Courses
 	@GetMapping("/course")
-	public String course(Model model){
+	public String course(Model model) throws SQLException{
+		CourseQueries querier = new CourseQueries();
+
+		//if the user is logged in then
+		ArrayList<HashMap<String, String>> courses = querier.getUserFavCourses("1");
+		JSONObject[] jcourses = querier.jsonifyList(courses);
+		model.addAttribute("favourites", jcourses);
 
 		return "course";
 	}
