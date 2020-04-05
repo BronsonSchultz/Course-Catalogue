@@ -9,7 +9,7 @@
     <link rel="stylesheet" th:href="@{css/site.css}" type='text/css'>
     <link rel="stylesheet" th:href="@{css/navbar.css}" type='text/css'>
     <link rel="stylesheet" th:href="@{css/course.css}" type='text/css'>
-    <link rel="stylesheet" type='text/css' th:href="@{css/courseSideBar.css}">
+    <link rel="stylesheet" th:href="@{css/courseSideBar.css}" type='text/css'>
     <link href="https://fonts.googleapis.com/css?family=Noto+Sans&display=swap" rel="stylesheet">
 
     <title>My Courses</title>
@@ -37,30 +37,64 @@
 
         <div class="tab-content mx-auto">
 
-            <div class="tab-pane active" id="list-favourite" role="tabpanel" style="width: 400px;">
+            <div class="tab-pane active" id="list-favourite" role="tabpanel">
                 <ul class="courseList" style="margin-top: 10px;">
-                    <li class="courseName " th:each="fav : ${favourites}"
-                        th:onclick="javascript:openCourseSideBar([[${fav.getString('SubjectCode')}]], [[${fav.getString('CourseCode')}]], [[${fav.getString('CourseName')}]], [[${fav.getString('Description')}]])">
-                        <div class="card border-info mb-1">
-                            <div class="card-body">
-                                <h3 class="card-title text-info"
-                                    th:text="${fav.getString('SubjectCode') + ' ' + fav.getString('CourseCode')}"></h3>
+
+                    <li class="courseName " th:each="fav : ${favourites}">
+
+                        <div class="container">
+                            <div class="row">
+
+                                <div class="col">
+                                    <div class="card border-info mb-1"
+                                         th:onclick="javascript:openCourseSideBar([[${fav.getString('SubjectCode')}]], [[${fav.getString('CourseCode')}]], [[${fav.getString('CourseName')}]], [[${fav.getString('Description')}]])">
+                                        <div class="card-body">
+                                            <h3 class="card-title text-info"
+                                                th:text="${fav.getString('SubjectCode') + ' ' + fav.getString('CourseCode')}"></h3>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col align-self-center">
+                                    <div>
+                                        <button class="btn btn-danger" type="button">Delete</button>
+                                    </div>
+                                </div>
+
                             </div>
                         </div>
+
                     </li>
                 </ul>
             </div>
 
 
-            <div class="tab-pane" id="list-complete" role="tabpanel" style="width: 400px;">
+            <div class="tab-pane" id="list-complete" role="tabpanel">
                 <ul class="courseList" style="margin-top: 10px;">
                     <li class="courseName" th:each="comp : ${completes}"
                         th:onclick="javascript:openCourseSideBar([[${comp.getString('SubjectCode')}]], [[${comp.getString('CourseCode')}]], [[${comp.getString('CourseName')}]], [[${comp.getString('Description')}]])">
-                        <div class="card border-info mb-1">
-                            <div class="card-body">
-                                <h3 class="card-title text-info" th:text="${comp.getString('SubjectCode') + ' ' + comp.getString('CourseCode')}"></h3>
+
+                        <div class="container">
+                            <div class="row">
+
+                                <div class="col">
+                                    <div class="card border-info mb-1">
+                                        <div class="card-body">
+                                            <h3 class="card-title text-info"
+                                                th:text="${comp.getString('SubjectCode') + ' ' + comp.getString('CourseCode')}"></h3>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col align-self-center">
+                                    <div>
+                                        <button class="btn btn-danger" type="button">Delete</button>
+                                    </div>
+                                </div>
+
                             </div>
                         </div>
+
                     </li>
                 </ul>
             </div>

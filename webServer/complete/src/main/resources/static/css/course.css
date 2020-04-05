@@ -3,6 +3,11 @@
     padding-left: 0;
 }
 
-.courseList li div:hover {
+.courseList .card{
+    width: 400px;
+}
+
+.courseList .card:hover {
+
     background-color: #80cde5;
 }
