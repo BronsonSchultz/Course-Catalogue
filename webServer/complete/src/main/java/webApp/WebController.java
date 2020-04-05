@@ -61,7 +61,7 @@ public class WebController implements WebMvcConfigurer {
 		} catch (SQLException e){
 			System.out.println(e);
 		}
-		return "redirect:/catalogue";
+		return "catalogue";
 	}
 
 
