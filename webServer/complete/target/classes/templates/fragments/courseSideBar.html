@@ -7,30 +7,40 @@
 
 <body>
 <div class="courseSideBar" id="courseSideBar" th:fragment="courseSideBar">
-    <a class="closebtn" href="javascript:void(0)" onclick="closeCourseSideBar()">&times;</a>
+
 
     <div class="container">
-        <div class="row">
-            <div class="btn-group-toggle ml-3 mr-3" data-toggle="buttons">
-                <label class="btn btn-warning">
-                    <i class="fa fa-check">&#x2714;</i>
-                    <input type="checkbox">
-                </label>
-            </div>
 
-            <div class="btn-group-toggle" data-toggle="buttons">
-                <label class="btn btn-warning">
-                    <i>	&#x1F7CA;</i>
-                    <input type="checkbox">
-                </label>
-            </div>
+        <div class="row">
+            <form action="#" th:action="@{/catalogue}" th:object="${favAndCompleteForm}" method="post">
+                <a class="closebtn" href="javascript:void(0)" onclick="closeCourseSideBar()" type="submit">&times;</a>
+                <div class="btn-group-toggle ml-3 mr-3 form-control" data-toggle="buttons">
+                    <label class="btn btn-warning">
+                        <i class="fas fa-check"></i>
+                        <input id="completedCheckbox" type="checkbox" th:field="*{completed}" value="c">
+                    </label>
+                </div>
+
+                <div class="btn-group-toggle form-control" data-toggle="buttons">
+                    <label class="btn btn-warning">
+                        <i class="fas fa-star"></i>
+                        <input id="favouriteCheckbox" type="checkbox" th:field="*{favourited}" value="f">
+                    </label>
+                </div>
+
+                <input type="hidden" id="hiddenSubject" name="hiddenSubject" value="">
+                <input type="hidden" id="hiddenCourseCode" name="hiddenCourseCode" value="">
+
+            </form>
         </div>
 
-        <h4 id="subjectCode"></h4>
-        <h4 id="courseCode"></h4>
-        <h4 id="courseName"></h4>
-        <h5>Description:</h5>
-        <p id="description"></p>
+        <div class="row">
+            <h4 id="subject"></h4>
+            <h4 id="courseCode"></h4>
+            <h4 id="courseName"></h4>
+            <h5>Description:</h5>
+            <p id="description"></p>
+        </div>
     </div>
 </div>
 

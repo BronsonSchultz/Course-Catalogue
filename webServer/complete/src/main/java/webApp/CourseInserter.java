@@ -11,7 +11,7 @@ public class CourseInserter {
         db = new DBConnection();
     }
 
-    public void InsertFavForUser(String SubjectCode, String courseCode, String userID) throws SQLException {
+    public void insertFavForUser(String SubjectCode, String courseCode, String userID) throws SQLException {
         String sql = "INSERT INTO FavouriteList (SubjectCode, CourseCode, UserID) " +
                 "VALUES (?, ?, ?)";
 

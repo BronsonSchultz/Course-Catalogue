@@ -28,7 +28,7 @@ public class WebController implements WebMvcConfigurer {
 
 
 	@RequestMapping(value="/catalogue", method = {RequestMethod.GET, RequestMethod.POST})
-	public String createCourses(Model model, @ModelAttribute("searchForm") SearchForm searchForm, @ModelAttribute("favAndCompForm") FavAndCompleteForm favAndCompleteForm) throws SQLException {
+	public String createCourses(Model model, @ModelAttribute("searchForm") SearchForm searchForm, @ModelAttribute("favAndCompleteForm") FavAndCompleteForm favAndCompleteForm) throws SQLException {
 		model.addAttribute("searchForm", new SearchForm());
 		model.addAttribute("favAndCompleteForm", new FavAndCompleteForm());
 
@@ -40,7 +40,9 @@ public class WebController implements WebMvcConfigurer {
 		}
 
 		CourseInserter inserter = new CourseInserter();
-		
+		if (favAndCompleteForm.getFavourited() != null){
+			inserter.insertFavForUser(favAndCompleteForm.getSubjectCode(), favAndCompleteForm.getCourseCode(), "1");
+		}
 
 		return "catalogue";
 	}

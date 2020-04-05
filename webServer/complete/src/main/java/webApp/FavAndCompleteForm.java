@@ -2,31 +2,50 @@ package webApp;
 
 public class FavAndCompleteForm {
 
-    private boolean isFavourited;
-    private boolean isCompleted;
+    private String favourited;
+    private String completed;
+    private String subjectCode;
+    private String courseCode;
 
-    public boolean isFavourited() {
-        return isFavourited;
+    public String getSubjectCode() {
+        return subjectCode;
     }
 
-    public void setFavourited(boolean favourited) {
-        isFavourited = favourited;
+    public void setSubjectCode(String subjectCode) {
+        this.subjectCode = subjectCode;
     }
 
-    public boolean isCompleted() {
-        return isCompleted;
+    public String getCourseCode() {
+        return courseCode;
     }
 
-    public void setCompleted(boolean completed) {
-        isCompleted = completed;
+    public void setCourseCode(String courseCode) {
+        this.courseCode = courseCode;
+    }
+
+    public String getFavourited() {
+        return favourited;
+    }
+
+    public void setFavourited(String favourited) {
+        this.favourited = favourited;
+    }
+
+    public String getCompleted() {
+        return completed;
+    }
+
+    public void setCompleted(String completed) {
+        this.completed = completed;
     }
 
     @Override
     public String toString() {
         return "FavAndCompleteForm{" +
-                "isFavourited=" + isFavourited +
-                ", isCompleted=" + isCompleted +
+                "favourited='" + favourited + '\'' +
+                ", completed='" + completed + '\'' +
+                ", subjectCode='" + subjectCode + '\'' +
+                ", courseCode='" + courseCode + '\'' +
                 '}';
     }
-
 }
