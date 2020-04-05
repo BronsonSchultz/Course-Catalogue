@@ -28,7 +28,7 @@ public class WebController implements WebMvcConfigurer {
 
 
 	@RequestMapping(value="/catalogue", method = {RequestMethod.GET, RequestMethod.POST})
-	public String createCourses(Model model, @ModelAttribute("searchForm") SearchForm searchForm) throws SQLException {
+	public String createCourses(Model model, @ModelAttribute("searchForm") SearchForm searchForm, @ModelAttribute("favAndCompForm") FavAndCompleteForm favAndCompleteForm) throws SQLException {
 		model.addAttribute("searchForm", new SearchForm());
 
 		CourseQueries querier = new CourseQueries();
@@ -39,7 +39,6 @@ public class WebController implements WebMvcConfigurer {
 		}
 
 
-		//model.addAttribute("s", s);
 
 		return "catalogue";
 	}

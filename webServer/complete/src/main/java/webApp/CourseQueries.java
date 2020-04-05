@@ -257,4 +257,6 @@ public class CourseQueries {
         return jsonArray;
     }
 
+    public void InsertFavForUser(String userID,  )
+
 }
