@@ -7,6 +7,7 @@ import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 
 import java.sql.SQLException;
+import java.sql.SQLIntegrityConstraintViolationException;
 import java.util.ArrayList;
 import java.util.HashMap;
 //import webApp.CoursesQuery;
@@ -28,7 +29,7 @@ public class WebController implements WebMvcConfigurer {
 
 
 	@RequestMapping(value="/catalogue", method = {RequestMethod.GET, RequestMethod.POST})
-	public String createCourses(Model model, @ModelAttribute("searchForm") SearchForm searchForm, @ModelAttribute("favAndCompleteForm") FavAndCompleteForm favAndCompleteForm) throws SQLException {
+	public String createCourses(Model model, @ModelAttribute("searchForm") SearchForm searchForm) throws SQLException {
 		model.addAttribute("searchForm", new SearchForm());
 		model.addAttribute("favAndCompleteForm", new FavAndCompleteForm());
 
@@ -39,12 +40,22 @@ public class WebController implements WebMvcConfigurer {
 			model.addAttribute("searchResults", searchResults);
 		}
 
-		CourseInserter inserter = new CourseInserter();
-		if (favAndCompleteForm.getFavourited() != null){
-			inserter.insertFavForUser(favAndCompleteForm.getSubjectCode(), favAndCompleteForm.getCourseCode(), "1");
-		}
-
 		return "catalogue";
+	}
+
+	@PostMapping("/catalogue/sidebar")
+	public String addFav(@ModelAttribute("favAndCompleteForm") FavAndCompleteForm favAndCompleteForm, @ModelAttribute("searchForm") SearchForm searchForm){
+
+		CourseInserter inserter = new CourseInserter();
+		System.out.println(favAndCompleteForm);
+		try {
+			if (favAndCompleteForm.getFavourited() != null) {
+				inserter.insertFavForUser(favAndCompleteForm.getSubjectCode(), favAndCompleteForm.getCourseCode(), "1");
+			}
+		} catch (SQLException e){
+			System.out.println(e);
+		}
+		return "redirect:/catalogue";
 	}
 
 

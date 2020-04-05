@@ -12,8 +12,9 @@
     <div class="container">
 
         <div class="row">
-            <form action="#" th:action="@{/catalogue}" th:object="${favAndCompleteForm}" method="post">
-                <a class="closebtn" href="javascript:void(0)" onclick="closeCourseSideBar()" type="submit">&times;</a>
+            <form action="#" th:action="@{/catalogue/sidebar}" th:object="${favAndCompleteForm}" method="post">
+                <a class="closebtn" href="javascript:void(0)" onclick="closeCourseSideBar()">&times;</a>
+                <input type="submit" value="Submit">
                 <div class="btn-group-toggle ml-3 mr-3 form-control" data-toggle="buttons">
                     <label class="btn btn-warning">
                         <i class="fas fa-check"></i>
@@ -28,8 +29,8 @@
                     </label>
                 </div>
 
-                <input type="hidden" id="hiddenSubject" name="hiddenSubject" value="">
-                <input type="hidden" id="hiddenCourseCode" name="hiddenCourseCode" value="">
+                <input type="hidden" id="hiddenSubject" name="hiddenSubject" th:field="*{subjectCode}" value="">
+                <input type="hidden" id="hiddenCourseCode" name="hiddenCourseCode" th:field="*{courseCode}" value="">
 
             </form>
         </div>

@@ -15,8 +15,12 @@ public class CourseInserter {
         String sql = "INSERT INTO FavouriteList (SubjectCode, CourseCode, UserID) " +
                 "VALUES (?, ?, ?)";
 
-        try (Connection conn = db.getConn(); PreparedStatement stmt = conn.prepareStatement(sql)) {
+        Connection conn = null;
+        PreparedStatement stmt = null;
 
+        try {
+            conn = db.getConn();
+            stmt = conn.prepareStatement(sql);
             // create statement with sql template
             stmt.setString(1, SubjectCode);
             stmt.setString(2, courseCode);
@@ -26,7 +30,16 @@ public class CourseInserter {
 
         } catch (SQLException e) {
             System.out.println(e);
-        }
+        } finally {
+            // close statement and connection objects to conserve DBMS resources
+            if (stmt != null) {
+                stmt.close();
+            }
+
+            if (conn != null) {
+                conn.close();
+            }
+    }
 
         // close statement and connection objects to conserve DBMS resources
 
