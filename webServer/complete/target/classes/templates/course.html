@@ -55,10 +55,10 @@
             <div class="tab-pane" id="list-complete" role="tabpanel" style="width: 400px;">
                 <ul class="courseList" style="margin-top: 10px;">
                     <li class="courseName" th:each="comp : ${completes}"
-                        th:onclick="javascript:openCourseSideBar()">
+                        th:onclick="javascript:openCourseSideBar([[${comp.getString('SubjectCode')}]], [[${comp.getString('CourseCode')}]], [[${comp.getString('CourseName')}]], [[${comp.getString('Description')}]])">
                         <div class="card border-info mb-1">
                             <div class="card-body">
-                                <h3 class="card-title text-info" th:text="${i}"></h3>
+                                <h3 class="card-title text-info" th:text="${comp.getString('SubjectCode') + ' ' + comp.getString('CourseCode')}"></h3>
                             </div>
                         </div>
                     </li>
