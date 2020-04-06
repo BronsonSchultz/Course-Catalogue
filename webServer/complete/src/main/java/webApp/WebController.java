@@ -104,6 +104,13 @@ public class WebController implements WebMvcConfigurer {
 		model.addAttribute("completes", jComplete);
 
 
+
+
+		return "course";
+	}
+
+	@PostMapping("/deletecourse/{id}")
+	public String deleteFavourite(@PathVariable int id){
 		CourseDeleter deleter = new CourseDeleter();
 		System.out.println(deleteFavForm);
 		try {
@@ -114,8 +121,6 @@ public class WebController implements WebMvcConfigurer {
 			System.out.println(e);
 		}
 
-
-		return "course";
 	}
 
 	//sign In

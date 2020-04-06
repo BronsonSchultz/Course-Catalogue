@@ -42,18 +42,22 @@
 
                         <div class="container">
                             <div class="row">
-
                                 <div class="col">
                                     <div class="card border-info mb-1"
                                          th:onclick="javascript:openSimpleCourseSideBar([[${fav.getString('SubjectCode')}]], [[${fav.getString('CourseCode')}]], [[${fav.getString('CourseName')}]], [[${fav.getString('Description')}]], '/course')">
+
                                         <div class="card-body">
                                             <h3 class="card-title text-info"
                                                 th:text="${fav.getString('SubjectCode') + ' ' + fav.getString('CourseCode')}"></h3>
                                         </div>
+
                                     </div>
                                 </div>
+                                <form  action="#" th:action="@{/deletecourse/${id}}" th:object="${fav}" method="post">
 
-                                <form  action="#" th:action="@{/course}" th:object="${deleteFavForm}" method="post">
+                                    <div class="form-group">
+                                        <input class=form-control type="hidden" id="hiddenSubject" name="hiddenSubject" th:field="${fav}">
+                                    </div>
                                     <div class="form-group">
                                         <div class="col align-self-center">
                                             <div>
@@ -61,8 +65,8 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <input type="hidden" id="hiddenSubject" name="hiddenSubject" th:field="*{subjectCode}" value="qw">
-                                    <input type="hidden" id="hiddenCourseCode" name="hiddenCourseCode" th:field="*{courseCode}" value="12">
+
+
                                 </form>
 
                             </div>
@@ -110,7 +114,6 @@
 <div th:insert="fragments/navbar :: navbar"></div>
 <div th:insert="fragments/courseSideBar :: simpleCourseSideBar"></div>
 
-<script th:src="@{js/courseSideBar.js}"></script>
 <script th:src="@{js/navbar.js}"></script>
 
 
