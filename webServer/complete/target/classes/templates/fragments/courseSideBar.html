@@ -31,11 +31,33 @@
     <div class="container">
 
         <div class="row">
-            <h4 id="subject"></h4>
-            <h4 id="courseCode"></h4>
-            <h4 id="courseName"></h4>
-            <h5>Description:</h5>
-            <p id="description"></p>
+            <div class="col">
+                <h4 id="subject"></h4>
+            </div>
+
+            <div class="col">
+                <h4 id="courseCode"></h4>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col">
+                <h4 id="courseName"></h4>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col">
+                <h5>Description:</h5>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col">
+                <p id="description"></p>
+            </div>
+        </div>
+
         </div>
     </div>
 </div>
@@ -44,7 +66,9 @@
 <div th:fragment="sideForm">
     <form action="/catalogue" th:action="@{/catalogue/sidebar}" th:object="${favAndCompleteForm}" method="post">
         <a class="closebtn" href="javascript:void(0)" onclick="closeCourseSideBar()">&times;</a>
+
         <input type="submit" value="Submit">
+
         <div class="btn-group-toggle ml-3 mr-3 form-control" data-toggle="buttons">
             <label class="btn btn-warning">
                 <i class="fas fa-check"></i>

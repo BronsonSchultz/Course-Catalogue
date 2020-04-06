@@ -61,7 +61,7 @@ public class WebController implements WebMvcConfigurer {
 		} catch (SQLException e){
 			System.out.println(e);
 		}
-		return "catalogue";
+		return "redirect:/catalogue";
 	}
 
 
@@ -87,8 +87,19 @@ public class WebController implements WebMvcConfigurer {
 	@GetMapping("/degree")
 	public String degree(){ return "degree";}
 
+	//sign In
+	@GetMapping("/signIn")
+	public String signIn(){ return "signIn";}
+
+	//sign up
+
+}
+
+@Controller
+@RequestMapping(path="/course")
+class CourseController implements WebMvcConfigurer {
 	//My Courses
-	@GetMapping("/course")
+	@RequestMapping(value="", method = {RequestMethod.GET})
 	public String course(Model model) throws SQLException{
 		CourseSelector querier = new CourseSelector();
 
@@ -105,32 +116,14 @@ public class WebController implements WebMvcConfigurer {
 		return "course";
 	}
 
-	@PostMapping("/course")
-	public String courseFavOrComp(@ModelAttribute("favAndCompleteForm") FavAndCompleteForm favAndCompleteForm){
-
-		CourseInserter inserter = new CourseInserter();
-		System.out.println(favAndCompleteForm);
+	@PostMapping("/favourites")
+	public String clearFavs(){
+		CourseDeleter deleter = new CourseDeleter();
 		try {
-			if (favAndCompleteForm.getFavourited() != null) {
-				inserter.insertFavForUser(favAndCompleteForm.getSubjectCode(), favAndCompleteForm.getCourseCode(), "1");
-			} else if (favAndCompleteForm.getCompleted() != null){
-				inserter.insertCompletedForUser(favAndCompleteForm.getSubjectCode(), favAndCompleteForm.getCourseCode(), "1");
-			} else if (favAndCompleteForm.getFavourited() != null && favAndCompleteForm.getCompleted() != null) {
-				inserter.insertFavForUser(favAndCompleteForm.getSubjectCode(), favAndCompleteForm.getCourseCode(), "1");
-				inserter.insertCompletedForUser(favAndCompleteForm.getSubjectCode(), favAndCompleteForm.getCourseCode(), "1");
-			}
-
+			deleter.clearFavForUser("1");
 		} catch (SQLException e){
 			System.out.println(e);
 		}
-		return "course";
+		return "redirect:/course";
 	}
-
-
-	//sign In
-	@GetMapping("/signIn")
-	public String signIn(){ return "signIn";}
-
-	//sign up
-
 }

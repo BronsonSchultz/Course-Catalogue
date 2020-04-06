@@ -20,6 +20,11 @@
 <h1>My Saved Courses</h1>
 
 <div class="container mx-auto">
+    <div class="row">
+        <form action="#" th:action="@{/course/favourites}" method="post">
+            <button class="btn btn-danger" name="clear-button" value="clear">Clear Favourites</button>
+        </form>
+    </div>
 
     <div class="row">
         <ul class="list-group list-group-horizontal mx-auto" id="list-tab" role="tablist"
@@ -34,31 +39,23 @@
     <div class="row">
 
         <div class="tab-content mx-auto">
-
             <div class="tab-pane active" id="list-favourite" role="tabpanel">
                 <ul class="courseList" style="margin-top: 10px;">
-
                     <li class="courseName " th:each="fav : ${favourites}">
 
                         <div class="container">
                             <div class="row">
-
                                 <div class="col">
                                     <div class="card border-info mb-1"
                                          th:onclick="javascript:openSimpleCourseSideBar([[${fav.getString('SubjectCode')}]], [[${fav.getString('CourseCode')}]], [[${fav.getString('CourseName')}]], [[${fav.getString('Description')}]], '/course')">
+
                                         <div class="card-body">
                                             <h3 class="card-title text-info"
                                                 th:text="${fav.getString('SubjectCode') + ' ' + fav.getString('CourseCode')}"></h3>
                                         </div>
+
                                     </div>
                                 </div>
-
-                                <div class="col align-self-center">
-                                    <div>
-                                        <button class="btn btn-danger" type="button">Delete</button>
-                                    </div>
-                                </div>
-
                             </div>
                         </div>
 
@@ -104,7 +101,6 @@
 <div th:insert="fragments/navbar :: navbar"></div>
 <div th:insert="fragments/courseSideBar :: simpleCourseSideBar"></div>
 
-<script th:src="@{js/courseSideBar.js}"></script>
 <script th:src="@{js/navbar.js}"></script>
 
 
@@ -112,6 +108,8 @@
         type="text/javascript"></script>
 
 <script th:src="@{js/savedCourses.js}"></script>
+<script th:src="@{js/course.js}"></script>
+
 
 
 <!-- Bootstrap stuff -->
