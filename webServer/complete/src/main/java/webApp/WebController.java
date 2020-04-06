@@ -88,8 +88,9 @@ public class WebController implements WebMvcConfigurer {
 	public String degree(){ return "degree";}
 
 	//My Courses
-	@GetMapping("/course")
-	public String course(Model model) throws SQLException{
+	@RequestMapping(value="/course", method = {RequestMethod.GET, RequestMethod.POST})
+	public String course(Model model, @ModelAttribute("deleteFavForm") DeleteFavForm deleteFavForm) throws SQLException{
+		model.addAttribute("deleteFavForm", new DeleteFavForm());
 		CourseSelector querier = new CourseSelector();
 
 		//if the user is logged in then
@@ -102,30 +103,20 @@ public class WebController implements WebMvcConfigurer {
 		model.addAttribute("favourites", jFavs);
 		model.addAttribute("completes", jComplete);
 
-		return "course";
-	}
 
-	@PostMapping("/course")
-	public String courseFavOrComp(@ModelAttribute("favAndCompleteForm") FavAndCompleteForm favAndCompleteForm){
-
-		CourseInserter inserter = new CourseInserter();
-		System.out.println(favAndCompleteForm);
+		CourseDeleter deleter = new CourseDeleter();
+		System.out.println(deleteFavForm);
 		try {
-			if (favAndCompleteForm.getFavourited() != null) {
-				inserter.insertFavForUser(favAndCompleteForm.getSubjectCode(), favAndCompleteForm.getCourseCode(), "1");
-			} else if (favAndCompleteForm.getCompleted() != null){
-				inserter.insertCompletedForUser(favAndCompleteForm.getSubjectCode(), favAndCompleteForm.getCourseCode(), "1");
-			} else if (favAndCompleteForm.getFavourited() != null && favAndCompleteForm.getCompleted() != null) {
-				inserter.insertFavForUser(favAndCompleteForm.getSubjectCode(), favAndCompleteForm.getCourseCode(), "1");
-				inserter.insertCompletedForUser(favAndCompleteForm.getSubjectCode(), favAndCompleteForm.getCourseCode(), "1");
+			if (deleteFavForm.getCourseCode() != null) {
+				deleter.deleteFavForUser(deleteFavForm.getSubjectCode(), deleteFavForm.getCourseCode(), "1");
 			}
-
 		} catch (SQLException e){
 			System.out.println(e);
 		}
+
+
 		return "course";
 	}
-
 
 	//sign In
 	@GetMapping("/signIn")

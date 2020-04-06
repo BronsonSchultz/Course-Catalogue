@@ -53,11 +53,17 @@
                                     </div>
                                 </div>
 
-                                <div class="col align-self-center">
-                                    <div>
-                                        <button class="btn btn-danger" type="button">Delete</button>
+                                <form  action="#" th:action="@{/course}" th:object="${deleteFavForm}" method="post">
+                                    <div class="form-group">
+                                        <div class="col align-self-center">
+                                            <div>
+                                                <input class="btn btn-danger" type="submit" value="Delete" />
+                                            </div>
+                                        </div>
                                     </div>
-                                </div>
+                                    <input type="hidden" id="hiddenSubject" name="hiddenSubject" th:field="*{subjectCode}" value="qw">
+                                    <input type="hidden" id="hiddenCourseCode" name="hiddenCourseCode" th:field="*{courseCode}" value="12">
+                                </form>
 
                             </div>
                         </div>
@@ -112,6 +118,8 @@
         type="text/javascript"></script>
 
 <script th:src="@{js/savedCourses.js}"></script>
+<script th:src="@{js/course.js}"></script>
+
 
 
 <!-- Bootstrap stuff -->

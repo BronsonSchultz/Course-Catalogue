@@ -1,4 +1,4 @@
-/* Set the width of the courseSideBar to 250px */
+/* Set the width of the courseSideBar to 275px */
 function openCourseSideBar(subjectCode, courseCode, courseName, description) {
 
   document.getElementById("favouriteCheckbox").checked = false;
@@ -12,7 +12,6 @@ function openCourseSideBar(subjectCode, courseCode, courseName, description) {
   document.getElementById("description").innerHTML = description;
 
    document.getElementById("hiddenSubject").value = subjectCode;
-   console.log(document.getElementById("hiddenSubject").value)
    document.getElementById("hiddenCourseCode").value = courseCode;
 }
 
