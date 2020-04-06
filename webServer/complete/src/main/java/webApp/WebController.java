@@ -87,8 +87,19 @@ public class WebController implements WebMvcConfigurer {
 	@GetMapping("/degree")
 	public String degree(){ return "degree";}
 
+	//sign In
+	@GetMapping("/signIn")
+	public String signIn(){ return "signIn";}
+
+	//sign up
+
+}
+
+@Controller
+@RequestMapping(path="/course")
+class CourseController implements WebMvcConfigurer {
 	//My Courses
-	@RequestMapping(value="/course", method = {RequestMethod.GET})
+	@RequestMapping(value="", method = {RequestMethod.GET})
 	public String course(Model model) throws SQLException{
 		CourseSelector querier = new CourseSelector();
 
@@ -105,7 +116,7 @@ public class WebController implements WebMvcConfigurer {
 		return "course";
 	}
 
-	@PostMapping("/course")
+	@PostMapping("/favourites")
 	public String clearFavs(){
 		CourseDeleter deleter = new CourseDeleter();
 		try {
@@ -113,13 +124,6 @@ public class WebController implements WebMvcConfigurer {
 		} catch (SQLException e){
 			System.out.println(e);
 		}
-		return "course";
+		return "redirect:/course";
 	}
-
-	//sign In
-	@GetMapping("/signIn")
-	public String signIn(){ return "signIn";}
-
-	//sign up
-
 }
