@@ -97,6 +97,7 @@ CREATE TABLE CompletedList (
         FOREIGN KEY(UserID) REFERENCES Users
            ON UPDATE CASCADE
            ON DELETE CASCADE
+        CONSTRAINT course_per_user UNIQUE (SubjectCode, CourseCode, UserID)
 );
 
 DROP TABLE IF EXISTS FavouriteList;
@@ -112,6 +113,7 @@ CREATE TABLE FavouriteList (
         FOREIGN KEY(UserID) REFERENCES Users
            ON UPDATE CASCADE
            ON DELETE CASCADE
+        CONSTRAINT course_per_user UNIQUE (SubjectCode, CourseCode, UserID)
 );
 
 PRAGMA foreign_keys = on;
