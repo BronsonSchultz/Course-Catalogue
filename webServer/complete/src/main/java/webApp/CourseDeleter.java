@@ -13,9 +13,14 @@ public class CourseDeleter {
         db = new DBConnection();
     }
 
-    public void deleteFavForUser(String SubjectCode, String courseCode, String userID) throws SQLException {
+    public static void main(String[] args) throws SQLException{
+        CourseDeleter d = new CourseDeleter();
+        d.clearFavForUser("1");
+    }
+
+    public void clearFavForUser(String userID) throws SQLException {
         String sql = "DELETE FROM FavouriteList " +
-                "WHERE CourseCode = ? AND SubjectCode = ? AND UserID = ?";
+                "WHERE UserID = ?";
 
         Connection conn = null;
         PreparedStatement stmt = null;
@@ -24,9 +29,7 @@ public class CourseDeleter {
             conn = db.getConn();
             stmt = conn.prepareStatement(sql);
             // create statement with sql template
-            stmt.setString(1, SubjectCode);
-            stmt.setString(2, courseCode);
-            stmt.setString(3, userID);
+            stmt.setString(1, userID);
 
             stmt.executeUpdate();
 
@@ -78,4 +81,5 @@ public class CourseDeleter {
             }
         }
     }
+
 }

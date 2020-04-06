@@ -61,7 +61,7 @@ public class WebController implements WebMvcConfigurer {
 		} catch (SQLException e){
 			System.out.println(e);
 		}
-		return "catalogue";
+		return "redirect:/catalogue";
 	}
 
 
@@ -88,9 +88,8 @@ public class WebController implements WebMvcConfigurer {
 	public String degree(){ return "degree";}
 
 	//My Courses
-	@RequestMapping(value="/course", method = {RequestMethod.GET, RequestMethod.POST})
-	public String course(Model model, @ModelAttribute("deleteFavForm") DeleteFavForm deleteFavForm) throws SQLException{
-		model.addAttribute("deleteFavForm", new DeleteFavForm());
+	@RequestMapping(value="/course", method = {RequestMethod.GET})
+	public String course(Model model) throws SQLException{
 		CourseSelector querier = new CourseSelector();
 
 		//if the user is logged in then
@@ -103,24 +102,18 @@ public class WebController implements WebMvcConfigurer {
 		model.addAttribute("favourites", jFavs);
 		model.addAttribute("completes", jComplete);
 
-
-
-
 		return "course";
 	}
 
-	@PostMapping("/deletecourse/{id}")
-	public String deleteFavourite(@PathVariable int id){
+	@PostMapping("/course")
+	public String clearFavs(){
 		CourseDeleter deleter = new CourseDeleter();
-		System.out.println(deleteFavForm);
 		try {
-			if (deleteFavForm.getCourseCode() != null) {
-				deleter.deleteFavForUser(deleteFavForm.getSubjectCode(), deleteFavForm.getCourseCode(), "1");
-			}
+			deleter.clearFavForUser("1");
 		} catch (SQLException e){
 			System.out.println(e);
 		}
-
+		return "course";
 	}
 
 	//sign In

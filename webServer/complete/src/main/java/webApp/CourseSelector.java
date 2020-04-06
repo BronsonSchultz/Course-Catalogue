@@ -159,7 +159,7 @@ public class CourseSelector {
      * @throws SQLException if a connection to the db cannot be formed
      */
     public ArrayList<HashMap<String, String>> getUserFavCourses(String userID) throws SQLException{
-        String sql = "SELECT fl.SubjectCode, fl.CourseCode, fl.UserID, CourseName, Description FROM (FavouriteList fl" +
+        String sql = "SELECT fl.FavouriteID, fl.SubjectCode, fl.CourseCode, fl.UserID, CourseName, Description FROM (FavouriteList fl" +
                 " JOIN Courses " +
                 "ON fl.SubjectCode = Courses.SubjectCode AND fl.CourseCode = Courses.CourseCode)" +
                 "WHERE fl.UserID = ?";
@@ -180,6 +180,7 @@ public class CourseSelector {
 
             while (rs.next()) {
                 HashMap<String, String> course = new HashMap<>();
+                course.put("FavouriteID", rs.getString("FavouriteID"));
                 course.put("SubjectCode", rs.getString("SubjectCode"));
                 course.put("CourseCode", rs.getString("CourseCode"));
                 course.put("CourseName", rs.getString("CourseName"));
