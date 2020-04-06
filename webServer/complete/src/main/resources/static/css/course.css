@@ -7,7 +7,40 @@
     width: 400px;
 }
 
-.courseList .card:hover {
+ .courseList li .card:hover {
+     background-color: #80cde5; /* greenish blue */
+ }
 
-    background-color: #80cde5;
+.simpleCourseSideBar {
+  height: 100%; /* 100% Full-height */
+  width: 0; /* 0 width - changes with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Stay on top */
+  top: 0;
+  right: 0;
+  background-color: #5bc0de; /* light blue */
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 60px; /* Place content 60px from the top */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidebar */
+  color: #fff; /*white text*/
+
 }
+
+.simpleCourseSideBar p {
+    margin: auto; /* center content */
+    width: 250px; /* contain text within 250px*/
+}
+
+.simpleCourseSideBar .closebtn {
+  position: absolute; /* keep the close button in the top left of the side bar*/
+  top: 0;
+  left: 25px;
+  font-size: 36px;
+  margin-right: 50px;
+}
+
+.simpleCourseSideBar a {
+  text-decoration: none; /* get rid of anchor underlining*/
+  color: #1e7994; /* green-ish blue */
+}
+

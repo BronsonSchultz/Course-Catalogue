@@ -44,7 +44,7 @@ public class WebController implements WebMvcConfigurer {
 	}
 
 	@PostMapping("/catalogue/sidebar")
-	public String addFav(@ModelAttribute("favAndCompleteForm") FavAndCompleteForm favAndCompleteForm, @ModelAttribute("searchForm") SearchForm searchForm){
+	public String addFavOrComp(@ModelAttribute("favAndCompleteForm") FavAndCompleteForm favAndCompleteForm, @ModelAttribute("searchForm") SearchForm searchForm){
 
 		CourseInserter inserter = new CourseInserter();
 		System.out.println(favAndCompleteForm);
@@ -102,6 +102,27 @@ public class WebController implements WebMvcConfigurer {
 		model.addAttribute("favourites", jFavs);
 		model.addAttribute("completes", jComplete);
 
+		return "course";
+	}
+
+	@PostMapping("/course")
+	public String courseFavOrComp(@ModelAttribute("favAndCompleteForm") FavAndCompleteForm favAndCompleteForm){
+
+		CourseInserter inserter = new CourseInserter();
+		System.out.println(favAndCompleteForm);
+		try {
+			if (favAndCompleteForm.getFavourited() != null) {
+				inserter.insertFavForUser(favAndCompleteForm.getSubjectCode(), favAndCompleteForm.getCourseCode(), "1");
+			} else if (favAndCompleteForm.getCompleted() != null){
+				inserter.insertCompletedForUser(favAndCompleteForm.getSubjectCode(), favAndCompleteForm.getCourseCode(), "1");
+			} else if (favAndCompleteForm.getFavourited() != null && favAndCompleteForm.getCompleted() != null) {
+				inserter.insertFavForUser(favAndCompleteForm.getSubjectCode(), favAndCompleteForm.getCourseCode(), "1");
+				inserter.insertCompletedForUser(favAndCompleteForm.getSubjectCode(), favAndCompleteForm.getCourseCode(), "1");
+			}
+
+		} catch (SQLException e){
+			System.out.println(e);
+		}
 		return "course";
 	}
 
