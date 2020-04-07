@@ -91,3 +91,108 @@ HSCH,999,N/A,Stand-in for high school courses used as prerequisites
 MATH,999,N/A,Stand-in for choice of MATH courses above a certain level.
 ZZZZ,999,N/A,General stand-in for undefined course requirements course code
 CMPT,999,N/A,Stand-in for choice of CMPT courses above a certain level.
+ACC,230,unknown,No longer offered.
+ARCH,250,Introduction to Archaeological Science,"A study of the theory, methods and techniques used by archaeologists in survey, excavation, analysis and interpretation. Emphasizes methods and techniques. Laboratory instruction is given in the handling of archaeological material and data."
+ARCH,251,Introduction to Archaeological Interpretation,"How do archaeologists reconstruct the lives of past peoples from the material remains they left behind? This course introduces the student to the methods, techniques and theoretical models used by archaeologists as they answer questions about our human past and the emergence of modern societies."
+BAC,25,unknown,Not offered.
+BAC,28,unknown,Not offered.
+BAC,29,unknown,Not offered.
+BINF,200,Introduction to Bioinformatics,"An introduction to the main concepts, techniques, data resources and terminology in bioinformatics. Topics include algorithms for sequence alignment, sequence assembly, phylogenetics, structure prediction, functional genomics, sequence motifs, proteomics, and genome annotation. Students will also learn to use major proteomic and genomic databases, to utilize bioinformatics software toolboxes, and to write simple bioinformatics programs in a scripting language."
+BMSC,320,Nucleic Acids From Central Dogma to Human Disease,"This course deals with the role of nucleic acids as the information storage molecule of living things, from bacteria to humans. Nucleic acid structure, DNA replication, recombination and repair, transcription of genes, and translation of mRNA in both prokaryotes and eukaryotes are covered along with a diversity of methods used in living things for regulation of expression. Genome structure and composition will be explored, especially as it relates to human diversity and disease. Finally, human genetic testing and the future of personalized medicine will be discussed."
+BIOL,110,unknown,No longer offered.
+BIOL,226,Genes to Genomics,"Content ranges from Mendelian genetics to computational procedures based on the complete genome. Examples from eukaryotic species, including humans, are emphasized. Topics include classical transmission genetics, cytogenetics, DNA structure and replication, gene function, mutation and repair, regulation, recombinant DNA technology, and structural, functional and comparative genomics."
+CE,318,Applied Engineering Mathematics,"An introduction to the use of mathematical methods in applied civil engineering problems. Topics include: matrix solution methods for systems of coupled equations, eigenvalue problems, and coordinate transformations; optimization and linear programming; and the solution of differential equations describing non-stationary physical systems using analytical, finite difference and finite element methods. Numerical techniques using computer programs are emphasized."
+CHEM,111,unknown,No longer offered.
+CHEM,114,General Chemistry for Engineers,"Topics include atoms and molecules, stoichiometry, bonding, molecular structure, states of matter, chemical reactions, and thermochemistry."
+CHEM,251,unknown,No longer offered.
+CHIN,111,unknown,No longer offered.
+CLAS,121,unknown,No longer offered.
+CMPT,812,unknown,No longer offered.
+CMRS,201,unknown,No longer offered.
+COMM,101,Introduction to Business,"The focus of this course is on integrated organizational decision making. To achieve this, students will examine case studies requiring an integrated analysis across six business disciplines (Accounting, Finance, Human Resources, Management/Strategy, Marketing and Operations) over the four stages of an organizational life-cycle (start-up, growth, maturity and revitalization) as an organization's activities shift from strategic exploration to exploitation and back to exploration again."
+COMM,104,Business Statistics I,"Teaches descriptive statistics, index numbers, probability concepts, probability distributions, sampling distributions, statistical inference - estimation and hypothesis testing, and introduces time series forecasting (moving averages and exponential smoothing). Spreadsheet-based statistical functions and/or computer programs will be used to demonstrate the concepts and theory and to analyze practical business situations."
+COMM,200,unknown,No longer offered.
+COMM,202,unknown,No longer offered.
+COMM,208,unknown,No longer offered.
+COMM,301,unknown,No longer offered.
+COMM,302,unknown,No longer offered.
+DRAM,100,unknown,No longer offered.
+DRAM,116,unknown,No longer offered.
+DRAM,117,unknown,No longer offered.
+DRAM,211,unknown,No longer offered.
+ECON,404,unknown,No longer offered.
+EE,232,Digital Electronics,"An introduction to digital logic including combinational and sequential logic devices and circuits. Covers the range from the fundamentals of Boolean algebra and the binary number systems to combinational and sequential circuit functional blocks such as adders, multiplexers, counters and state machines. Some coverage is also given to electronic characteristics of real logic devices and field programmable gate arrays (FPGA)."
+EE,332,unknown,No longer offered.
+EE,431,unknown,No longer offered.
+EE,432,unknown,No longer offered.
+ENG,200,unknown,No longer offered.
+ENG,342,unknown,No longer offered.
+ENG,390,unknown,No longer offered.
+ENT,300,unknown,No longer offered.
+ESL,105,unknown,No longer offered.
+ESL,106,unknown,No longer offered.
+FREN,212,Advanced French I,"A French language course that builds on skills acquired in FREN 122, 125 or equivalent. Some oral work, but emphasis is placed on the practical application of grammar through reading and writing. A contemporary register of language, vocabulary and style is stressed through the study of magazines, journals and newspapers."
+FREN,215,unknown,No longer offered.
+GE,111,Engineering Problem Solving,"Review of the application of methods in trigonometry and algebra to problem solving. Graphing techniques. Problem solving strategies. Translation and reduction of ""word problems"" to algebraic equations. Review of complex numbers and their application in engineering problems. Elements of linear algebra, with MATLAB applications. Coordinate transformation problems. Application of simple numerical methods to engineering problems. Problems involving the solution of nonlinear equations."
+GEOE,118,unknown,No longer offered.
+GEOG,113,unknown,No longer offered.
+GEOG,114,unknown,No longer offered.
+GEOG,240,Sustainable Cities and Regions,"This courses uses the pillars of sustainable development- economic, social/cultural, environmental - as an organizing framework for the study of cities and the regions in which they are embedded. Historical and contemporary thought in the fields of urban/economic, social/cultural and environmental geography form the substance of this course."
+GEOG,445,unknown,No longer offered.
+GEOG,849,Advanced Planning with Indigenous Communities,"The course focuses on the theory and methods of indigenous community planning in reserve, rural, urban, northern, and international contexts. Students will apply course content in classroom discussions and to produce a research essay. Guest lectures from practitioners and a field trip are additional highlights to the learning experience."
+GEOL,103,unknown,No longer offered.
+GEOL,105,unknown,No longer offered.
+GEOL,108,The Earth and How It Works,"Exploration of the global and local-scale physical, chemical, and biological processes that have shaped the Earth’s surface and interior through geologic time. Topics include Earth’s structure and composition, plate tectonics, minerals, the rock cycle, weathering and erosion, volcanoes, earthquakes, mountain building, geologic time, geologic hazards, the hydrological cycle, the origin and use of energy, mineral and water resources, and other earth processes that impact humans."
+GEOL,109,The Earth and Life through Time,"A consideration of the evolution of the earth, from its origin to the present. Emphasis is placed on the evolution of life, and on the interpretation of the rock and fossil record. Special consideration is given to major events in the history of our planet and of animals and plants."
+GEOL,110,unknown,No longer offered.
+HEB,111,unknown,No longer offered.
+HLST,210,Introduction to Quantitative and Qualitative Research Methods in Health Studies,"This course introduces students to the research methods and approaches used to investigate health issues. The course will expand students' research skills across a broad range of approaches to studying health sciences; consequently, students will also quantitative and qualitative data analysis approaches. Finally, students will learn to be a critical consumer of health sciences research."
+HRM,243,unknown,No longer offered.
+INCC,201,unknown,No longer offered.
+INCC,380,unknown,No longer offered.
+INTS,101,unknown,No longer offered.
+INTS,200,unknown,No longer offered.
+LING,342,Phonetics,"Introduces articulatory phonetics, the structure and functioning of the vocal tract, the major classes of speech sounds and systems of phonetic notation. A brief discussion of acoustic and perceptual phonetics will be given. Recognition, production and notation of speech sounds and the preliminaries of phonological analysis will be emphasized. Students will also be introduced to the computer software PRAAT for phonetic analysis."
+LIT,100,unknown,No longer offered.
+MATH,100,unknown,No longer offered.
+MATH,101,Quantitative Reasoning,"This course will expose students to various aspects of quantitative reasoning, including the use of quantitative arguments to analyze problems, critique arguments, and draw and justify conclusions; the recognition and evaluation of quantitative assumptions; and the detection and interpretation of trends and patterns in quantitative data drawn from real-world sources and case studies. The course will nurture basic skills in numeracy, arithmetic, and estimation. In the process, students will learn to use algebraic and statistical methods to solve problems and understand changing quantities. They will also use visual and technological tools to assist with calculations and analysis. The format of the course involves 1 hour of lecture and 3 hours of lab-based active learning activity per week, emphasizing inquiry and practice."
+MATH,102,Precalculus Mathematics,"Discusses mathematical ideas essential for the study of calculus. Topics include: the fundamentals of algebra; functions, their properties and graphs; polynomial and rational functions; exponential and logarithmic functions; trigonometric and inverse trigonometric functions; trigonometric properties."
+MATH,128,unknown,No longer offered.
+MATH,163,Introduction to Mathematical Reasoning,"A broad introduction to the language of Mathematics through the study of logic and proof techniques, sets, functions and relations, integers and counting, complex numbers, and graphs."
+MATH,260,unknown,No longer offered.
+MKT,251,unknown,No longer offered.
+MUS,100,unknown,No longer offered.
+MUS,113,unknown,No longer offered.
+MUS,114,unknown,No longer offered.
+MUS,119,unknown,No longer offered.
+MUS,150,unknown,No longer offered.
+MUS,250,History of Music III Western Art Music Antiquity to High Renaissance,"History of Western art music with an emphasis on the main composers and their representative compositions, forms, genres, and compositional techniques including Greeksystema teleion, Guidonian system, melodic/rhythmic modes; artes liberales, missa ordinarium, proprium, officium; monophony and early polyphony, rhythmic/melodic notation, organology, fauxbourdon, falsobordone, Reformation, Counter-Reformation, Anglican church music, intabulations."
+MUS,285,unknown,No longer offered.
+NRTH,101,unknown,No longer offered.
+NS,262,unknown,No longer offered.
+NS,271,unknown,No longer offered.
+PHIL,240,unknown,No longer offered.
+PHIL,241,Introduction to Symbolic Logic I,An introduction to modern logic. Truth-functional statement logic and first order predicate logic. Formalization of natural language statements and arguments.
+PHIL,242,unknown,No longer offered.
+PHYS,111,unknown,No longer offered.
+PHYS,121,unknown,No longer offered.
+PHYS,125,Physics and Technology,"Introduces students to aspects of physics with an emphasis on applications in technology and the physical sciences. This course can be used as the second part of an introduction to physics for students in the physical sciences or as a science elective for engineering students. Topics include fluid mechanics, oscillations and waves, temperature and ideal gas law, optics, special relativity, quantum physics, and nuclear physics."
+PHYS,155,Introduction to Electricity and Magnetism,"Begins with an introduction to electricity: elementary electric charge, Coulomb's law, concepts of electric field and electrostatic potential, work, energy and capacitance, and dielectrics. The second part of the class is devoted to circuit analysis: voltage, current, resistance, power, Ohm's law, DC series/parallel circuits, Kirchhoff's laws, circuits with capacitors and R-C transients. The third part of the class focuses on concepts of electromagnetism: magnetic field and magnetic flux, forces acting on a charge and current carrying conductor, and analysis of series magnetic circuits."
+POLS,110,unknown,No longer offered.
+POLS,246,unknown,No longer offered.
+POLS,867,Topics in International Relations,"An examination of selected topics in International Relations. Topics include The Canadian Foreign Policy Process, Ethical Issues in International Relations, International Terrorism, Nationalism, International Political Economy, and International Trade."
+PSY,110,unknown,No longer offered.
+PSY,233,Statistical Methods in Behavioural Sciences,"The role of statistics in research including: statistical concepts and models, estimation, simple tests of significance, linear regression and correlation, and introduction to analysis of variance. The laboratory component will consist of training in the utilization of statistical software."
+PSY,235,Research Methods and Design,"Introduces students to both experimental and non-experimental research methods and designs used in psychology. The course focuses on the interplay between research questions, theory, the selection of appropriate research procedures and resulting conclusions. The laboratory component will consist of practical training and application of the concepts discussed in class."
+PSY,252,Perceptual Processes,"A survey of the neurophysiological and cognitive mechanisms underlying perception, with special emphasis on vision and hearing. This course will examine the fundamental principles of sensory information processing, including basic structure and function of sensory receptors, neural pathways of sensory systems, and the cognitive processes that organize, identify, and interpret sensory information. Topics on multisensory integration, psychophysics, and perception for action may be included."
+PSY,253,Introduction to Cognitive Psychology,"An introduction to research and theory in human cognition. The course will survey the major cognitive processes involved in attention, memory, comprehension and production of language, and higher order thinking (reasoning, problem solving, and decision making)."
+PSY,255,Human Memory,"An introduction to research and theory on the structures and processes involved in human memory. Topics include the evidence for distinct sensory, short-term, and long-term memory stores, the format of representation in memory, and the determinants of effective memory performance."
+PSY,256,Psychology of Language,"Explores and evaluates theories and research involving the psychology of language. Broadly defined, the topics will include visual and auditory language issues regarding: encoding, representation, comprehension, production, acquisition, biological foundations, dysfunction, and cultural influences. Students will also learn about current research projects, and the preparation of research papers."
+RLST,110,unknown,No longer offered.
+RLST,398,Special Topics,"Offered occasionally by visiting faculty and in other special situations to cover, in depth, topics that are not thoroughly covered in regularly offered courses."
+SNSK,101,unknown,No longer offered.
+SOC,110,unknown,No longer offered.
+STAT,103,Elementary Probability,"An elementary introduction to the concepts of probability, including: sets, Venn diagrams, definition of probability, algebra of probabilities, counting principles, some discrete random variables and their distributions, graphical displays, expected values, the normal distribution, the Central Limit Theorem, applications, some statistical concepts."
+STAT,244,Elementary Statistical Concepts,"Statistical concepts and techniques including graphing of distributions, measures of location and variability, measures of association, regression, probability, confidence intervals, hypothesis testing. Students should consult with their department before enrolling in this course to determine the status of this course in their program."
+STAT,246,Introduction to Biostatistics,"An introduction to statistical techniques with emphasis on methods particularly applicable to biological and health sciences. Topics include: descriptive statistics, estimation and hypothesis testing, linear and logistic regression, contingency tables, life tables, and experimental design. Computerized data analysis will be an essential component of the labs."
+WGST,110,unknown,No longer offered.
