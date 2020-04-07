@@ -4,7 +4,7 @@ DROP TABLE IF EXISTS Courses;
 CREATE TABLE Courses(
         SubjectCode NCHAR(4) NOT NULL,
         CourseCode INTEGER NOT NULL
-           CHECK(CourseCode BETWEEN 100 AND 999),
+           CHECK(CourseCode BETWEEN 1 AND 999),
         CourseName TEXT,
         Description TEXT,
         PRIMARY KEY(SubjectCode, CourseCode)
