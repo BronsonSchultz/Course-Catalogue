@@ -1,9 +1,13 @@
 package webApp;
 
 import java.sql.*;
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashMap;
+
 
 import db.DBConnection;
 import org.json.JSONObject;
@@ -60,19 +64,6 @@ public class CourseSelector {
         System.out.println("Expecting all of user 1's completed courses");
         l = querier.getUserCompletedCourses("1");
         System.out.println(l);
-
-        /// garb
-
-        boolean i = false;
-        boolean j = false;
-
-        if (i){
-            System.out.println("neither");
-        } else if (j) {
-            System.out.println("i");
-        } else if (j && i) {
-            System.out.println("j");
-        }
 
     }
 
