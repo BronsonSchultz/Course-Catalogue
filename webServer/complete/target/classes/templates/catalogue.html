@@ -20,6 +20,8 @@
     <h1>Course Catalogue</h1>
     <div th:insert="fragments/searchBar :: searchForm" class="container"></div>
 
+    <h3 th:if="${numResults == 0}">No search results!</h3>
+
     <ul class="courseList">
 
         <li class="courseName" th:each="course : ${searchResults}" th:onclick="javascript:openCourseSideBar([[${course.getString('SubjectCode')}]], [[${course.getString('CourseCode')}]], [[${course.getString('CourseName')}]], [[${course.getString('Description')}]])">

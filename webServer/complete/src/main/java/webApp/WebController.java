@@ -3,14 +3,15 @@ package webApp;
 import org.json.JSONObject;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 
+import javax.validation.Valid;
 import java.sql.SQLException;
-import java.sql.SQLIntegrityConstraintViolationException;
+
 import java.util.ArrayList;
 import java.util.HashMap;
-//import webApp.CoursesQuery;
 
 @Controller
 public class WebController implements WebMvcConfigurer {
@@ -29,15 +30,18 @@ public class WebController implements WebMvcConfigurer {
 
 
 	@RequestMapping(value="/catalogue", method = {RequestMethod.GET, RequestMethod.POST})
-	public String createCourses(Model model, @ModelAttribute("searchForm") SearchForm searchForm) throws SQLException {
+	public String createCourses(Model model, @ModelAttribute("searchForm") SearchForm searchForm, BindingResult bindingResult) throws SQLException {
 		model.addAttribute("searchForm", new SearchForm());
 		model.addAttribute("favAndCompleteForm", new FavAndCompleteForm());
+
+
 
 		CourseSelector querier = new CourseSelector();
 		if (searchForm.getYearLvl() != null && searchForm.getSubjectCode() != null) {
 			ArrayList<HashMap<String, String>> courses = querier.getCoursesFromDB(searchForm.getSubjectCode(), searchForm.getYearLvl());
 			JSONObject[] searchResults = querier.jsonifyList(courses);
 			model.addAttribute("searchResults", searchResults);
+			model.addAttribute("numResults", searchResults.length);
 		}
 
 		return "catalogue";

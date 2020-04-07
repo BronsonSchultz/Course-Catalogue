@@ -1,26 +1,20 @@
 package webApp;
 
+import javax.validation.constraints.Size;
+
 public class SearchForm {
 
+
     private String subjectCode;
+
     private String yearLvl;
-    private int numResults;
 
     @Override
     public String toString() {
         return "SearchForm{" +
                 "subjectCode='" + subjectCode + '\'' +
-                ", yearLvl=" + yearLvl +
-                ", numResults=" + numResults +
+                ", yearLvl='" + yearLvl + '\'' +
                 '}';
-    }
-
-    public int getNumResults() {
-        return numResults;
-    }
-
-    public void setNumResults(int numResults) {
-        this.numResults = numResults;
     }
 
     public String getYearLvl() {
