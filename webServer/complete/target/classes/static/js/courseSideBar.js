@@ -16,6 +16,12 @@ function openCourseSideBar(subjectCode, courseCode, courseName, description) {
 }
 
 function closeCourseSideBar() {
+  alert("Course saved")
   document.getElementById("courseSideBar").style.width = "0";
 }
 
+$("#saveCourseForm").click(function(e){
+        if($(".form-check-input:checked").length == 0){
+            e.preventDefault();
+        }
+    });

@@ -14,23 +14,22 @@
 }
 
 .courseSideBar p {
-    margin: auto;
+    margin: auto; /* center content */
     width: 250px;
 }
 
 .courseSideBar .closebtn {
   position: absolute;
-  top: 0;
-  left: 25px;
-  font-size: 36px;
+  top: 10px;
+  left: 10px;
+  font-size: 20px;
   margin-right: 50px;
-}
-
-.courseSideBar a {
   text-decoration: none;
-  color: #1e7994;
 }
 
-.courseSideBar a:hover {
-  color: #f1f1f1;
+.form-inline {
+    padding-left: 10px;
 }
+/* .courseSideBar .closebtn:hover {
+   color: #f1f1f1;
+ } */
