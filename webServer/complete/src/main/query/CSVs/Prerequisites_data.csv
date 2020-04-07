@@ -224,11 +224,11 @@
 224,INDG,281,INDG,107,1,,
 225,INDG,281,ZZZZ,999,0,,"3 additional credit units from ANTH, ARCH, ECON, GEOG, INDG, LING, NS, POLS, PSY, SOC, or WGST"
 226,INDG,302,ZZZZ,999,,,12 credit units in Native Studies (NS) or Indigenous Studies (INDG)
-227,INDG,320,INDG,999,,,12 credit units in Indigenous Studies (INDG)
-228,INDG,321,INDG,999,,,12 credit units in Indigenous Studies (INDG)
+227,INDG,320,ZZZZ,999,,,12 credit units in Indigenous Studies (INDG)
+228,INDG,321,ZZZZ,999,,,12 credit units in Indigenous Studies (INDG)
 229,INDG,330,INDG,230,1,,
 230,INDG,330,ZZZZ,999,1,,or permission of the instructor
-231,INDG,331,INDG,999,0,,12 credit units in Indigenous Studies (INDG)
+231,INDG,331,ZZZZ,999,0,,12 credit units in Indigenous Studies (INDG)
 232,INDG,331,NS,264,1,,"recommended, not required"
 233,INDG,331,INDG,264,1,,"recommended, not required"
 234,INDG,340,NS,261,1,,
