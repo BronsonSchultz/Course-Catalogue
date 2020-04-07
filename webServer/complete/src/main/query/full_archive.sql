@@ -21,6 +21,6 @@ SELECT * FROM Users;
 SELECT * FROM FavouriteList;
 
 .output CompletedList_archive.csv
-SELECT * CompletedList;
+SELECT * FROM CompletedList;
 
 .mode list
