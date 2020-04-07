@@ -3,95 +3,104 @@
 <head>
     <meta charset="UTF-8">
     <title>FAQ Page</title>
-    <link rel="shortcut icon" type="image/icon" href="img/favicon.ico" />
+    <link href="img/favicon.ico" rel="shortcut icon" type="image/icon"/>
 
     <!-- bootstrap and font awesome -->
     <link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link crossorigin="anonymous" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+          integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" rel="stylesheet">
 
     <!-- custom css -->
-    <link rel="stylesheet" type='text/css' th:href="@{css/site.css}">
+    <link rel="stylesheet" th:href="@{css/site.css}" type='text/css'>
 
 </head>
 <body>
-    <div th:insert="fragments/navbar :: topBar"></div>
+<div th:insert="fragments/navbar :: topBar"></div>
 
-    <h1>Frequently Asked Questions</h1>
+<h1>Frequently Asked Questions</h1>
 
-    <div class="accordion container-xl mb-5" id="accordionQuestions">
-        <div class="card">
-            <div class="card-header">
-                <h2 class="mb-0">
-                    <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#questionOne">
-                        How do I...?
-                    </button>
-                </h2>
-            </div>
+<div class="container-xl">
 
+    <div class="row">
+        <div class="accordion container-xl mb-5" id="accordionQuestions">
 
-            <div id="questionOne" class="collapse" data-parent="#accordionQuestions">
-                <div class="card-body">
-                    Just do this....
+            <div class="card">
+                <div class="card-header">
+                    <h2 class="mb-0">
+                        <button class="btn btn-link" data-target="#questionOne" data-toggle="collapse" type="button">
+                            How do I...?
+                        </button>
+                    </h2>
+                </div>
+                <div class="collapse" data-parent="#accordionQuestions" id="questionOne">
+                    <div class="card-body">
+                        Just do this....
+                    </div>
                 </div>
             </div>
-        </div>
 
-        <div class="card">
-            <div class="card-header">
-                <h2 class="mb-0">
-                    <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#questionTwo">
-                        Where is...?
-                    </button>
-                </h2>
-            </div>
-
-
-            <div id="questionTwo" class="collapse" data-parent="#accordionQuestions">
-                <div class="card-body">
-                    It's over here....
+            <div class="card">
+                <div class="card-header">
+                    <h2 class="mb-0">
+                        <button class="btn btn-link" data-target="#questionTwo" data-toggle="collapse" type="button">
+                            Where is...?
+                        </button>
+                    </h2>
+                </div>
+                <div class="collapse" data-parent="#accordionQuestions" id="questionTwo">
+                    <div class="card-body">
+                        It's over here....
+                    </div>
                 </div>
             </div>
-        </div>
 
-        <div class="card">
-            <div class="card-header">
-                <h2 class="mb-0">
-                    <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#questionThree">
-                       What happens if...?
-                    </button>
-                </h2>
-            </div>
-
-
-            <div id="questionThree" class="collapse" data-parent="#accordionQuestions">
-                <div class="card-body">
-                    No problem, just....
+            <div class="card">
+                <div class="card-header">
+                    <h2 class="mb-0">
+                        <button class="btn btn-link" data-target="#questionThree" data-toggle="collapse" type="button">
+                            What happens if...?
+                        </button>
+                    </h2>
+                </div>
+                <div class="collapse" data-parent="#accordionQuestions" id="questionThree">
+                    <div class="card-body">
+                        No problem, just....
+                    </div>
                 </div>
             </div>
+
         </div>
-
-    </div>
-
-    <div class="container-xl" th:action="@{/faq}">
-        <form th:object="${bugReportForm}" method="post">
-            <label for="bug-box">Found a bug? let us know what happened along with as much detail you can provide!</label>
-            <div class="input-group">
-                <textarea class="form-control" id="bug-box" th:field="*{description}"></textarea>
-                <button class="btn btn-primary" type="submit">Send</button>
-            </div>
-        </form>
     </div>
 
 
+            <form method="post" th:object="${bugReportForm}"  th:action="@{/faq}">
+                <div class="row">
+                <label for="bug-box"><b>Found a bug?</b> let us know what happened along with as much detail you can
+                    provide!</label>
+                <div class="input-group">
+                    <textarea class="form-control" id="bug-box" th:field="*{description}"></textarea>
+                    <button class="btn btn-success ml-2" type="submit">Send</button>
+                </div>
+                </div>
+            </form>
 
-    <div th:insert="fragments/navbar :: navbar"></div>
+</div>
 
-    <script th:src="@{js/navbar.js}"></script>
 
-    <!-- Bootstrap stuff -->
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+<div th:insert="fragments/navbar :: navbar"></div>
+
+<script th:src="@{js/navbar.js}"></script>
+
+<!-- Bootstrap stuff -->
+<script crossorigin="anonymous"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+<script crossorigin="anonymous"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+<script crossorigin="anonymous"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
 
 </body>
 </html>

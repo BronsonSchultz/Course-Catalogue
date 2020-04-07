@@ -1,5 +1,5 @@
 body {
-background: #e6f2e2;
+background: #e6f2e2; /* grey with a hint of green */
 }
 
 h1, h2{
@@ -13,14 +13,14 @@ p {
 
 .button {
     cursor: pointer;
-    background-color: #0b6a41;
+    background-color: #0b6a41; /* deep green */
     font-size: 20px;
     padding: 10px 15px;
     border: none;
 }
 
 .button:hover {
-    background-color: #11a263;
+    background-color: #11a263; /* deep mint green */
 }
 
 /* The sidebar menu */
@@ -42,7 +42,7 @@ p {
   padding: 8px 8px 8px 32px;
   text-decoration: none;
   font-size: 25px;
-  color: #0b6a41; /* */
+  color: #0b6a41; /* deep green */
   display: block;
   transition: 0.3s;
 }
@@ -61,11 +61,7 @@ p {
   margin-left: 50px;
 }
 
-@media screen and (max-height: 450px) {
-  .sidebar {padding-top: 15px;}
-  .sidebar a {font-size: 18px;}
-}
-
+/* get rid of link underline and colour change */
 nav a:link, a:visited {
     text-decoration: none;
     text-align: center;
