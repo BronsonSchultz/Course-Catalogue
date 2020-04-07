@@ -15,14 +15,13 @@ import org.json.JSONObject;
 /**
  * class who queries database for courses and degrees based on some search parameters
  */
-public class CourseSelector {
-    DBConnection db;
+public class CourseSelector extends Selector{
 
     /**
      * create a new instance of a CourseQueries object
      */
     public CourseSelector() {
-        db = new DBConnection();
+        super();
     }
 
 
@@ -247,21 +246,56 @@ public class CourseSelector {
 
         return mappedCourses;
     }
-    
 
     /**
-     * create an array of json objects from an array list
-     * @param list the array list of hashMaps returned by the query methods
-     * @return array of json objects from an array list
+     * query the database for the courses of a degree category
+     * @param category the name of the category of courses "C1"
+     * @return an array list of courses as hashMaps
+     * @throws SQLException if a connection to the db cannot be formed
      */
-    public JSONObject[] jsonifyList(ArrayList<HashMap<String, String>> list) {
-        JSONObject[] jsonArray = new JSONObject[list.size()];
-        for (int i = 0; i < list.size(); i++) {
-            JSONObject j = new JSONObject(list.get(i));
-            jsonArray[i] = j;
-        }
-        return jsonArray;
-    }
+    public ArrayList<HashMap<String, String>> getCategoryCourses(String category, String degree, String programName) throws SQLException{
+        String sql = "SELECT * FROM DegreeRequirements " +
+                "WHERE RequirementsGroup = ? AND Degree = ? AND ProgramName = ?";
+        Connection conn = null;
+        PreparedStatement stmt = null;
+        ArrayList<HashMap<String, String>> mappedCourses = new ArrayList<>();
 
+        try {
+            conn = db.getConn();
+
+            // create statement with sql template
+            stmt = conn.prepareStatement(sql);
+            stmt.setString(1, category);
+            stmt.setString(2, degree);
+            stmt.setString(3, programName);
+
+
+            // get results
+            ResultSet rs = stmt.executeQuery();
+
+
+            while (rs.next()) {
+                HashMap<String, String> course = new HashMap<>();
+                course.put("SubjectCode", rs.getString("SubjectCode"));
+                course.put("CourseCode", rs.getString("CourseCode"));
+
+                mappedCourses.add(course);
+            }
+
+        } catch (SQLException e){
+            System.out.println(e);
+        } finally {
+            // close statement and connection objects to conserve DBMS resources
+            if (stmt != null) {
+                stmt.close();
+            }
+
+            if (conn != null) {
+                conn.close();
+            }
+        }
+
+        return mappedCourses;
+    }
 
 }

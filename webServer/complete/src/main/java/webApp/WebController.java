@@ -9,10 +9,12 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 
 import java.io.FileWriter;
 import java.io.IOException;
+import java.lang.reflect.Array;
 import java.sql.SQLException;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Date;
 import java.util.HashMap;
 
@@ -143,7 +145,27 @@ public class WebController implements WebMvcConfigurer {
 
 	//My Degrees
 	@GetMapping("/degree")
-	public String degree(){ return "degree";}
+	public String degree(Model model){
+		DegreeSelector degreeSelector = new DegreeSelector();
+		try {
+			ArrayList<HashMap<String, String>> degrees = degreeSelector.getDegreesFromDB("Computer Science");
+			JSONObject[] jdegrees = degreeSelector.jsonifyList(degrees);
+
+			CourseSelector selector = new CourseSelector();
+			JSONObject[][] all = new JSONObject[4][];
+			all[0] = selector.jsonifyList(selector.getCategoryCourses("C1", "All","Computer Science"));
+			all[1] = selector.jsonifyList(selector.getCategoryCourses("C2", "All","Computer Science"));
+			all[2] = selector.jsonifyList(selector.getCategoryCourses("C3", "All","Computer Science"));
+			all[3] = selector.jsonifyList(selector.getCategoryCourses("C4", "All","Computer Science"));
+
+			System.out.println(Arrays.toString(all[0]));
+			model.addAttribute("degrees", jdegrees);
+			model.addAttribute("all", all);
+		} catch (SQLException e){
+			System.out.println(e);
+		}
+		return "degree";
+	}
 
 	//sign In
 	@GetMapping("/signIn")
