@@ -11,7 +11,7 @@ public class LoginQuery {
 		try {
             // create a connection to the database
 			Class.forName("org.sqlite.JDBC");
-			conn = DriverManager.getConnection("jdbc:sqlite:UofSPlanner.db");
+			conn = DriverManager.getConnection("jdbc:sqlite:UofSPlanner.webApp.db");
 			System.out.println("Connection to database established.");
 			
             // create and execute query

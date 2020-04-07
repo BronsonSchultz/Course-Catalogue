@@ -1,6 +1,6 @@
 package webApp;
 
-import db.DBConnection;
+import webApp.db.DBConnection;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;

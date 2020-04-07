@@ -1,4 +1,4 @@
-package db;
+package webApp.db;
 
 import java.sql.*;
 
@@ -15,7 +15,7 @@ public class DBConnection {
 
             // create a connection to the database
             Class.forName("org.sqlite.JDBC");
-            conn = DriverManager.getConnection("jdbc:sqlite:UofSPlanner.db");
+            conn = DriverManager.getConnection("jdbc:sqlite:UofSPlanner.webApp.db");
         } catch (Exception e) {
             System.out.println(e);
         }

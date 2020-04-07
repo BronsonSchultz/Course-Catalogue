@@ -3,7 +3,7 @@ package webApp;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
-import db.DBConnection;
+import webApp.db.DBConnection;
 
 public class CourseInserter {
     DBConnection db;

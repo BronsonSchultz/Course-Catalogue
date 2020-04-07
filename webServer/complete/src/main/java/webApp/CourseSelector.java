@@ -1,15 +1,11 @@
 package webApp;
 
 import java.sql.*;
-import java.text.DateFormat;
-import java.text.SimpleDateFormat;
-import java.util.Date;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashMap;
 
 
-import db.DBConnection;
 import org.json.JSONObject;
 
 /**
@@ -151,7 +147,7 @@ public class CourseSelector extends Selector{
      * query the database for the favourited courses of a user
      * @param userID the id of the logged in user
      * @return an array list of courses as hashMaps
-     * @throws SQLException if a connection to the db cannot be formed
+     * @throws SQLException if a connection to the webApp.db cannot be formed
      */
     public ArrayList<HashMap<String, String>> getUserFavCourses(String userID) throws SQLException{
         String sql = "SELECT fl.FavouriteID, fl.SubjectCode, fl.CourseCode, fl.UserID, CourseName, Description FROM (FavouriteList fl" +
@@ -204,7 +200,7 @@ public class CourseSelector extends Selector{
      * query the database for the favourited courses of a user
      * @param userID the id of the logged in user
      * @return an array list of courses as hashMaps
-     * @throws SQLException if a connection to the db cannot be formed
+     * @throws SQLException if a connection to the webApp.db cannot be formed
      */
     public ArrayList<HashMap<String, String>> getUserCompletedCourses(String userID) throws SQLException{
         String sql = "SELECT cl.SubjectCode, cl.CourseCode, cl.UserID, CourseName, Description FROM (CompletedList cl" +
@@ -256,7 +252,7 @@ public class CourseSelector extends Selector{
      * query the database for the courses of a degree category
      * @param category the name of the category of courses "C1"
      * @return an array list of courses as hashMaps
-     * @throws SQLException if a connection to the db cannot be formed
+     * @throws SQLException if a connection to the webApp.db cannot be formed
      */
     public ArrayList<HashMap<String, String>> getCategoryCourses(String category, String degree, String programName) throws SQLException{
         String sql = "SELECT Courses.SubjectCode, Courses.CourseCode, CourseName, Description " +

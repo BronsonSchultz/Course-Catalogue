@@ -1,6 +1,6 @@
 package webApp;
 
-import db.DBConnection;
+import webApp.db.DBConnection;
 import org.json.JSONObject;
 
 import java.util.ArrayList;
