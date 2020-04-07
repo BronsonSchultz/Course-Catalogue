@@ -18,7 +18,7 @@ CREATE TABLE CreditConflicts (
         ConflictSubjectCode NCHAR(4) NOT NULL,
         ConflictCourseCode INTEGER NOT NULL,
         ConflictType TEXT DEFAULT 'Regular'
-           CHECK(ConflictType IN ('Regular', 'Previous Name', 'Other')),
+           CHECK(ConflictType IN ('Regular', 'Previous Name', 'Other', 'Fluency')),
         PRIMARY KEY(CreditConflictID),
         FOREIGN KEY(SubjectCode, CourseCode) REFERENCES Courses (SubjectCode, CourseCode)
            ON UPDATE CASCADE
