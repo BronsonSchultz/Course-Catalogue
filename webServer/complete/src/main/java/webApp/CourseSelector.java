@@ -64,6 +64,11 @@ public class CourseSelector extends Selector{
         l = querier.getUserCompletedCourses("1");
         System.out.println(l);
 
+        //////// get courses of category c1 for all comp sci /////////
+        System.out.println("Expecting all of user 1's completed courses");
+        l = querier.getCategoryCourses("C1", "All", "Computer Science");
+        System.out.println(l);
+
     }
 
     /**
@@ -254,7 +259,10 @@ public class CourseSelector extends Selector{
      * @throws SQLException if a connection to the db cannot be formed
      */
     public ArrayList<HashMap<String, String>> getCategoryCourses(String category, String degree, String programName) throws SQLException{
-        String sql = "SELECT * FROM DegreeRequirements " +
+        String sql = "SELECT Courses.SubjectCode, Courses.CourseCode, CourseName, Description " +
+                "FROM (DegreeRequirements dr " +
+                "JOIN Courses " +
+                "ON Courses.SubjectCode = dr.SubjectCode AND Courses.CourseCode = dr.CourseCode) " +
                 "WHERE RequirementsGroup = ? AND Degree = ? AND ProgramName = ?";
         Connection conn = null;
         PreparedStatement stmt = null;
@@ -278,6 +286,10 @@ public class CourseSelector extends Selector{
                 HashMap<String, String> course = new HashMap<>();
                 course.put("SubjectCode", rs.getString("SubjectCode"));
                 course.put("CourseCode", rs.getString("CourseCode"));
+                course.put("CourseName", rs.getString("CourseName"));
+                course.put("Description", rs.getString("Description"));
+
+
 
                 mappedCourses.add(course);
             }

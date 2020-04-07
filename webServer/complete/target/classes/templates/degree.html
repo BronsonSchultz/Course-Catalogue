@@ -11,6 +11,9 @@
 
     <!-- custom css -->
     <link rel="stylesheet" type='text/css' th:href="@{css/site.css}">
+    <link rel="stylesheet" th:href="@{css/degree.css}" type='text/css'>
+
+
 
 </head>
 <body>
@@ -19,7 +22,7 @@
     <h1>My Saved Degrees</h1>
 
     <h2>Here's where you'll view your saved degrees that you have favourited</h2>
-    <div class="container-xl mx-auto" style="border: 2px solid black">
+    <div class="container-xl mx-auto">
         <div class="row">
             <div class="dropdown mx-auto">
                 <a class="btn btn-success dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -49,7 +52,8 @@
                                 <div id="collapseC1" class="collapse" data-parent="#degreeAcordian">
                                     <div class="card-body">
                                         <ul class="list-group">
-                                            <li class="list-group-item" th:each="deg : ${all[0]}" th:text="${deg.getString('SubjectCode') + ' ' + deg.getString('CourseCode')}"></li>
+                                            <li class="list-group-item" th:each="deg : ${all[0]}"
+                                                th:onclick="javascript:openSimpleCourseSideBar([[${deg.getString('SubjectCode')}]], [[${deg.getString('CourseCode')}]], [[${deg.getString('CourseName')}]], [[${deg.getString('Description')}]])" th:text="${deg.getString('SubjectCode') + ' ' + deg.getString('CourseCode')}"></li>
                                         </ul>
 
                                     </div>
@@ -84,7 +88,7 @@
                             <div id="collapseC3" class="collapse" data-parent="#degreeAcordian">
                                 <div class="card-body">
                                     <ul class="list-group">
-                                        <li class="list-group-item"th:each="deg : ${all[2]}" th:text="${deg.getString('SubjectCode') + ' ' + deg.getString('CourseCode')}"></li>
+                                        <li class="list-group-item" th:each="deg : ${all[2]}" th:text="${deg.getString('SubjectCode') + ' ' + deg.getString('CourseCode')}"></li>
                                     </ul>
                                 </div>
                             </div>
@@ -121,6 +125,8 @@
     </div>
 
     <div th:insert="fragments/navbar :: navbar"></div>
+    <div th:insert="fragments/courseSideBar :: simpleCourseSideBar"></div>
+
 
 
     <script src="http://code.jquery.com/jquery-1.10.1.min.js"
@@ -128,6 +134,7 @@
 
     <script th:src="@{js/degrees.js}"></script>
     <script th:src="@{js/navbar.js}"></script>
+    <script th:src="@{js/savedCourses.js}"></script>
 
     <!-- Bootstrap stuff -->
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
