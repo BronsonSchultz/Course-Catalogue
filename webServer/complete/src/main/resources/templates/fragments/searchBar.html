@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta charset="UTF-8">
+
+</head>
+<body>
+
+    <form th:fragment="searchForm" action="#" th:action="@{/catalogue}" th:object="${searchForm}" method="post">
+
+        <div class="form-row">
+            <div class="col">
+                <div class="form-group">
+                    <input type="text" class="form-control" th:field="*{subjectCode}" placeholder="Subject Code"/>
+                </div>
+
+
+            </div>
+        </div>
+
+        <div class="form-row">
+            <div class="col">
+                <div class="form-group">
+                    <label for="level">Search by Course Level:</label>
+                    <select class="form-control" id="level" th:field="*{yearLvl}" >
+                        <option value="1">100-level</option>
+                        <option value="2">200-level</option>
+                        <option value="3">300-level</option>
+                        <option value="4">400-level</option>
+                        <option value="8">Master level</option>
+                        <option value="9">Doctorate level</option>
+                        <option value="%" selected>All Levels</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+
+        <div class="form-row">
+            <div class="col">
+                <button id="searchBtn" class="btn btn-success fas fa-search" type="submit" style="color: black"></button>
+            </div>
+        </div>
+
+        </div>
+    </form>
+
+</body>
+</html>

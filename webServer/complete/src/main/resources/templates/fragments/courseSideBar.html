@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+</head>
+
+<body>
+<div class="courseSideBar" id="courseSideBar" th:fragment="courseSideBar">
+
+        <form  id="saveCourseForm" class="form-inline" action="/catalogue" th:action="@{/catalogue/sidebar}" th:object="${favAndCompleteForm}" method="post">
+
+<!--            <a class="closebtn" onclick="closeCourseSideBar()">&times;</a>-->
+<!---->
+            <input class="btn btn-success closebtn" type="submit" value="Save">
+
+
+
+            <input class="form-check-input form-check-inline" id="completedCheckbox" type="checkbox" th:field="*{completed}" value="c">
+            <label for="completedCheckbox">Completed</label>
+
+
+            <input class="form-check-input form-check-inline" id="favouriteCheckbox" type="checkbox" th:field="*{favourited}" value="f">
+            <label for="favouriteCheckbox">Favourite</label>
+
+                <input type="hidden" id="hiddenSubject" name="hiddenSubject" th:field="*{subjectCode}" value="">
+                <input type="hidden" id="hiddenCourseCode" name="hiddenCourseCode" th:field="*{courseCode}" value="">
+        </form>
+
+    <div class="container">
+
+        <div class="row">
+            <div class="col">
+                <h4 id="subject"></h4>
+            </div>
+
+            <div class="col">
+                <h4 id="courseCode"></h4>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col">
+                <h4 id="courseName"></h4>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col">
+                <h5>Description:</h5>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col">
+                <p id="description"></p>
+            </div>
+        </div>
+
+    </div>
+</div>
+</div>
+
+
+<div class="simpleCourseSideBar" id="simpleCourseSideBar" th:fragment="simpleCourseSideBar">
+    <a class="closebtn" href="javascript:void(0)" onclick="closeSimpleCourseSideBar()">&times;</a>
+    <div class="container">
+
+        <div class="row">
+            <div class="col">
+                <h4 id="subject"></h4>
+            </div>
+
+            <div class="col">
+                <h4 id="courseCode"></h4>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col">
+                <h4 id="courseName"></h4>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col">
+                <h5>Description:</h5>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col">
+                <p id="description"></p>
+            </div>
+        </div>
+
+        </div>
+    </div>
+</div>
+
+
+<div th:fragment="sideForm">
+
+</div>
+
+</body>
+</html>

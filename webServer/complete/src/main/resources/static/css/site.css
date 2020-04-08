@@ -1,0 +1,70 @@
+body {
+background: #e6f2e2; /* grey with a hint of green */
+}
+
+h1, h2{
+    text-align: center;
+}
+
+p {
+    width: 600px;
+    padding-left: 10px;
+}
+
+.button {
+    cursor: pointer;
+    background-color: #0b6a41; /* deep green */
+    font-size: 20px;
+    padding: 10px 15px;
+    border: none;
+}
+
+.button:hover {
+    background-color: #11a263; /* deep mint green */
+}
+
+/* The sidebar menu */
+.side-nav-bar {
+  height: 100%; /* 100% Full-height */
+  width: 0; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Stay on top */
+  top: 0;
+  left: 0;
+  background-color: #5cb85c; /* mint green */
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 60px; /* Place content 60px from the top */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidebar */
+}
+
+/* The sidebar links */
+.side-nav-bar a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #0b6a41; /* deep green */
+  display: block;
+  transition: 0.3s;
+}
+
+/* When you mouse over the navigation links, change their color */
+.side-nav-bar a:hover {
+  color: #f1f1f1;
+}
+
+/* Position and style the close button (top right corner) */
+.side-nav-bar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+/* get rid of link underline and colour change */
+nav a:link, a:visited {
+    text-decoration: none;
+    text-align: center;
+    display: inline-block;
+    padding: 10px 15px;
+}

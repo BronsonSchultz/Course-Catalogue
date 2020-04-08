@@ -1,0 +1,50 @@
+.courseList {
+     list-style-type: none;
+     margin-top: 10px;
+ }
+
+ .courseList li {
+     align: center;
+     margin: auto;
+     width 20rem;
+ }
+ .courseList li div:hover {
+     background-color: #80cde5;
+ }
+
+ .container {
+    margin-bottom: 5px;
+ }
+
+ .courseSideBar {
+   height: 100%; /* 100% Full-height */
+   width: 0; /* 0 width - changes with JavaScript */
+   position: fixed; /* Stay in place */
+   z-index: 1; /* Stay on top */
+   top: 0;
+   right: 0;
+   background-color: #5bc0de; /* light blue */
+   overflow-x: hidden; /* Disable horizontal scroll */
+   padding-top: 60px; /* Place content 60px from the top */
+   transition: 0.5s; /* 0.5 second transition effect to slide in the sidebar */
+   color: #fff; /*white text*/
+
+ }
+
+ .courseSideBar p {
+     margin: auto; /* center content */
+     width: 250px;
+ }
+
+ .courseSideBar .closebtn {
+   position: absolute;
+   top: 10px;
+   left: 10px;
+   font-size: 20px;
+   margin-right: 50px;
+   text-decoration: none;
+ }
+
+ .form-inline {
+     padding-left: 10px;
+ }
