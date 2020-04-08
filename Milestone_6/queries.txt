@@ -1,0 +1,11 @@
+Queries:
+
+On login:
+	SELECT UserID FROM Users WHERE Username=? AND Password=?;
+
+Search for a course:
+	SELECT * FROM Courses WHERE Subject=? AND (? < Code < ?+99);
+
+
+
+
