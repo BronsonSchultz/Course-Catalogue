@@ -84,7 +84,6 @@ public class WebController implements WebMvcConfigurer {
 	public String addFavOrComp(@ModelAttribute("favAndCompleteForm") FavAndCompleteForm favAndCompleteForm, @ModelAttribute("searchForm") SearchForm searchForm){
 
 		CourseInserter inserter = new CourseInserter();
-		System.out.println(favAndCompleteForm);
 		try {
 			if (favAndCompleteForm.getFavourited() != null) {
 				inserter.insertFavForUser(favAndCompleteForm.getSubjectCode(), favAndCompleteForm.getCourseCode(), "1");
@@ -158,7 +157,6 @@ public class WebController implements WebMvcConfigurer {
 			all[2] = selector.jsonifyList(selector.getCategoryCourses("C3", "All","Computer Science"));
 			all[3] = selector.jsonifyList(selector.getCategoryCourses("C4", "All","Computer Science"));
 
-			System.out.println(Arrays.toString(all[0]));
 			model.addAttribute("degrees", jdegrees);
 			model.addAttribute("all", all);
 		} catch (SQLException e){
