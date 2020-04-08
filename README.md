@@ -225,6 +225,8 @@ By running the server, we verify all of the necessary pieces of the project
 work together. However, if you would like to test each component on its own, 
 do the following: 
 
+I assume here that these commands are run in order one after another!
+
 Tests for sqlite3 database
   - to launch sqlite3 and query our database run the following commands from the command line:
 ```
