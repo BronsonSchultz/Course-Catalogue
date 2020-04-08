@@ -151,7 +151,7 @@ the communication of data to and from the back end**
 
 </details>
 
-<details open>
+<details>
 <summary>Milestone 10 Progress</summary>
 
 ## To view our product progress on the vm:
@@ -184,6 +184,47 @@ http://10.81.40.175:8081/home
 ```
 (you need to be working on a UofS machine or connected to their VPN in order 
 to access it)
+
+
+</details>
+
+<details open>
+<summary>Final Product README</summary>
+
+## To view our product  on the VM:
+Once logged in, make sure to clone our project into a directory of your choice.
+using 
+```
+git clone https://git.cs.usask.ca/tmg935/370project.git
+```
+you will need to provide your gitlab credentials.
+
+once you have cloned our product, you should switch over to the beta branch
+and make sure your working copy is up to date
+```
+cd 370project
+git fetch
+git pull
+```
+now, to launch the server, we just need to use maven and spring boot
+```
+cd webServer/complete/
+mvn spring-boot:run
+```
+
+if maven and spring are not already installed on your profile then the above
+command should install them correctly (**tested on clean user account in the VM**)
+
+after that the server will be running, so open up your web browser and head to
+```
+http://10.81.40.175:8081/home
+```
+(you need to be working on a UofS machine or connected to their VPN in order 
+to access it)
+
+(there was a known permissions issue with the marker account, if that is still
+the case please use the user account or dev5)
+
 
 
 </details>
