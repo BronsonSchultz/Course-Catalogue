@@ -1,0 +1,499 @@
+1,CMPT,100,HSCH,999,1,,Choice of High School Grade 12 Math classes
+2,CMPT,113,HSCH,999,1,,Choice of High School Grade 12 Math classes
+3,CMPT,116,HSCH,999,1,,Choice of High School Grade 12 Math classes
+4,CMPT,141,HSCH,999,1,,Choice of High School Grade 12 Math classes
+5,CMPT,141,CMPT,105,1,,
+6,CMPT,141,CMPT,140,1,,
+7,CMPT,141,HSCH,999,2,,Choice of High School Grade 12 Math classes
+8,CMPT,141,MATH,110,2,,
+9,CMPT,141,MATH,123,2,,
+10,CMPT,141,MATH,176,2,,
+11,CMPT,145,CMPT,141,1,,
+12,CMPT,145,CMPT,111,1,,needs permission of department to be an alternate prerequisite
+13,CMPT,214,CMPT,145,1,,
+14,CMPT,214,CMPT,115,1,,
+15,CMPT,214,CMPT,117,1,,
+16,CMPT,215,CMPT,214,0,,
+17,CMPT,215,MATH,104,1,,
+18,CMPT,215,MATH,110,1,,
+19,CMPT,215,MATH,121,1,,
+20,CMPT,215,MATH,123,1,,
+21,CMPT,215,MATH,125,1,,
+22,CMPT,215,MATH,176,1,,
+23,CMPT,215,STAT,245,1,,
+24,CMPT,260,MATH,110,1,,
+25,CMPT,260,MATH,176,1,,
+26,CMPT,260,CMPT,145,2,,
+27,CMPT,260,CMPT,115,2,,
+28,CMPT,260,CMPT,117,2,,
+29,CMPT,270,CMPT,145,1,,
+30,CMPT,270,CMPT,115,1,,
+31,CMPT,270,CMPT,117,1,,
+32,CMPT,270,MATH,104,2,,
+33,CMPT,270,MATH,110,2,,
+34,CMPT,270,MATH,121,2,,
+35,CMPT,270,MATH,123,2,,
+36,CMPT,270,MATH,125,2,,
+37,CMPT,270,MATH,176,2,,
+38,CMPT,270,STAT,245,2,,
+39,CMPT,280,CMPT,270,0,,
+40,CMPT,281,CMPT,141,1,,
+41,CMPT,281,CMPT,106,1,,
+42,CMPT,281,CMPT,111,1,,
+43,CMPT,306,CMPT,270,0,,
+44,CMPT,306,MATH,264,1,,"recommended, not required"
+45,CMPT,306,MATH,266,1,,"recommended, not required"
+46,CMPT,317,CMPT,260,0,,
+47,CMPT,317,CMPT,280,0,,
+48,CMPT,317,STAT,242,1,,
+49,CMPT,317,STAT,245,1,,
+50,CMPT,317,EE,216,1,,
+51,CMPT,317,ME,251,1,,
+52,CMPT,332,CMPT,280,0,,
+53,CMPT,332,CMPT,215,1,,
+54,CMPT,332,CME,331,1,,
+55,CMPT,340,CMPT,214,0,,
+56,CMPT,340,CMPT,260,0,,
+57,CMPT,340,CMPT,270,0,,
+58,CMPT,350,CMPT,280,0,,
+59,CMPT,352,CMPT,270,1,,
+60,CMPT,352,CMPT,275,1,,
+61,CMPT,353,CMPT,280,0,,
+62,CMPT,355,CMPT,260,0,,
+63,CMPT,355,CMPT,270,0,,
+64,CMPT,355,CMPT,275,1,,"instead of 260+270 combined, not one of 3"
+65,CMPT,360,CMPT,260,0,,
+66,CMPT,360,CMPT,280,0,,
+67,CMPT,360,MATH,999,,,3 of MATH
+68,CMPT,364,ZZZZ,999,,,3 of MATH or STAT
+69,CMPT,364,CMPT,260,0,,
+70,CMPT,370,CMPT,214,0,,
+71,CMPT,370,CMPT,270,0,,
+72,CMPT,371,CMPT,370,0,,
+73,CMPT,371,CMPT,280,0,,can be concurrent
+74,CMPT,381,CMPT,270,0,,
+75,CMPT,384,CMPT,280,0,,
+76,CMPT,384,MATH,164,0,,"recommended, not required"
+77,CMPT,394,CMPT,270,0,,
+78,CMPT,400,ZZZZ,999,,,In the final year of an Honours Program; or a cumulative percentage average of at least 70% in 24 credit units in computer science and written permission of the department.
+79,CMPT,405,ZZZZ,999,,,permission of dept + In the final year of an Honours Program; or a cumulative percentage average of at least 70% in 24 credit units in computer science.
+80,CMPT,406,CMPT,306,0,,
+81,CMPT,408,CMPT,999,,,"Successful completion of 30 credit units in computer science, including at least 3 credit units at the 400-level of computer science."
+82,CMPT,412,CMPT,350,0,,
+83,CMPT,423,CMPT,317,0,,
+84,CMPT,423,STAT,245,0,,
+85,CMPT,423,MATH,164,0,,
+86,CMPT,432,CMPT,332,0,,
+87,CMPT,433,CMPT,332,0,,
+88,CMPT,433,CMPT,352,1,,can be concurrent
+89,CMPT,433,CMPT,432,1,,can be concurrent
+90,CMPT,433,CMPT,434,1,,can be concurrent
+91,CMPT,434,CMPT,332,0,,
+92,CMPT,435,CMPT,215,0,,
+93,CMPT,435,CMPT,332,,1,
+94,CMPT,435,CMPT,340,,1,
+95,CMPT,435,CMPT,360,,1,
+96,CMPT,436,CMPT,332,1,,
+97,CMPT,436,CMPT,350,1,,
+98,CMPT,436,CMPT,370,1,,
+99,CMPT,438,CMPT,332,0,,can be concurrent
+100,CMPT,438,CMPT,434,0,,can be concurrent
+101,CMPT,440,CMPT,340,0,,
+102,CMPT,442,CMPT,215,1,,
+103,CMPT,442,CME,331,1,,
+104,CMPT,442,CMPT,360,0,,
+105,CMPT,463,CMPT,360,,,
+106,CMPT,470,CMPT,370,,,
+107,CMPT,479,CMPT,370,1,,
+108,CMPT,479,ZZZZ,999,1,,permission of instructor
+109,CMPT,480,CMPT,999,,,9 credit units of CMPT courses at the 300-level or above.
+110,CMPT,481,CMPT,370,1,,
+111,CMPT,481,CMPT,381,1,,
+112,CMPT,484,CMPT,360,0,,
+113,CMPT,484,CMPT,384,0,,
+114,CMPT,484,CMPT,350,0,,"recommended, not required"
+115,CMPT,484,CMPT,381,0,,"recommended, not required"
+116,CMPT,485,ZZZZ,999,,,6 credit units of 300-level CMPT
+117,CMPT,485,MATH,164,1,,
+118,CMPT,485,MATH,266,1,,
+119,CMPT,485,EE,216,1,,
+120,CMPT,485,CE,318,1,,
+121,CMPT,487,MATH,164,1,,
+122,CMPT,487,MATH,266,1,,
+123,CMPT,487,EE,216,1,,
+124,CMPT,487,CE,318,1,,
+125,CMPT,487,CMPT,317,2,,
+126,CMPT,487,CMPT,332,2,,
+127,CMPT,487,CMPT,340,2,,
+128,CMPT,487,CMPT,370,2,,
+129,CMPT,489,MATH,164,1,,
+130,CMPT,489,MATH,266,1,,
+131,CMPT,489,EE,216,1,,
+132,CMPT,489,CE,318,1,,
+133,CMPT,489,STAT,245,0,,
+134,CMPT,489,CMPT,317,2,,
+135,CMPT,489,CMPT,487,2,,
+136,CMPT,811,CMPT,370,1,,
+137,CMPT,811,ZZZZ,999,1,,permission of instructor
+138,CMPT,817,ZZZZ,999,0,,permission of instructor required
+139,CMPT,820,ZZZZ,999,,,Open to graduate students in computer science who have at least one undergraduate course (3 credit units) of Artificial Intelligence.
+140,CMPT,821,ZZZZ,999,,,Open to graduate students in computer science who have at least one undergraduate course (3 credit units) in Programming Languages.
+141,CMPT,832,CMPT,332,0,,
+142,CMPT,840,ZZZZ,999,0,,permission of instructor required
+143,CMPT,846,ZZZZ,999,0,,permission of instructor required
+144,CMPT,851,ZZZZ,999,0,,permission of instructor required
+145,CMPT,856,CMPT,816,1,,
+146,CMPT,856,CMPT,826,1,,
+147,CMPT,856,CMPT,999,1,,or equivalent
+148,CMPT,857,ZZZZ,999,,,"Open to students in computer science, life sciences, and natural sciences, but subject to permission of the instructors."
+149,CMPT,865,ZZZZ,999,0,,Previous course in operating systems
+150,CMPT,865,CMPT,815,1,,
+151,CMPT,865,ZZZZ,999,1,,or equivalent
+152,CMPT,866,CMPT,481,1,,
+153,CMPT,866,CMPT,811,1,,
+154,CMPT,866,ZZZZ,999,1,,permission of instructor
+155,CMPT,867,CMPT,481,1,,
+156,CMPT,867,CMPT,811,1,,
+157,CMPT,867,ZZZZ,999,1,,or equivalent
+158,CMPT,868,ZZZZ,999,0,,permission of instructor required
+159,CMPT,868,ZZZZ,999,0,,Experience in web programming or web-based information systems
+160,CMPT,873,CMPT,812,1,,
+161,CMPT,873,ZZZZ,999,1,,permission of instructor
+162,CMPT,874,CMPT,812,1,,
+163,CMPT,874,ZZZZ,999,1,,permission of instructor
+164,CMPT,876,CMPT,829,1,,
+165,CMPT,876,CMPT,485,1,,
+166,CMPT,880,ZZZZ,999,0,,Admission to the M.Sc. program in computer science.
+167,CMPT,890,ZZZZ,999,,,Admission to the Ph.D. program in computer science.
+168,INDG,201,ZZZZ,999,,,"3 credit units 100-level INDG and 3 credit units from ANTH, ARCH, ECON, GEOG, INDG, LING, NS, POLS, PSY, SOC, or WGST."
+169,INDG,210,NS,107,1,,
+170,INDG,210,INDG,107,1,,
+171,INDG,210,ZZZZ,999,0,,"3 additional credit units from ANTH, ARCH, ECON, GEOG, INDG, LING, NS, POLS, PSY, SOC, or WGST"
+172,INDG,212,NS,107,1,,
+173,INDG,212,INDG,107,1,,
+174,INDG,212,ZZZZ,999,0,,"3 additional credit units from ANTH, ARCH, ECON, GEOG, INDG, LING, NS, POLS, PSY, SOC, or WGST"
+175,INDG,214,NS,107,1,,
+176,INDG,214,INDG,107,1,,
+177,INDG,214,ZZZZ,999,0,,"3 additional credit units from ANTH, ARCH, ECON, GEOG, INDG, LING, NS, POLS, PSY, SOC, or WGST"
+178,INDG,215,NS,107,1,,
+179,INDG,215,INDG,107,1,,
+180,INDG,215,ZZZZ,999,0,,"3 additional credit units from ANTH, ARCH, ECON, GEOG, INDG, LING, NS, POLS, PSY, SOC, or WGST"
+181,INDG,220,NS,107,1,,
+182,INDG,220,INDG,107,1,,
+183,INDG,220,ZZZZ,999,0,,"3 additional credit units from ANTH, ARCH, ECON, GEOG, INDG, LING, NS, POLS, PSY, SOC, or WGST"
+184,INDG,221,NS,107,1,,
+185,INDG,221,INDG,107,1,,
+186,INDG,221,ZZZZ,999,0,,"3 additional credit units from ANTH, ARCH, ECON, GEOG, INDG, LING, NS, POLS, PSY, SOC, or WGST"
+187,INDG,230,NS,107,1,,
+188,INDG,230,INDG,107,1,,
+189,INDG,230,ZZZZ,999,0,,"3 additional credit units from ANTH, ARCH, ECON, GEOG, INDG, LING, NS, POLS, PSY, SOC, or WGST"
+190,INDG,241,NS,107,1,,
+191,INDG,241,INDG,107,1,,
+192,INDG,241,ZZZZ,999,0,,"3 additional credit units from ANTH, ARCH, ECON, GEOG, INDG, LING, NS, POLS, PSY, SOC, or WGST"
+193,INDG,252,NS,107,1,,
+194,INDG,252,INDG,107,1,,
+195,INDG,252,ZZZZ,999,0,,"3 additional credit units from ANTH, ARCH, ECON, GEOG, INDG, LING, NS, POLS, PSY, SOC, or WGST"
+196,INDG,255,NS,107,1,,
+197,INDG,255,INDG,107,1,,
+198,INDG,255,ZZZZ,999,0,,"3 additional credit units from ANTH, ARCH, ECON, GEOG, INDG, LING, NS, POLS, PSY, SOC, or WGST"
+199,INDG,256,NS,107,1,,
+200,INDG,256,INDG,107,1,,
+201,INDG,256,ZZZZ,999,0,,"3 additional credit units from ANTH, ARCH, ECON, GEOG, INDG, LING, NS, POLS, PSY, SOC, or WGST"
+202,INDG,261,NS,107,1,,
+203,INDG,261,INDG,107,1,,
+204,INDG,261,ZZZZ,999,0,,"3 additional credit units from ANTH, ARCH, ECON, GEOG, INDG, LING, NS, POLS, PSY, SOC, or WGST"
+205,INDG,262,NS,107,1,,
+206,INDG,262,INDG,107,1,,
+207,INDG,262,ZZZZ,999,0,,"3 additional credit units from ANTH, ARCH, ECON, GEOG, INDG, LING, NS, POLS, PSY, SOC, or WGST"
+208,INDG,264,NS,107,1,,
+209,INDG,264,INDG,107,1,,
+210,INDG,264,ZZZZ,999,0,,"3 additional credit units from ANTH, ARCH, ECON, GEOG, INDG, LING, NS, POLS, PSY, SOC, or WGST"
+211,INDG,265,NS,107,1,,
+212,INDG,265,INDG,107,1,,
+213,INDG,265,ZZZZ,999,0,,"3 additional credit units from ANTH, ARCH, ECON, GEOG, INDG, LING, NS, POLS, PSY, SOC, or WGST"
+214,INDG,270,NS,107,1,,
+215,INDG,270,INDG,107,1,,
+216,INDG,270,ZZZZ,999,0,,"3 additional credit units from ANTH, ARCH, ECON, GEOG, INDG, LING, NS, POLS, PSY, SOC, or WGST"
+217,INDG,273,NS,107,1,,
+218,INDG,273,INDG,107,1,,
+219,INDG,273,ZZZZ,999,0,,"3 additional credit units from ANTH, ARCH, ECON, GEOG, INDG, LING, NS, POLS, PSY, SOC, or WGST"
+220,INDG,280,NS,107,1,,
+221,INDG,280,INDG,107,1,,
+222,INDG,280,ZZZZ,999,0,,"3 additional credit units from ANTH, ARCH, ECON, GEOG, INDG, LING, NS, POLS, PSY, SOC, or WGST"
+223,INDG,281,NS,107,1,,
+224,INDG,281,INDG,107,1,,
+225,INDG,281,ZZZZ,999,0,,"3 additional credit units from ANTH, ARCH, ECON, GEOG, INDG, LING, NS, POLS, PSY, SOC, or WGST"
+226,INDG,302,ZZZZ,999,,,12 credit units in Native Studies (NS) or Indigenous Studies (INDG)
+227,INDG,320,ZZZZ,999,,,12 credit units in Indigenous Studies (INDG)
+228,INDG,321,ZZZZ,999,,,12 credit units in Indigenous Studies (INDG)
+229,INDG,330,INDG,230,1,,
+230,INDG,330,ZZZZ,999,1,,or permission of the instructor
+231,INDG,331,ZZZZ,999,0,,12 credit units in Indigenous Studies (INDG)
+232,INDG,331,NS,264,1,,"recommended, not required"
+233,INDG,331,INDG,264,1,,"recommended, not required"
+234,INDG,340,NS,261,1,,
+235,INDG,340,INDG,261,1,,
+236,INDG,340,NS,262,2,,
+237,INDG,340,INDG,262,2,,
+238,INDG,340,ZZZZ,999,,,6 credit units 200-level Native Studies or Indigenous Studies
+239,INDG,341,NS,261,1,,
+240,INDG,341,INDG,261,1,,
+241,INDG,341,NS,262,2,,
+242,INDG,341,INDG,262,2,,
+243,INDG,341,ZZZZ,999,,,6 credit units 200-level Native Studies or Indigenous Studies
+244,INDG,351,INDG,252,0,,
+245,INDG,352,INDG,252,0,,
+246,INDG,361,INDG,265,0,,
+247,INDG,362,INDG,265,1,,
+248,INDG,362,NS,265,1,,
+249,INDG,362,ZZZZ,999,,,6 credit units 200-level NS or INDG.
+250,INDG,366,NS,261,1,,
+251,INDG,366,INDG,261,1,,
+252,INDG,366,NS,262,2,,
+253,INDG,366,INDG,262,2,,
+254,INDG,366,ZZZZ,999,,,6 credit units 200-level Native Studies or Indigenous Studies
+255,INDG,370,NS,261,1,,
+256,INDG,370,INDG,261,1,,
+257,INDG,370,NS,262,2,,
+258,INDG,370,INDG,262,2,,
+259,INDG,370,ZZZZ,999,,,6 credit units 200-level Native Studies or Indigenous Studies
+260,INDG,371,INDG,230,0,,
+261,INDG,373,ZZZZ,999,,,12 credit units in NS or INDG
+262,INDG,373,NS,271,0,,"recommended, not required"
+263,INDG,410,ZZZZ,999,1,,18 credit units NS or INDG or permission of the instructor
+264,INDG,430,ZZZZ,999,1,,"12 credit units in senior NS or INDG courses, or permission from the instructor."
+265,INDG,440,INDG,252,0,,
+266,INDG,440,INDG,351,1,,
+267,INDG,440,INDG,352,1,,
+268,INDG,440,ZZZZ,999,,,12 credit units INDG courses at the 300-level.
+269,INDG,450,INDG,252,0,,
+270,INDG,450,INDG,351,1,,
+271,INDG,450,INDG,352,1,,
+272,INDG,450,ZZZZ,999,,,12 credit units INDG courses at the 300-level.
+273,INDG,451,INDG,252,0,,
+274,INDG,451,INDG,351,1,,
+275,INDG,451,INDG,352,1,,
+276,INDG,451,ZZZZ,999,,,12 credit units INDG courses at the 300-level.
+277,INDG,454,ZZZZ,999,,,12 credit units INDG courses
+278,INDG,471,INDG,230,0,,
+279,INDG,471,ZZZZ,999,,,and 9 credit units INDG courses at the 300 level; or permission of the instructor.
+280,ANTH,202,ZZZZ,999,,,30 credit units of university courses.
+281,ANTH,302,ANTH,111,1,,
+282,ANTH,302,ZZZZ,999,1,,permission of instructor
+283,ANTH,310,ANTH,111,1,,
+284,ANTH,310,WGST,112,1,,
+285,ANTH,310,ZZZZ,999,1,,permission of instructor
+286,ANTH,405,ZZZZ,999,,,3 credit units 300-level ANTH or permission of instructor.
+287,ANTH,421,ZZZZ,999,,,3 credit units 300-level ANTH or permission of instructor.
+288,ANTH,480,ZZZZ,999,,,3 credit units 300-level ANTH or permission of instructor.
+289,ARBC,117,ARBC,114,0,,
+290,ARCH,350,ARCH,250,1,,
+291,ARCH,350,ARCH,251,1,,
+292,ASTR,113,HSCH,999,,,Physics 30 or PHYS 90; and (Mathemetics B30 and C30; or Foundations of Mathematics 30; or Pre-Calculus 30).
+293,BINF,300,CMPT,280,0,,
+294,BINF,300,BINF,200,0,,
+295,BINF,300,BMSC,320,1,,
+296,BINF,300,BIOL,226,1,,
+297,BIOL,120,ZZZZ,999,1,,Biology 30 or BIOL 90 or BIOL 107 or BIOL 108.
+298,BIOL,121,ZZZZ,999,1,,Biology 30 or BIOL 90 or BIOL 107 or BIOL 108.
+299,CHEM,112,ZZZZ,999,,,Chemistry 30 or CHEM 90 or CHEM 100
+300,CHEM,112,HSCH,999,,,Mathematics B30 or Foundations of Mathematics 30 or Pre-Calculus 30
+301,CHEM,115,CHEM,111,1,,
+302,CHEM,115,CHEM,112,1,,
+303,CHEM,115,CHEM,114,1,,
+304,CHEM,250,CHEM,112,1,,
+305,CHEM,250,CHEM,114,1,,
+306,CHIN,114,ZZZZ,999,0,,permission of department required
+307,CHIN,117,CHIN,114,1,,
+308,CHIN,117,ZZZZ,999,1,,or equivalent
+309,CHIN,117,ZZZZ,999,0,,permission of department required
+310,CME,331,CMPT,116,1,,
+311,CME,331,CMPT,141,1,,
+312,CME,331,EE,232,0,,
+313,CME,332,CMPT,115,1,,
+314,CME,332,CMPT,117,1,,
+315,CME,332,CMPT,145,1,,
+316,CME,332,CME,331,0,,
+317,CME,332,CME,341,0,,
+318,CME,334,CME,331,0,,
+319,CME,341,CMPT,116,1,,
+320,CME,341,CMPT,141,1,,
+321,CME,341,EE,232,0,,
+322,CME,342,CME,341,0,,can be concurrent
+323,CME,433,CME,331,0,,
+324,CME,433,CME,341,0,,
+325,CME,435,CME,341,0,,
+326,CME,451,CME,331,0,,
+327,COMM,203,MATH,110,1,,
+328,COMM,203,MATH,121,1,,
+329,COMM,203,COMM,104,0,,
+330,COMM,205,COMM,104,0,,
+331,COMM,210,COMM,201,0,,
+332,DRAM,119,DRAM,116,1,,
+333,DRAM,119,DRAM,118,1,,
+334,ECON,114,ECON,111,0,,"recommended, not required"
+335,EE,216,MATH,123,0,,
+336,EE,216,MATH,124,0,,
+337,ENG,202,ZZZZ,999,0,,6 credit units of 100-level ENG.
+338,ENG,203,ZZZZ,999,0,,6 credit units of 100-level ENG.
+339,ENG,204,ZZZZ,999,0,,6 credit units of 100-level ENG.
+340,ENG,242,ZZZZ,999,0,,6 credit units of 100-level ENG OR 3 credit units of 100-level ENG and INDG
+341,ENG,243,ZZZZ,999,0,,6 credit units of 100-level ENG.
+342,ENG,290,ZZZZ,999,1,,6 credit units of 100-level ENG.
+343,ENG,290,LING,111,1,,
+344,ENG,290,ZZZZ,999,1,,a senior course in a language
+345,ENG,335,ZZZZ,999,0,,"3 credit units of 200-level English, can be concurrent"
+346,ENG,335,ENG,243,0,,"recommended, not required"
+347,ESL,115,ZZZZ,999,0,,"Registration in this course is restricted to students who have completed Level UP2: High Advanced Academic English (U of S Language Centre), completed English as a Second Language (University of Regina: “ESL 050”), completed an English Proficiency Test (such as the TEOFL) as a condition of admission; or on the recommendation the U of S Language Centre. Such students must have completed fewer than 60 credit units in which English is the language of instruction."
+348,ESL,116,ZZZZ,999,0,,"Registration in this course is restricted to students who have completed Level UP2: High Advanced Academic English (U of S Language Centre), completed English as a Second Language (University of Regina: “ESL 050”), completed an English Proficiency Test (such as the TEOFL) as a condition of admission; or on the recommendation the U of S Language Centre. Such students must have completed fewer than 60 credit units in which English is the language of instruction."
+349,FREN,106,HSCH,999,1,,Frech 20
+350,FREN,106,FREN,103,1,,
+351,FREN,122,HSCH,999,1,,French 30 (Grade 12 Core French)
+352,FREN,122,FREN,106,1,,
+353,FREN,125,FREN,122,0,,
+354,FREN,218,FREN,212,0,,
+355,GEOG,120,HSCH,999,0,,A background in high school sciences at the 30-level is recommended.
+356,GERM,117,GERM,114,0,,
+357,GRK,113,GRK,112,0,,
+358,HIST,266,ZZZZ,999,0,,3 credit units HIST at the 100-level or 30 credit units of university level courses.
+359,HNDI,117,HNDI,114,0,,
+360,INTS,110,ZZZZ,999,,,"INTS 110.3 is intended as a first or second-year Arts & Science course. In order to register, students must be registered in the College of Arts & Science and have successfully completed no more than 60 university credit units."
+361,INTS,201,ZZZZ,999,0,,30 credit units completed at the University of Saskatchewan.
+362,INTS,203,ZZZZ,999,0,,18 credit units at university level or permission of the instructor.
+363,INTS,380,ZZZZ,999,0,,60 credit units of university courses and permission from the instructor.
+364,JPNS,117,JPNS,114,0,,
+365,LATN,113,LATN,112,0,,
+366,LING,112,LING,111,0,,
+367,LING,253,LING,111,1,,
+368,LING,253,LING,112,1,,
+369,LING,253,INDG,107,1,,
+370,LING,253,CREE,101,1,,
+371,LING,253,CREE,110,1,,
+372,MATH,110,MATH,102,1,,
+373,MATH,110,MATH,104,1,,
+374,MATH,110,HSCH,999,1,,Pre-Calculus 30 and a 60% score in the Math Placement Test; or Mathematics B30 and C30 and a 60% score in the Math Placement Test
+375,MATH,116,MATH,110,0,,
+376,MATH,124,MATH,123,0,,
+377,MATH,164,MATH,999,0,,Pre-Calculus 30; or Foundations of Mathematics 30; or Mathematics B30 and C30; or 3 credit units of MATH or STAT
+378,MATH,176,MATH,999,0,,Calculus 30 and a score of at least 80% on the Math Placement Test
+379,MATH,177,MATH,110,1,,
+380,MATH,177,MATH,123,1,,
+381,MATH,177,MATH,176,1,,
+382,MATH,211,MATH,116,1,,
+383,MATH,211,MATH,124,1,,
+384,MATH,211,MATH,177,1,,
+385,MATH,211,MATH,164,0,,can be concurrent if one of the other prerequisite options has been taken with a prerequisite waiver
+386,MATH,223,MATH,123,0,,
+387,MATH,223,MATH,124,0,,
+388,MATH,223,MATH,999,,,Engineering students may take this course with prerequisite of MATH 110 and 116 if they seek permission of the Engineering Students' Centre
+389,MATH,225,MATH,999,,,(MATH 110 and 116) or (MATH 121 or MATH 125; and MATH 128) or (MATH 176 and MATH 177).
+390,MATH,266,MATH,164,1,,
+391,MATH,266,MATH,999,1,,Students who have credit for MATH 110 and 116 will be granted a prerequisite waiver to take this course concurrently with MATH 164 in 2019-20.
+392,MATH,276,MATH,110,1,,
+393,MATH,276,MATH,121,1,,
+394,MATH,276,MATH,123,1,,
+395,MATH,276,MATH,125,1,,
+396,MATH,276,MATH,176,1,,
+397,MATH,276,MATH,164,0,,can be concurrent if one of the other prerequisite options has been taken with a prerequisite waiver
+398,MATH,327,MATH,164,1,,
+399,MATH,327,MATH,266,1,,
+400,MATH,327,MATH,260,2,,
+401,MATH,327,MATH,999,2,,6 credit units 200-level MATH.
+402,MATH,328,MATH,164,1,,
+403,MATH,328,MATH,266,1,,
+404,MATH,328,MATH,260,2,,
+405,MATH,328,MATH,999,2,,6 credit units 200-level MATH.
+406,MATH,361,MATH,999,,,MATH 163 and MATH 164; or MATH 266
+407,MATH,362,MATH,999,,,MATH 163 and MATH 164; or MATH 266
+408,MATH,364,MATH,163,0,,"Students with credit for one of MATH 100, 104, 110, 121, 125, or STAT 103 will be given a prerequisite waiver to take MATH 163 and 364 concurrently in 2019-20."
+409,ME,251,GE,111,0,,
+410,ME,251,MATH,223,0,,
+411,MUS,120,MUS,101,1,,
+412,MUS,120,ZZZZ,999,1,,a minimum grade of 65% on the Music Theory Entrance Examination.
+413,MUS,120,ZZZZ,999,0,,permission of department required
+414,MUS,120,MUS,133,0,,can be concurrent
+415,MUS,121,MUS,120,0,,
+416,MUS,121,MUS,134,0,,can be concurrent
+417,MUS,133,MUS,101,1,,
+418,MUS,133,ZZZZ,999,1,,a minimum grade of 65% on the Music Theory Entrance Examination.
+419,MUS,134,MUS,133,1,,
+420,MUS,134,MUS,113,1,,
+421,MUS,134,MUS,121,0,,can be concurrent
+422,MUS,156,MUS,155,,,
+423,PHIL,208,ZZZZ,999,,,3 credit units in philosophy or completion of 18 credit units at the university level or permission of the instructor.
+424,PHIL,232,ZZZZ,999,0,,Restricted to students in the Computer Science and Interactive Systems Design programs.
+425,PHIL,232,ZZZZ,999,0,,Completion of at least 6 credit units in 100-level CMPT
+426,PHIL,233,ZZZZ,999,,,3 credit units in philosophy or completion of 18 credit units at the university level or permission of the instructor.
+427,PHIL,243,PHIL,241,1,,
+428,PHIL,243,CMPT,260,1,,
+429,PHYS,115,HSCH,999,0,,Physics 30 or PHYS 90; and (Mathematics B30 and C30; or Foundations of Mathematics 30; or Pre-Calculus 30).
+430,PHYS,117,PHYS,115,,,
+431,PLAN,445,GEOG,240,1,,
+432,PLAN,445,ZZZZ,999,1,,60 credit units at the University.
+433,POLS,222,POLS,110,,1,
+434,POLS,222,POLS,111,,1,
+435,POLS,222,POLS,112,,1,
+436,POLS,222,INDG,107,,1,
+437,POLS,222,ZZZZ,999,,,or 60 credit units at university level.
+438,POLS,245,IS,110,,1,
+439,POLS,245,POLS,111,,1,
+440,POLS,245,POLS,112,,1,
+441,POLS,245,ZZZZ,999,,,"or 18 credit units at the university level including at least 3 credit units of ANTH, ENG, HIST, INDG, IS, POLS, RLST, SOC, or WGST."
+442,POLS,323,POLS,222,1,,
+443,POLS,323,ZZZZ,999,1,,6 credit units 100-level POLS
+444,POLS,328,ZZZZ,999,1,,12 credit units of POLS and/or IS
+445,POLS,328,ZZZZ,999,1,,"or 36 credit units at the university level, including at least 6 credit units of ANTH, ENG, HIST, INDG, IS, POLS, RLST, SOC, or WGST"
+446,POLS,333,ZZZZ,999,1,,12 credit units of POLS and/or IS
+447,POLS,333,ZZZZ,999,1,,"or 36 credit units at the university level, including at least 6 credit units of ANTH, ENG, HIST, INDG, IS, POLS, RLST, SOC, or WGST"
+448,POLS,336,ZZZZ,999,1,,12 credit units of POLS and/or IS
+449,POLS,336,ZZZZ,999,1,,"or 36 credit units at the university level, including at least 6 credit units of ANTH, ENG, HIST, INDG, IS, POLS, RLST, SOC, or WGST"
+450,POLS,422,POLS,222,1,,
+451,POLS,422,ZZZZ,999,1,,"or 54 credit units at the university level, including 18 credit units POLS and/or IS."
+452,POLS,461,ZZZZ,999,0,,"54 credit units at the university level, including 18 credit units POLS and/or IS."
+453,PSY,323,ZZZZ,999,0,,permission of department required
+454,PSY,323,PSY,233,0,,
+455,PSY,323,PSY,235,1,,
+456,PSY,323,HLST,210,1,,
+457,PSY,323,ZZZZ,999,0,,3 credit units from Group 1
+458,PSY,323,ZZZZ,999,0,,an additional 9 credit units of 200-level Psychology.
+459,PSY,355,ZZZZ,999,0,,permission of department required
+460,PSY,355,ZZZZ,999,0,,9 credit units of 200-level psychology
+461,PSY,355,PSY,233,0,,
+462,PSY,355,PSY,235,1,,
+463,PSY,355,HLST,210,1,,
+464,PSY,355,PSY,252,2,,
+465,PSY,355,PSY,253,2,,
+466,PSY,355,PSY,255,2,,
+467,PSY,355,PSY,256,2,,
+468,RLST,280,ZZZZ,999,0,,3 credit units 100-Level RLST or 18 credit units at the university level.
+469,RLST,362,ZZZZ,999,0,,permission of department required
+470,RLST,362,ZZZZ,999,0,,6 credit units RLST or 24 credit units at the university level.
+471,RUSS,117,RUSS,114,0,,
+472,SNSK,114,ZZZZ,999,0,,permission of department
+473,SNSK,117,ZZZZ,999,0,,permission of department
+474,SNSK,117,SNSK,114,1,,
+475,SNSK,117,ZZZZ,999,1,,or equivalent
+476,SPAN,117,SPAN,114,0,,
+477,STAT,241,MATH,999,1,,MATH 110 and MATH 116
+478,STAT,241,MATH,999,1,,MATH 176 and MATH 177
+479,STAT,242,STAT,241,0,,
+480,STAT,245,MATH,100,1,,
+481,STAT,245,MATH,101,1,,
+482,STAT,245,MATH,104,1,,
+483,STAT,245,MATH,110,1,,
+484,STAT,245,MATH,121,1,,
+485,STAT,245,MATH,123,1,,
+486,STAT,245,MATH,125,1,,
+487,STAT,245,MATH,176,1,,
+488,STAT,245,STAT,103,1,,
+489,STAT,344,STAT,242,1,,
+490,STAT,344,STAT,245,1,,
+491,STAT,344,STAT,246,1,,
+492,STAT,345,STAT,242,1,,
+493,STAT,345,STAT,245,1,,
+494,STAT,345,STAT,246,1,,
+495,STAT,348,STAT,242,1,,
+496,STAT,348,STAT,245,1,,
+497,STAT,348,STAT,246,1,,
+498,UKR,117,UKR,114,1,,
+499,UKR,117,HSCH,999,1,,or Ukrainian 20 (Grade 11 Ukrainian)
