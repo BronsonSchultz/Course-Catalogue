@@ -15,7 +15,7 @@ public class DBConnection {
 
             // create a connection to the database
             Class.forName("org.sqlite.JDBC");
-            conn = DriverManager.getConnection("jdbc:sqlite:UofSPlanner.webApp.db");
+            conn = DriverManager.getConnection("jdbc:sqlite:UofSPlanner.db");
         } catch (Exception e) {
             System.out.println(e);
         }
