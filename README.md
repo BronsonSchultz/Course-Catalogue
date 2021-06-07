@@ -178,19 +178,19 @@ to access it)
 
 </details>
 
-<details open>
+<details>
 <summary>Final Product README</summary>
 
 This is a course catalogue website created for CMPT 370: software engineering,
 at the University of Saskatchewan in the winter term of 2020.
 
 The goal of this project was to go through each step of the development process
-from
+Check out the [wiki](https://github.com/BronsonSchultz/Course-Catalogue/wiki) for development detais
 
-## To see the database documentation
+## Database documentation
 Look [here](Development_Process/DB_README.pdf) and [here](Development_Process/UofSPlannerDB_Documentation.pdf)
 
-## To view our product  on the VM:
+## To 
 Once logged in, make sure to clone our project into a directory of your choice.
 using
 ```
@@ -263,4 +263,12 @@ spring run app.groovy
 curl localhost:8080
 ```    
 
+</details>
+
+<details open>
+<summary>Post Development README</summary>
+## Running this project
+  This website requires either Spring to be installed on your machine or can be run with Docker.
+  
+  If you're using Spring
 </details>
