@@ -267,8 +267,9 @@ curl localhost:8080
 
 <details open>
 <summary>Post Development README</summary>
-## Running this project
-  This website requires either Spring to be installed on your machine or can be run with Docker.
   
-  If you're using Spring
+ ## Running this project  
+  This website can be used with Docker or just on its own.
+  
+  If you're using Docker 
 </details>
