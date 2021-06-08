@@ -5,12 +5,32 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c58c7800-ab70-41f3-9abd-eac5c16a8a70" name="Default Changelist" comment="">
+<<<<<<< HEAD
       <change beforePath="$PROJECT_DIR$/.idea/complete.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/complete.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mvnw" beforeDir="false" afterPath="$PROJECT_DIR$/mvnw" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/webApp/ApplicationMockMvcTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/webApp/ApplicationMockMvcTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/META-INF/complete.kotlin_module" beforeDir="false" />
+=======
+      <change beforePath="$PROJECT_DIR$/../../.idea/370project.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/complete.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/complete.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/complete.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/db_query/LoginQuery.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/db_query/LoginQuery.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/webApp/CourseController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/webApp/CourseController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/webApp/CourseDeleter.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/webApp/CourseDeleter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/webApp/CourseInserter.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/webApp/CourseInserter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/webApp/CourseSelector.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/webApp/CourseSelector.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/webApp/DegreeSelector.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/webApp/DegreeSelector.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/webApp/DeleteFavForm.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/webApp/DeleteFavForm.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/webApp/FavAndCompleteForm.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/webApp/FavAndCompleteForm.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/webApp/Selector.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/webApp/Selector.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/webApp/db/DBConnection.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/webApp/db/DBConnection.class" afterDir="false" />
+>>>>>>> f9aa0a47b06c43f1b1c9831f2817d1e9bb64ed1e
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,7 +69,10 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+<<<<<<< HEAD
     <property name="com.google.cloudcode.ide_session_index" value="20210411_0000" />
+=======
+>>>>>>> f9aa0a47b06c43f1b1c9831f2817d1e9bb64ed1e
     <property name="full.screen.before.presentation.mode" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../gcp_project/pom.xml" />
     <property name="node.js.detected.package.eslint" value="true" />
@@ -134,6 +157,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+<<<<<<< HEAD
+=======
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+>>>>>>> f9aa0a47b06c43f1b1c9831f2817d1e9bb64ed1e
     <configuration name="Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="complete" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="webApp.Application" />
@@ -162,10 +199,14 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1583001230417</updated>
+<<<<<<< HEAD
       <workItem from="1617131609455" duration="5770000" />
       <workItem from="1617561767221" duration="1965000" />
       <workItem from="1618206582800" duration="706000" />
       <workItem from="1618241831304" duration="39000" />
+=======
+      <workItem from="1620402754213" duration="233000" />
+>>>>>>> f9aa0a47b06c43f1b1c9831f2817d1e9bb64ed1e
     </task>
     <servers />
   </component>

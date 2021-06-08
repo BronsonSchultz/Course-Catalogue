@@ -36,11 +36,11 @@ Tests for Java Spring Boot
   - Spring by default runs actively in the terminal unlike tomcat which ran in the background, so in order to view the output either run spring in the background or open a new terminal tab and run:
 ```
     $ curl localhost:8080
-``` 
-  - Also by default spring will start it's server on the same port as tomcat, so make sure to stop the tomcat server first before launching this one 
+```
+  - Also by default spring will start it's server on the same port as tomcat, so make sure to stop the tomcat server first before launching this one
 
-    
-    
+
+
 
 Tests For JDBC
   - Navigate to "connect" directory first
@@ -49,14 +49,14 @@ Tests For JDBC
     $ java -cp .:.sqlite-jdbc-3.30.1.jar net.sqlitetest.TestQuery
 
   - Currently not working, but connection to database is fine
- 
+
 </details>
 
 <details>
 <summary>Milestone 8 Tests</summary>
 
  ## Website tests
- 
+
 we don't have access to the marker's profile so there may be some setup required
 first.
 Hopefully maven is installed for the marker profile, test it with  
@@ -83,16 +83,16 @@ This will launch the server on port 8081, it can be view in the browser at:
 as long as your on a Usask machine or using the VPN
 
 On the website you can navigate through the basic pages of our website.
-I have created some stubs for any information that requires data from the 
+I have created some stubs for any information that requires data from the
 backend. Please refer to our storyboards for some of the functionality!
-  
- ## Database tests 
+
+ ## Database tests
 
 
 ```
 cd 370project/webServer/complete/src/main/query
 (or from wherever you are to the end directory)
-sqlite3 
+sqlite3
 .open UofSPlanner.db
 .tables
 Courses             Degrees             TestFavouriteList
@@ -120,22 +120,22 @@ Should have 4 undergraduate degrees for computer science listedS
  java -classpath sqlite-jdbc-3.8.11.2.jar db_query/src/db_query/CoursesQuery.java
  ```
  results in every single CMPT course being printed to the console from JDBC
- 
+
  ## What User Stories did we implement?
- - As Alan Admin, I need a database to hold all of the classes and programs, 
+ - As Alan Admin, I need a database to hold all of the classes and programs,
  so that the information is accessible for the rest of the application.
- - As Alan Admin, I want to be able to add and remove classes to and from the 
+ - As Alan Admin, I want to be able to add and remove classes to and from the
  database, so that the catalogue of classes is up to date.
 
- ## What User stories are partially complete? 
+ ## What User stories are partially complete?
  - As Newman I want to see a list of first year CMPT courses so I know what
 courses to take this years.
  - As Newman I want to see info about CMPT courses so I know what
 the course will cover.
- -As Ember I’d like my favourited classes to show they are on that list when 
+ -As Ember I’d like my favourited classes to show they are on that list when
 looking at the course description. (star icon?)
 
-**Right now these user stories have front end stubs, we will be working on 
+**Right now these user stories have front end stubs, we will be working on
 the communication of data to and from the back end**
 
 
@@ -146,7 +146,7 @@ the communication of data to and from the back end**
 
 ## To view our product progress on the vm:
 Once logged in, make sure to clone our project into a directory of your choice.
-using 
+using
 ```
 git clone https://git.cs.usask.ca/tmg935/370project.git
 ```
@@ -172,21 +172,27 @@ after that the server will be running, so open up your web browser and head to
 ```
 http://10.81.40.175:8081/home
 ```
-(you need to be working on a UofS machine or connected to their VPN in order 
+(you need to be working on a UofS machine or connected to their VPN in order
 to access it)
 
 
 </details>
 
-<details open>
+<details>
 <summary>Final Product README</summary>
 
-## To see the database documentation 
-Look [here](https://git.cs.usask.ca/tmg935/370project/-/blob/master/DB_README.pdf) and [here](https://git.cs.usask.ca/tmg935/370project/-/blob/master/UofSPlannerDB_Documentation.pdf) 
+This is a course catalogue website created for CMPT 370: software engineering,
+at the University of Saskatchewan in the winter term of 2020.
 
-## To view our product  on the VM:
+The goal of this project was to go through each step of the development process
+Check out the [wiki](https://github.com/BronsonSchultz/Course-Catalogue/wiki) for development detais
+
+## Database documentation
+Look [here](Development_Process/DB_README.pdf) and [here](Development_Process/UofSPlannerDB_Documentation.pdf)
+
+## To 
 Once logged in, make sure to clone our project into a directory of your choice.
-using 
+using
 ```
 git clone https://git.cs.usask.ca/tmg935/370project.git
 ```
@@ -212,7 +218,7 @@ after that the server will be running, so open up your web browser and head to
 ```
 http://10.81.40.175:8081/home
 ```
-(you need to be working on a UofS machine or connected to their VPN in order 
+(you need to be working on a UofS machine or connected to their VPN in order
 to access it)
 
 (there was a known permissions issue with the marker account, if that is still
@@ -222,8 +228,8 @@ the case please use the user account or dev5)
 
 ## Project Component Tests
 By running the server, we verify all of the necessary pieces of the project
-work together. However, if you would like to test each component on its own, 
-do the following: 
+work together. However, if you would like to test each component on its own,
+do the following:
 
 I assume here that these commands are run in order one after another!
 
@@ -257,4 +263,13 @@ spring run app.groovy
 curl localhost:8080
 ```    
 
+</details>
+
+<details open>
+<summary>Post Development README</summary>
+  
+ ## Running this project  
+  This website can be used with Docker or just on its own.
+  
+  If you're using Docker 
 </details>
