@@ -269,7 +269,7 @@ curl localhost:8080
 <summary>Post Development README</summary>
   
 ## What's all the info above?
- all the info in this README above is from the development process. I ran this project on a provided VM so it's not very relevant to running the project today but it does give insight into how it went!
+ all the info in this README above is from the development process. I ran this project on a provided VM so it's not very relevant to running the project today but it does give insight into how it went! Check out the [wiki](https://github.com/BronsonSchultz/Course-Catalogue/wiki) as well to see details 
   
 ## Running this project  
 Spring makes running webapps easy by including a maven executable  
