@@ -268,11 +268,16 @@ curl localhost:8080
 <details open>
 <summary>Post Development README</summary>
   
+## What's all the info above?
+ all the info in this README above is from the development process. I ran this project on a provided VM so it's not very relevant to running the project today but it does give insight into how it went!
+  
 ## Running this project  
 Spring makes running webapps easy by including a maven executable  
   from within `/Course-Catalogue/webServer/complete` on the terminal, run  
   `./mvnw spring-boot:run`  
   this will start the website on your localhost on port 8080 which you can visit from your favourite browser.
+  
+  
   
   
 </details>
