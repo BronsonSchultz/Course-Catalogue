@@ -278,6 +278,11 @@ Spring makes running webapps easy by including a maven executable
   this will start the website on your localhost on port 8080 which you can visit from your favourite browser.
   
   
+    
+    
   
-  
+### Contributors  
+Implementation of the website was done by me, Bronson Schultz  
+Implementation of the Database was done by Chandra Lyons  
+Project design documents were created by Bronson Schultz, Chandra Lyons, Tomas Johnsgaard and Larson Paul  
 </details>
