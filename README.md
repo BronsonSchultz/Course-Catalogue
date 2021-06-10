@@ -268,8 +268,11 @@ curl localhost:8080
 <details open>
 <summary>Post Development README</summary>
   
- ## Running this project  
-  This website can be used with Docker or just on its own.
+## Running this project  
+Spring makes running webapps easy by including a maven executable  
+  from within `/Course-Catalogue/webServer/complete` on the terminal, run  
+  `./mvnw spring-boot:run`  
+  this will start the website on your localhost on port 8080 which you can visit from your favourite browser.
   
-  If you're using Docker 
+  
 </details>
